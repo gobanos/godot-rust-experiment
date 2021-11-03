@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="MeshLibrary" inherits="Resource" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+		<method name="clear">
+			<return type="void" />
+			<description>
+			</description>
+		</method>
+		<method name="create_item">
+			<return type="void" />
+			<argument index="0" name="id" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="find_item_by_name" qualifiers="const">
+			<return type="int" />
+			<argument index="0" name="name" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="get_item_list" qualifiers="const">
+			<return type="PoolIntArray" />
+			<description>
+			</description>
+		</method>
+		<method name="get_item_mesh" qualifiers="const">
+			<return type="Mesh" />
+			<argument index="0" name="id" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="get_item_name" qualifiers="const">
+			<return type="String" />
+			<argument index="0" name="id" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="get_item_navmesh" qualifiers="const">
+			<return type="NavigationMesh" />
+			<argument index="0" name="id" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="get_item_navmesh_transform" qualifiers="const">
+			<return type="Transform" />
+			<argument index="0" name="id" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="get_item_preview" qualifiers="const">
+			<return type="Texture" />
+			<argument index="0" name="id" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="get_item_shapes" qualifiers="const">
+			<return type="Array" />
+			<argument index="0" name="id" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="get_last_unused_item_id" qualifiers="const">
+			<return type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="remove_item">
+			<return type="void" />
+			<argument index="0" name="id" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="set_item_mesh">
+			<return type="void" />
+			<argument index="0" name="id" type="int" />
+			<argument index="1" name="mesh" type="Mesh" />
+			<description>
+			</description>
+		</method>
+		<method name="set_item_name">
+			<return type="void" />
+			<argument index="0" name="id" type="int" />
+			<argument index="1" name="name" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="set_item_navmesh">
+			<return type="void" />
+			<argument index="0" name="id" type="int" />
+			<argument index="1" name="navmesh" type="NavigationMesh" />
+			<description>
+			</description>
+		</method>
+		<method name="set_item_navmesh_transform">
+			<return type="void" />
+			<argument index="0" name="id" type="int" />
+			<argument index="1" name="navmesh" type="Transform" />
+			<description>
+			</description>
+		</method>
+		<method name="set_item_preview">
+			<return type="void" />
+			<argument index="0" name="id" type="int" />
+			<argument index="1" name="texture" type="Texture" />
+			<description>
+			</description>
+		</method>
+		<method name="set_item_shapes">
+			<return type="void" />
+			<argument index="0" name="id" type="int" />
+			<argument index="1" name="shapes" type="Array" />
+			<description>
+			</description>
+		</method>
+	</methods>
+	<constants>
+	</constants>
+</class>

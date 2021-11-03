@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="Panel" inherits="Control" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+	</methods>
+	<constants>
+	</constants>
+	<theme_items>
+		<theme_item name="panel" type="StyleBox">
+		</theme_item>
+	</theme_items>
+</class>

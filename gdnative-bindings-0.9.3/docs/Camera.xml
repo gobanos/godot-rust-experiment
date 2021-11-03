@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="Camera" inherits="Spatial" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+		<method name="clear_current">
+			<return type="void" />
+			<argument index="0" name="enable_next" type="bool" default="true" />
+			<description>
+			</description>
+		</method>
+		<method name="get_camera_rid" qualifiers="const">
+			<return type="RID" />
+			<description>
+			</description>
+		</method>
+		<method name="get_camera_transform" qualifiers="const">
+			<return type="Transform" />
+			<description>
+			</description>
+		</method>
+		<method name="get_cull_mask_bit" qualifiers="const">
+			<return type="bool" />
+			<argument index="0" name="layer" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="get_frustum" qualifiers="const">
+			<return type="Array" />
+			<description>
+			</description>
+		</method>
+		<method name="is_position_behind" qualifiers="const">
+			<return type="bool" />
+			<argument index="0" name="world_point" type="Vector3" />
+			<description>
+			</description>
+		</method>
+		<method name="make_current">
+			<return type="void" />
+			<description>
+			</description>
+		</method>
+		<method name="project_local_ray_normal" qualifiers="const">
+			<return type="Vector3" />
+			<argument index="0" name="screen_point" type="Vector2" />
+			<description>
+			</description>
+		</method>
+		<method name="project_position" qualifiers="const">
+			<return type="Vector3" />
+			<argument index="0" name="screen_point" type="Vector2" />
+			<argument index="1" name="z_depth" type="float" />
+			<description>
+			</description>
+		</method>
+		<method name="project_ray_normal" qualifiers="const">
+			<return type="Vector3" />
+			<argument index="0" name="screen_point" type="Vector2" />
+			<description>
+			</description>
+		</method>
+		<method name="project_ray_origin" qualifiers="const">
+			<return type="Vector3" />
+			<argument index="0" name="screen_point" type="Vector2" />
+			<description>
+			</description>
+		</method>
+		<method name="set_cull_mask_bit">
+			<return type="void" />
+			<argument index="0" name="layer" type="int" />
+			<argument index="1" name="enable" type="bool" />
+			<description>
+			</description>
+		</method>
+		<method name="set_frustum">
+			<return type="void" />
+			<argument index="0" name="size" type="float" />
+			<argument index="1" name="offset" type="Vector2" />
+			<argument index="2" name="z_near" type="float" />
+			<argument index="3" name="z_far" type="float" />
+			<description>
+			</description>
+		</method>
+		<method name="set_orthogonal">
+			<return type="void" />
+			<argument index="0" name="size" type="float" />
+			<argument index="1" name="z_near" type="float" />
+			<argument index="2" name="z_far" type="float" />
+			<description>
+			</description>
+		</method>
+		<method name="set_perspective">
+			<return type="void" />
+			<argument index="0" name="fov" type="float" />
+			<argument index="1" name="z_near" type="float" />
+			<argument index="2" name="z_far" type="float" />
+			<description>
+			</description>
+		</method>
+		<method name="unproject_position" qualifiers="const">
+			<return type="Vector2" />
+			<argument index="0" name="world_point" type="Vector3" />
+			<description>
+			</description>
+		</method>
+	</methods>
+	<members>
+		<member name="cull_mask" type="int" setter="set_cull_mask" getter="get_cull_mask" default="1048575">
+		</member>
+		<member name="current" type="bool" setter="set_current" getter="is_current" default="false">
+		</member>
+		<member name="doppler_tracking" type="int" setter="set_doppler_tracking" getter="get_doppler_tracking" enum="Camera.DopplerTracking" default="0">
+		</member>
+		<member name="environment" type="Environment" setter="set_environment" getter="get_environment">
+		</member>
+		<member name="far" type="float" setter="set_zfar" getter="get_zfar" default="100.0">
+		</member>
+		<member name="fov" type="float" setter="set_fov" getter="get_fov" default="70.0">
+		</member>
+		<member name="frustum_offset" type="Vector2" setter="set_frustum_offset" getter="get_frustum_offset" default="Vector2( 0, 0 )">
+		</member>
+		<member name="h_offset" type="float" setter="set_h_offset" getter="get_h_offset" default="0.0">
+		</member>
+		<member name="keep_aspect" type="int" setter="set_keep_aspect_mode" getter="get_keep_aspect_mode" enum="Camera.KeepAspect" default="1">
+		</member>
+		<member name="near" type="float" setter="set_znear" getter="get_znear" default="0.05">
+		</member>
+		<member name="projection" type="int" setter="set_projection" getter="get_projection" enum="Camera.Projection" default="0">
+		</member>
+		<member name="size" type="float" setter="set_size" getter="get_size" default="1.0">
+		</member>
+		<member name="v_offset" type="float" setter="set_v_offset" getter="get_v_offset" default="0.0">
+		</member>
+	</members>
+	<constants>
+		<constant name="PROJECTION_PERSPECTIVE" value="0" enum="Projection">
+		</constant>
+		<constant name="PROJECTION_ORTHOGONAL" value="1" enum="Projection">
+		</constant>
+		<constant name="PROJECTION_FRUSTUM" value="2" enum="Projection">
+		</constant>
+		<constant name="KEEP_WIDTH" value="0" enum="KeepAspect">
+		</constant>
+		<constant name="KEEP_HEIGHT" value="1" enum="KeepAspect">
+		</constant>
+		<constant name="DOPPLER_TRACKING_DISABLED" value="0" enum="DopplerTracking">
+		</constant>
+		<constant name="DOPPLER_TRACKING_IDLE_STEP" value="1" enum="DopplerTracking">
+		</constant>
+		<constant name="DOPPLER_TRACKING_PHYSICS_STEP" value="2" enum="DopplerTracking">
+		</constant>
+	</constants>
+</class>

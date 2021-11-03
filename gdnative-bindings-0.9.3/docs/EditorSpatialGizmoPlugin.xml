@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="EditorSpatialGizmoPlugin" inherits="Resource" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+		<method name="add_material">
+			<return type="void" />
+			<argument index="0" name="name" type="String" />
+			<argument index="1" name="material" type="SpatialMaterial" />
+			<description>
+			</description>
+		</method>
+		<method name="can_be_hidden" qualifiers="virtual">
+			<return type="bool" />
+			<description>
+			</description>
+		</method>
+		<method name="commit_handle" qualifiers="virtual">
+			<return type="void" />
+			<argument index="0" name="gizmo" type="EditorSpatialGizmo" />
+			<argument index="1" name="index" type="int" />
+			<argument index="2" name="restore" type="Variant" />
+			<argument index="3" name="cancel" type="bool" default="false" />
+			<description>
+			</description>
+		</method>
+		<method name="create_gizmo" qualifiers="virtual">
+			<return type="EditorSpatialGizmo" />
+			<argument index="0" name="spatial" type="Spatial" />
+			<description>
+			</description>
+		</method>
+		<method name="create_handle_material">
+			<return type="void" />
+			<argument index="0" name="name" type="String" />
+			<argument index="1" name="billboard" type="bool" default="false" />
+			<description>
+			</description>
+		</method>
+		<method name="create_icon_material">
+			<return type="void" />
+			<argument index="0" name="name" type="String" />
+			<argument index="1" name="texture" type="Texture" />
+			<argument index="2" name="on_top" type="bool" default="false" />
+			<argument index="3" name="color" type="Color" default="Color( 1, 1, 1, 1 )" />
+			<description>
+			</description>
+		</method>
+		<method name="create_material">
+			<return type="void" />
+			<argument index="0" name="name" type="String" />
+			<argument index="1" name="color" type="Color" />
+			<argument index="2" name="billboard" type="bool" default="false" />
+			<argument index="3" name="on_top" type="bool" default="false" />
+			<argument index="4" name="use_vertex_color" type="bool" default="false" />
+			<description>
+			</description>
+		</method>
+		<method name="get_handle_name" qualifiers="virtual">
+			<return type="String" />
+			<argument index="0" name="gizmo" type="EditorSpatialGizmo" />
+			<argument index="1" name="index" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="get_handle_value" qualifiers="virtual">
+			<return type="Variant" />
+			<argument index="0" name="gizmo" type="EditorSpatialGizmo" />
+			<argument index="1" name="index" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="get_material">
+			<return type="SpatialMaterial" />
+			<argument index="0" name="name" type="String" />
+			<argument index="1" name="gizmo" type="EditorSpatialGizmo" default="null" />
+			<description>
+			</description>
+		</method>
+		<method name="get_name" qualifiers="virtual">
+			<return type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="get_priority" qualifiers="virtual">
+			<return type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="has_gizmo" qualifiers="virtual">
+			<return type="bool" />
+			<argument index="0" name="spatial" type="Spatial" />
+			<description>
+			</description>
+		</method>
+		<method name="is_handle_highlighted" qualifiers="virtual">
+			<return type="bool" />
+			<argument index="0" name="gizmo" type="EditorSpatialGizmo" />
+			<argument index="1" name="index" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="is_selectable_when_hidden" qualifiers="virtual">
+			<return type="bool" />
+			<description>
+			</description>
+		</method>
+		<method name="redraw" qualifiers="virtual">
+			<return type="void" />
+			<argument index="0" name="gizmo" type="EditorSpatialGizmo" />
+			<description>
+			</description>
+		</method>
+		<method name="set_handle" qualifiers="virtual">
+			<return type="void" />
+			<argument index="0" name="gizmo" type="EditorSpatialGizmo" />
+			<argument index="1" name="index" type="int" />
+			<argument index="2" name="camera" type="Camera" />
+			<argument index="3" name="point" type="Vector2" />
+			<description>
+			</description>
+		</method>
+	</methods>
+	<constants>
+	</constants>
+</class>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="Basis" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+		<method name="Basis">
+			<return type="Basis" />
+			<argument index="0" name="from" type="Quat" />
+			<description>
+			</description>
+		</method>
+		<method name="Basis">
+			<return type="Basis" />
+			<argument index="0" name="from" type="Vector3" />
+			<description>
+			</description>
+		</method>
+		<method name="Basis">
+			<return type="Basis" />
+			<argument index="0" name="axis" type="Vector3" />
+			<argument index="1" name="phi" type="float" />
+			<description>
+			</description>
+		</method>
+		<method name="Basis">
+			<return type="Basis" />
+			<argument index="0" name="x_axis" type="Vector3" />
+			<argument index="1" name="y_axis" type="Vector3" />
+			<argument index="2" name="z_axis" type="Vector3" />
+			<description>
+			</description>
+		</method>
+		<method name="determinant">
+			<return type="float" />
+			<description>
+			</description>
+		</method>
+		<method name="get_euler">
+			<return type="Vector3" />
+			<description>
+			</description>
+		</method>
+		<method name="get_orthogonal_index">
+			<return type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="get_rotation_quat">
+			<return type="Quat" />
+			<description>
+			</description>
+		</method>
+		<method name="get_scale">
+			<return type="Vector3" />
+			<description>
+			</description>
+		</method>
+		<method name="inverse">
+			<return type="Basis" />
+			<description>
+			</description>
+		</method>
+		<method name="is_equal_approx">
+			<return type="bool" />
+			<argument index="0" name="b" type="Basis" />
+			<argument index="1" name="epsilon" type="float" default="1e-05" />
+			<description>
+			</description>
+		</method>
+		<method name="orthonormalized">
+			<return type="Basis" />
+			<description>
+			</description>
+		</method>
+		<method name="rotated">
+			<return type="Basis" />
+			<argument index="0" name="axis" type="Vector3" />
+			<argument index="1" name="phi" type="float" />
+			<description>
+			</description>
+		</method>
+		<method name="scaled">
+			<return type="Basis" />
+			<argument index="0" name="scale" type="Vector3" />
+			<description>
+			</description>
+		</method>
+		<method name="slerp">
+			<return type="Basis" />
+			<argument index="0" name="to" type="Basis" />
+			<argument index="1" name="weight" type="float" />
+			<description>
+			</description>
+		</method>
+		<method name="tdotx">
+			<return type="float" />
+			<argument index="0" name="with" type="Vector3" />
+			<description>
+			</description>
+		</method>
+		<method name="tdoty">
+			<return type="float" />
+			<argument index="0" name="with" type="Vector3" />
+			<description>
+			</description>
+		</method>
+		<method name="tdotz">
+			<return type="float" />
+			<argument index="0" name="with" type="Vector3" />
+			<description>
+			</description>
+		</method>
+		<method name="transposed">
+			<return type="Basis" />
+			<description>
+			</description>
+		</method>
+		<method name="xform">
+			<return type="Vector3" />
+			<argument index="0" name="v" type="Vector3" />
+			<description>
+			</description>
+		</method>
+		<method name="xform_inv">
+			<return type="Vector3" />
+			<argument index="0" name="v" type="Vector3" />
+			<description>
+			</description>
+		</method>
+	</methods>
+	<members>
+		<member name="x" type="Vector3" setter="" getter="" default="Vector3( 1, 0, 0 )">
+		</member>
+		<member name="y" type="Vector3" setter="" getter="" default="Vector3( 0, 1, 0 )">
+		</member>
+		<member name="z" type="Vector3" setter="" getter="" default="Vector3( 0, 0, 1 )">
+		</member>
+	</members>
+	<constants>
+		<constant name="IDENTITY" value="Basis( 1, 0, 0, 0, 1, 0, 0, 0, 1 )">
+		</constant>
+		<constant name="FLIP_X" value="Basis( -1, 0, 0, 0, 1, 0, 0, 0, 1 )">
+		</constant>
+		<constant name="FLIP_Y" value="Basis( 1, 0, 0, 0, -1, 0, 0, 0, 1 )">
+		</constant>
+		<constant name="FLIP_Z" value="Basis( 1, 0, 0, 0, 1, 0, 0, 0, -1 )">
+		</constant>
+	</constants>
+</class>

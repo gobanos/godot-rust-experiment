@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="ResourceLoader" inherits="Object" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+		<method name="exists">
+			<return type="bool" />
+			<argument index="0" name="path" type="String" />
+			<argument index="1" name="type_hint" type="String" default="&quot;&quot;" />
+			<description>
+			</description>
+		</method>
+		<method name="get_dependencies">
+			<return type="PoolStringArray" />
+			<argument index="0" name="path" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="get_recognized_extensions_for_type">
+			<return type="PoolStringArray" />
+			<argument index="0" name="type" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="has">
+			<return type="bool" />
+			<argument index="0" name="path" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="has_cached">
+			<return type="bool" />
+			<argument index="0" name="path" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="load">
+			<return type="Resource" />
+			<argument index="0" name="path" type="String" />
+			<argument index="1" name="type_hint" type="String" default="&quot;&quot;" />
+			<argument index="2" name="no_cache" type="bool" default="false" />
+			<description>
+			</description>
+		</method>
+		<method name="load_interactive">
+			<return type="ResourceInteractiveLoader" />
+			<argument index="0" name="path" type="String" />
+			<argument index="1" name="type_hint" type="String" default="&quot;&quot;" />
+			<description>
+			</description>
+		</method>
+		<method name="set_abort_on_missing_resources">
+			<return type="void" />
+			<argument index="0" name="abort" type="bool" />
+			<description>
+			</description>
+		</method>
+	</methods>
+	<constants>
+	</constants>
+</class>

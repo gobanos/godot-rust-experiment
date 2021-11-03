@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="VisibilityEnabler2D" inherits="VisibilityNotifier2D" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+		<method name="is_enabler_enabled" qualifiers="const">
+			<return type="bool" />
+			<argument index="0" name="enabler" type="int" enum="VisibilityEnabler2D.Enabler" />
+			<description>
+			</description>
+		</method>
+		<method name="set_enabler">
+			<return type="void" />
+			<argument index="0" name="enabler" type="int" enum="VisibilityEnabler2D.Enabler" />
+			<argument index="1" name="enabled" type="bool" />
+			<description>
+			</description>
+		</method>
+	</methods>
+	<members>
+		<member name="freeze_bodies" type="bool" setter="set_enabler" getter="is_enabler_enabled" default="true">
+		</member>
+		<member name="pause_animated_sprites" type="bool" setter="set_enabler" getter="is_enabler_enabled" default="true">
+		</member>
+		<member name="pause_animations" type="bool" setter="set_enabler" getter="is_enabler_enabled" default="true">
+		</member>
+		<member name="pause_particles" type="bool" setter="set_enabler" getter="is_enabler_enabled" default="true">
+		</member>
+		<member name="physics_process_parent" type="bool" setter="set_enabler" getter="is_enabler_enabled" default="false">
+		</member>
+		<member name="process_parent" type="bool" setter="set_enabler" getter="is_enabler_enabled" default="false">
+		</member>
+	</members>
+	<constants>
+		<constant name="ENABLER_PAUSE_ANIMATIONS" value="0" enum="Enabler">
+		</constant>
+		<constant name="ENABLER_FREEZE_BODIES" value="1" enum="Enabler">
+		</constant>
+		<constant name="ENABLER_PAUSE_PARTICLES" value="2" enum="Enabler">
+		</constant>
+		<constant name="ENABLER_PARENT_PROCESS" value="3" enum="Enabler">
+		</constant>
+		<constant name="ENABLER_PARENT_PHYSICS_PROCESS" value="4" enum="Enabler">
+		</constant>
+		<constant name="ENABLER_PAUSE_ANIMATED_SPRITES" value="5" enum="Enabler">
+		</constant>
+		<constant name="ENABLER_MAX" value="6" enum="Enabler">
+		</constant>
+	</constants>
+</class>

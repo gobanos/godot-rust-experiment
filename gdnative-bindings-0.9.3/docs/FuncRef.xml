@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="FuncRef" inherits="Reference" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+		<method name="call_func" qualifiers="vararg">
+			<return type="Variant" />
+			<description>
+			</description>
+		</method>
+		<method name="call_funcv">
+			<return type="Variant" />
+			<argument index="0" name="arg_array" type="Array" />
+			<description>
+			</description>
+		</method>
+		<method name="is_valid" qualifiers="const">
+			<return type="bool" />
+			<description>
+			</description>
+		</method>
+		<method name="set_instance">
+			<return type="void" />
+			<argument index="0" name="instance" type="Object" />
+			<description>
+			</description>
+		</method>
+	</methods>
+	<members>
+		<member name="function" type="String" setter="set_function" getter="get_function" default="&quot;&quot;">
+		</member>
+	</members>
+	<constants>
+	</constants>
+</class>

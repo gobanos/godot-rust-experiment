@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="Shape2D" inherits="Resource" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+		<method name="collide">
+			<return type="bool" />
+			<argument index="0" name="local_xform" type="Transform2D" />
+			<argument index="1" name="with_shape" type="Shape2D" />
+			<argument index="2" name="shape_xform" type="Transform2D" />
+			<description>
+			</description>
+		</method>
+		<method name="collide_and_get_contacts">
+			<return type="Array" />
+			<argument index="0" name="local_xform" type="Transform2D" />
+			<argument index="1" name="with_shape" type="Shape2D" />
+			<argument index="2" name="shape_xform" type="Transform2D" />
+			<description>
+			</description>
+		</method>
+		<method name="collide_with_motion">
+			<return type="bool" />
+			<argument index="0" name="local_xform" type="Transform2D" />
+			<argument index="1" name="local_motion" type="Vector2" />
+			<argument index="2" name="with_shape" type="Shape2D" />
+			<argument index="3" name="shape_xform" type="Transform2D" />
+			<argument index="4" name="shape_motion" type="Vector2" />
+			<description>
+			</description>
+		</method>
+		<method name="collide_with_motion_and_get_contacts">
+			<return type="Array" />
+			<argument index="0" name="local_xform" type="Transform2D" />
+			<argument index="1" name="local_motion" type="Vector2" />
+			<argument index="2" name="with_shape" type="Shape2D" />
+			<argument index="3" name="shape_xform" type="Transform2D" />
+			<argument index="4" name="shape_motion" type="Vector2" />
+			<description>
+			</description>
+		</method>
+		<method name="draw">
+			<return type="void" />
+			<argument index="0" name="canvas_item" type="RID" />
+			<argument index="1" name="color" type="Color" />
+			<description>
+			</description>
+		</method>
+	</methods>
+	<members>
+		<member name="custom_solver_bias" type="float" setter="set_custom_solver_bias" getter="get_custom_solver_bias" default="0.0">
+		</member>
+	</members>
+	<constants>
+	</constants>
+</class>

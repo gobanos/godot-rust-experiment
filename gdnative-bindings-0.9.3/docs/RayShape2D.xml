@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="RayShape2D" inherits="Shape2D" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+	</methods>
+	<members>
+		<member name="length" type="float" setter="set_length" getter="get_length" default="20.0">
+		</member>
+		<member name="slips_on_slope" type="bool" setter="set_slips_on_slope" getter="get_slips_on_slope" default="false">
+		</member>
+	</members>
+	<constants>
+	</constants>
+</class>

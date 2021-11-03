@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="EditorImportPlugin" inherits="ResourceImporter" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+		<method name="get_import_options" qualifiers="virtual">
+			<return type="Array" />
+			<argument index="0" name="preset" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="get_import_order" qualifiers="virtual">
+			<return type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="get_importer_name" qualifiers="virtual">
+			<return type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="get_option_visibility" qualifiers="virtual">
+			<return type="bool" />
+			<argument index="0" name="option" type="String" />
+			<argument index="1" name="options" type="Dictionary" />
+			<description>
+			</description>
+		</method>
+		<method name="get_preset_count" qualifiers="virtual">
+			<return type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="get_preset_name" qualifiers="virtual">
+			<return type="String" />
+			<argument index="0" name="preset" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="get_priority" qualifiers="virtual">
+			<return type="float" />
+			<description>
+			</description>
+		</method>
+		<method name="get_recognized_extensions" qualifiers="virtual">
+			<return type="Array" />
+			<description>
+			</description>
+		</method>
+		<method name="get_resource_type" qualifiers="virtual">
+			<return type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="get_save_extension" qualifiers="virtual">
+			<return type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="get_visible_name" qualifiers="virtual">
+			<return type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="import" qualifiers="virtual">
+			<return type="int" />
+			<argument index="0" name="source_file" type="String" />
+			<argument index="1" name="save_path" type="String" />
+			<argument index="2" name="options" type="Dictionary" />
+			<argument index="3" name="platform_variants" type="Array" />
+			<argument index="4" name="gen_files" type="Array" />
+			<description>
+			</description>
+		</method>
+	</methods>
+	<constants>
+	</constants>
+</class>

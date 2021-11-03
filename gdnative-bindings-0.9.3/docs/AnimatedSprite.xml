@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="AnimatedSprite" inherits="Node2D" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+		<method name="is_playing" qualifiers="const">
+			<return type="bool" />
+			<description>
+			</description>
+		</method>
+		<method name="play">
+			<return type="void" />
+			<argument index="0" name="anim" type="String" default="&quot;&quot;" />
+			<argument index="1" name="backwards" type="bool" default="false" />
+			<description>
+			</description>
+		</method>
+		<method name="stop">
+			<return type="void" />
+			<description>
+			</description>
+		</method>
+	</methods>
+	<members>
+		<member name="animation" type="String" setter="set_animation" getter="get_animation" default="&quot;default&quot;">
+		</member>
+		<member name="centered" type="bool" setter="set_centered" getter="is_centered" default="true">
+		</member>
+		<member name="flip_h" type="bool" setter="set_flip_h" getter="is_flipped_h" default="false">
+		</member>
+		<member name="flip_v" type="bool" setter="set_flip_v" getter="is_flipped_v" default="false">
+		</member>
+		<member name="frame" type="int" setter="set_frame" getter="get_frame" default="0">
+		</member>
+		<member name="frames" type="SpriteFrames" setter="set_sprite_frames" getter="get_sprite_frames">
+		</member>
+		<member name="offset" type="Vector2" setter="set_offset" getter="get_offset" default="Vector2( 0, 0 )">
+		</member>
+		<member name="playing" type="bool" setter="_set_playing" getter="_is_playing" default="false">
+		</member>
+		<member name="speed_scale" type="float" setter="set_speed_scale" getter="get_speed_scale" default="1.0">
+		</member>
+	</members>
+	<signals>
+		<signal name="animation_finished">
+			<description>
+			</description>
+		</signal>
+		<signal name="frame_changed">
+			<description>
+			</description>
+		</signal>
+	</signals>
+	<constants>
+	</constants>
+</class>

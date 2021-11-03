@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="SpotLight" inherits="Light" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+	</methods>
+	<members>
+		<member name="spot_angle" type="float" setter="set_param" getter="get_param" default="45.0">
+		</member>
+		<member name="spot_angle_attenuation" type="float" setter="set_param" getter="get_param" default="1.0">
+		</member>
+		<member name="spot_attenuation" type="float" setter="set_param" getter="get_param" default="1.0">
+		</member>
+		<member name="spot_range" type="float" setter="set_param" getter="get_param" default="5.0">
+		</member>
+	</members>
+	<constants>
+	</constants>
+</class>

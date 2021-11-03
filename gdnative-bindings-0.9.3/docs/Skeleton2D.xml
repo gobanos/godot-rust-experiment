@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="Skeleton2D" inherits="Node2D" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+		<method name="get_bone">
+			<return type="Bone2D" />
+			<argument index="0" name="idx" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="get_bone_count" qualifiers="const">
+			<return type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="get_skeleton" qualifiers="const">
+			<return type="RID" />
+			<description>
+			</description>
+		</method>
+	</methods>
+	<signals>
+		<signal name="bone_setup_changed">
+			<description>
+			</description>
+		</signal>
+	</signals>
+	<constants>
+	</constants>
+</class>

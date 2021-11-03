@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="Shape" inherits="Resource" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+		<method name="get_debug_mesh">
+			<return type="ArrayMesh" />
+			<description>
+			</description>
+		</method>
+	</methods>
+	<members>
+		<member name="margin" type="float" setter="set_margin" getter="get_margin" default="0.04">
+		</member>
+	</members>
+	<constants>
+	</constants>
+</class>

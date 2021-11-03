@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="ScriptEditor" inherits="PanelContainer" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+		<method name="can_drop_data_fw" qualifiers="const">
+			<return type="bool" />
+			<argument index="0" name="point" type="Vector2" />
+			<argument index="1" name="data" type="Variant" />
+			<argument index="2" name="from" type="Control" />
+			<description>
+			</description>
+		</method>
+		<method name="drop_data_fw">
+			<return type="void" />
+			<argument index="0" name="point" type="Vector2" />
+			<argument index="1" name="data" type="Variant" />
+			<argument index="2" name="from" type="Control" />
+			<description>
+			</description>
+		</method>
+		<method name="get_current_script">
+			<return type="Script" />
+			<description>
+			</description>
+		</method>
+		<method name="get_drag_data_fw">
+			<return type="Variant" />
+			<argument index="0" name="point" type="Vector2" />
+			<argument index="1" name="from" type="Control" />
+			<description>
+			</description>
+		</method>
+		<method name="get_open_scripts" qualifiers="const">
+			<return type="Array" />
+			<description>
+			</description>
+		</method>
+		<method name="goto_line">
+			<return type="void" />
+			<argument index="0" name="line_number" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="open_script_create_dialog">
+			<return type="void" />
+			<argument index="0" name="base_name" type="String" />
+			<argument index="1" name="base_path" type="String" />
+			<description>
+			</description>
+		</method>
+	</methods>
+	<signals>
+		<signal name="editor_script_changed">
+			<argument index="0" name="script" type="Script" />
+			<description>
+			</description>
+		</signal>
+		<signal name="script_close">
+			<argument index="0" name="script" type="Script" />
+			<description>
+			</description>
+		</signal>
+	</signals>
+	<constants>
+	</constants>
+</class>

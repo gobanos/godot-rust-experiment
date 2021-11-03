@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="MultiMeshInstance2D" inherits="Node2D" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+	</methods>
+	<members>
+		<member name="multimesh" type="MultiMesh" setter="set_multimesh" getter="get_multimesh">
+		</member>
+		<member name="normal_map" type="Texture" setter="set_normal_map" getter="get_normal_map">
+		</member>
+		<member name="texture" type="Texture" setter="set_texture" getter="get_texture">
+		</member>
+	</members>
+	<signals>
+		<signal name="texture_changed">
+			<description>
+			</description>
+		</signal>
+	</signals>
+	<constants>
+	</constants>
+</class>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="ARVRInterface" inherits="Reference" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+		<method name="get_camera_feed_id">
+			<return type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="get_capabilities" qualifiers="const">
+			<return type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="get_name" qualifiers="const">
+			<return type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="get_render_targetsize">
+			<return type="Vector2" />
+			<description>
+			</description>
+		</method>
+		<method name="get_tracking_status" qualifiers="const">
+			<return type="int" enum="ARVRInterface.Tracking_status" />
+			<description>
+			</description>
+		</method>
+		<method name="initialize">
+			<return type="bool" />
+			<description>
+			</description>
+		</method>
+		<method name="is_stereo">
+			<return type="bool" />
+			<description>
+			</description>
+		</method>
+		<method name="uninitialize">
+			<return type="void" />
+			<description>
+			</description>
+		</method>
+	</methods>
+	<members>
+		<member name="ar_is_anchor_detection_enabled" type="bool" setter="set_anchor_detection_is_enabled" getter="get_anchor_detection_is_enabled" default="false">
+		</member>
+		<member name="interface_is_initialized" type="bool" setter="set_is_initialized" getter="is_initialized" default="false">
+		</member>
+		<member name="interface_is_primary" type="bool" setter="set_is_primary" getter="is_primary" default="false">
+		</member>
+	</members>
+	<constants>
+		<constant name="ARVR_NONE" value="0" enum="Capabilities">
+		</constant>
+		<constant name="ARVR_MONO" value="1" enum="Capabilities">
+		</constant>
+		<constant name="ARVR_STEREO" value="2" enum="Capabilities">
+		</constant>
+		<constant name="ARVR_AR" value="4" enum="Capabilities">
+		</constant>
+		<constant name="ARVR_EXTERNAL" value="8" enum="Capabilities">
+		</constant>
+		<constant name="EYE_MONO" value="0" enum="Eyes">
+		</constant>
+		<constant name="EYE_LEFT" value="1" enum="Eyes">
+		</constant>
+		<constant name="EYE_RIGHT" value="2" enum="Eyes">
+		</constant>
+		<constant name="ARVR_NORMAL_TRACKING" value="0" enum="Tracking_status">
+		</constant>
+		<constant name="ARVR_EXCESSIVE_MOTION" value="1" enum="Tracking_status">
+		</constant>
+		<constant name="ARVR_INSUFFICIENT_FEATURES" value="2" enum="Tracking_status">
+		</constant>
+		<constant name="ARVR_UNKNOWN_TRACKING" value="3" enum="Tracking_status">
+		</constant>
+		<constant name="ARVR_NOT_TRACKING" value="4" enum="Tracking_status">
+		</constant>
+	</constants>
+</class>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="ConfigFile" inherits="Reference" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+		<method name="clear">
+			<return type="void" />
+			<description>
+			</description>
+		</method>
+		<method name="erase_section">
+			<return type="void" />
+			<argument index="0" name="section" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="erase_section_key">
+			<return type="void" />
+			<argument index="0" name="section" type="String" />
+			<argument index="1" name="key" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="get_section_keys" qualifiers="const">
+			<return type="PoolStringArray" />
+			<argument index="0" name="section" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="get_sections" qualifiers="const">
+			<return type="PoolStringArray" />
+			<description>
+			</description>
+		</method>
+		<method name="get_value" qualifiers="const">
+			<return type="Variant" />
+			<argument index="0" name="section" type="String" />
+			<argument index="1" name="key" type="String" />
+			<argument index="2" name="default" type="Variant" default="null" />
+			<description>
+			</description>
+		</method>
+		<method name="has_section" qualifiers="const">
+			<return type="bool" />
+			<argument index="0" name="section" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="has_section_key" qualifiers="const">
+			<return type="bool" />
+			<argument index="0" name="section" type="String" />
+			<argument index="1" name="key" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="load">
+			<return type="int" enum="Error" />
+			<argument index="0" name="path" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="load_encrypted">
+			<return type="int" enum="Error" />
+			<argument index="0" name="path" type="String" />
+			<argument index="1" name="key" type="PoolByteArray" />
+			<description>
+			</description>
+		</method>
+		<method name="load_encrypted_pass">
+			<return type="int" enum="Error" />
+			<argument index="0" name="path" type="String" />
+			<argument index="1" name="password" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="parse">
+			<return type="int" enum="Error" />
+			<argument index="0" name="data" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="save">
+			<return type="int" enum="Error" />
+			<argument index="0" name="path" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="save_encrypted">
+			<return type="int" enum="Error" />
+			<argument index="0" name="path" type="String" />
+			<argument index="1" name="key" type="PoolByteArray" />
+			<description>
+			</description>
+		</method>
+		<method name="save_encrypted_pass">
+			<return type="int" enum="Error" />
+			<argument index="0" name="path" type="String" />
+			<argument index="1" name="password" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="set_value">
+			<return type="void" />
+			<argument index="0" name="section" type="String" />
+			<argument index="1" name="key" type="String" />
+			<argument index="2" name="value" type="Variant" />
+			<description>
+			</description>
+		</method>
+	</methods>
+	<constants>
+	</constants>
+</class>

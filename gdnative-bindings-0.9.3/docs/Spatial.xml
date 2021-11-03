@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="Spatial" inherits="Node" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+		<method name="force_update_transform">
+			<return type="void" />
+			<description>
+			</description>
+		</method>
+		<method name="get_parent_spatial" qualifiers="const">
+			<return type="Spatial" />
+			<description>
+			</description>
+		</method>
+		<method name="get_world" qualifiers="const">
+			<return type="World" />
+			<description>
+			</description>
+		</method>
+		<method name="global_rotate">
+			<return type="void" />
+			<argument index="0" name="axis" type="Vector3" />
+			<argument index="1" name="angle" type="float" />
+			<description>
+			</description>
+		</method>
+		<method name="global_scale">
+			<return type="void" />
+			<argument index="0" name="scale" type="Vector3" />
+			<description>
+			</description>
+		</method>
+		<method name="global_translate">
+			<return type="void" />
+			<argument index="0" name="offset" type="Vector3" />
+			<description>
+			</description>
+		</method>
+		<method name="hide">
+			<return type="void" />
+			<description>
+			</description>
+		</method>
+		<method name="is_local_transform_notification_enabled" qualifiers="const">
+			<return type="bool" />
+			<description>
+			</description>
+		</method>
+		<method name="is_scale_disabled" qualifiers="const">
+			<return type="bool" />
+			<description>
+			</description>
+		</method>
+		<method name="is_set_as_toplevel" qualifiers="const">
+			<return type="bool" />
+			<description>
+			</description>
+		</method>
+		<method name="is_transform_notification_enabled" qualifiers="const">
+			<return type="bool" />
+			<description>
+			</description>
+		</method>
+		<method name="is_visible_in_tree" qualifiers="const">
+			<return type="bool" />
+			<description>
+			</description>
+		</method>
+		<method name="look_at">
+			<return type="void" />
+			<argument index="0" name="target" type="Vector3" />
+			<argument index="1" name="up" type="Vector3" />
+			<description>
+			</description>
+		</method>
+		<method name="look_at_from_position">
+			<return type="void" />
+			<argument index="0" name="position" type="Vector3" />
+			<argument index="1" name="target" type="Vector3" />
+			<argument index="2" name="up" type="Vector3" />
+			<description>
+			</description>
+		</method>
+		<method name="orthonormalize">
+			<return type="void" />
+			<description>
+			</description>
+		</method>
+		<method name="rotate">
+			<return type="void" />
+			<argument index="0" name="axis" type="Vector3" />
+			<argument index="1" name="angle" type="float" />
+			<description>
+			</description>
+		</method>
+		<method name="rotate_object_local">
+			<return type="void" />
+			<argument index="0" name="axis" type="Vector3" />
+			<argument index="1" name="angle" type="float" />
+			<description>
+			</description>
+		</method>
+		<method name="rotate_x">
+			<return type="void" />
+			<argument index="0" name="angle" type="float" />
+			<description>
+			</description>
+		</method>
+		<method name="rotate_y">
+			<return type="void" />
+			<argument index="0" name="angle" type="float" />
+			<description>
+			</description>
+		</method>
+		<method name="rotate_z">
+			<return type="void" />
+			<argument index="0" name="angle" type="float" />
+			<description>
+			</description>
+		</method>
+		<method name="scale_object_local">
+			<return type="void" />
+			<argument index="0" name="scale" type="Vector3" />
+			<description>
+			</description>
+		</method>
+		<method name="set_as_toplevel">
+			<return type="void" />
+			<argument index="0" name="enable" type="bool" />
+			<description>
+			</description>
+		</method>
+		<method name="set_disable_scale">
+			<return type="void" />
+			<argument index="0" name="disable" type="bool" />
+			<description>
+			</description>
+		</method>
+		<method name="set_identity">
+			<return type="void" />
+			<description>
+			</description>
+		</method>
+		<method name="set_ignore_transform_notification">
+			<return type="void" />
+			<argument index="0" name="enabled" type="bool" />
+			<description>
+			</description>
+		</method>
+		<method name="set_notify_local_transform">
+			<return type="void" />
+			<argument index="0" name="enable" type="bool" />
+			<description>
+			</description>
+		</method>
+		<method name="set_notify_transform">
+			<return type="void" />
+			<argument index="0" name="enable" type="bool" />
+			<description>
+			</description>
+		</method>
+		<method name="show">
+			<return type="void" />
+			<description>
+			</description>
+		</method>
+		<method name="to_global" qualifiers="const">
+			<return type="Vector3" />
+			<argument index="0" name="local_point" type="Vector3" />
+			<description>
+			</description>
+		</method>
+		<method name="to_local" qualifiers="const">
+			<return type="Vector3" />
+			<argument index="0" name="global_point" type="Vector3" />
+			<description>
+			</description>
+		</method>
+		<method name="translate">
+			<return type="void" />
+			<argument index="0" name="offset" type="Vector3" />
+			<description>
+			</description>
+		</method>
+		<method name="translate_object_local">
+			<return type="void" />
+			<argument index="0" name="offset" type="Vector3" />
+			<description>
+			</description>
+		</method>
+		<method name="update_gizmo">
+			<return type="void" />
+			<description>
+			</description>
+		</method>
+	</methods>
+	<members>
+		<member name="gizmo" type="SpatialGizmo" setter="set_gizmo" getter="get_gizmo">
+		</member>
+		<member name="global_transform" type="Transform" setter="set_global_transform" getter="get_global_transform">
+		</member>
+		<member name="rotation" type="Vector3" setter="set_rotation" getter="get_rotation">
+		</member>
+		<member name="rotation_degrees" type="Vector3" setter="set_rotation_degrees" getter="get_rotation_degrees" default="Vector3( 0, 0, 0 )">
+		</member>
+		<member name="scale" type="Vector3" setter="set_scale" getter="get_scale" default="Vector3( 1, 1, 1 )">
+		</member>
+		<member name="transform" type="Transform" setter="set_transform" getter="get_transform" default="Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )">
+		</member>
+		<member name="translation" type="Vector3" setter="set_translation" getter="get_translation" default="Vector3( 0, 0, 0 )">
+		</member>
+		<member name="visible" type="bool" setter="set_visible" getter="is_visible" default="true">
+		</member>
+	</members>
+	<signals>
+		<signal name="visibility_changed">
+			<description>
+			</description>
+		</signal>
+	</signals>
+	<constants>
+		<constant name="NOTIFICATION_TRANSFORM_CHANGED" value="2000">
+		</constant>
+		<constant name="NOTIFICATION_ENTER_WORLD" value="41">
+		</constant>
+		<constant name="NOTIFICATION_EXIT_WORLD" value="42">
+		</constant>
+		<constant name="NOTIFICATION_VISIBILITY_CHANGED" value="43">
+		</constant>
+	</constants>
+</class>

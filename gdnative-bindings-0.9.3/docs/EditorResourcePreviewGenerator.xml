@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="EditorResourcePreviewGenerator" inherits="Reference" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+		<method name="can_generate_small_preview" qualifiers="virtual">
+			<return type="bool" />
+			<description>
+			</description>
+		</method>
+		<method name="generate" qualifiers="virtual">
+			<return type="Texture" />
+			<argument index="0" name="from" type="Resource" />
+			<argument index="1" name="size" type="Vector2" />
+			<description>
+			</description>
+		</method>
+		<method name="generate_from_path" qualifiers="virtual">
+			<return type="Texture" />
+			<argument index="0" name="path" type="String" />
+			<argument index="1" name="size" type="Vector2" />
+			<description>
+			</description>
+		</method>
+		<method name="generate_small_preview_automatically" qualifiers="virtual">
+			<return type="bool" />
+			<description>
+			</description>
+		</method>
+		<method name="handles" qualifiers="virtual">
+			<return type="bool" />
+			<argument index="0" name="type" type="String" />
+			<description>
+			</description>
+		</method>
+	</methods>
+	<constants>
+	</constants>
+</class>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="JSONParseResult" inherits="Reference" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+	</methods>
+	<members>
+		<member name="error" type="int" setter="set_error" getter="get_error" enum="Error">
+		</member>
+		<member name="error_line" type="int" setter="set_error_line" getter="get_error_line" default="-1">
+		</member>
+		<member name="error_string" type="String" setter="set_error_string" getter="get_error_string" default="&quot;&quot;">
+		</member>
+		<member name="result" type="Variant" setter="set_result" getter="get_result">
+		</member>
+	</members>
+	<constants>
+	</constants>
+</class>

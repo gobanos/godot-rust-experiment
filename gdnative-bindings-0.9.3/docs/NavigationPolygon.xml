@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="NavigationPolygon" inherits="Resource" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+		<method name="add_outline">
+			<return type="void" />
+			<argument index="0" name="outline" type="PoolVector2Array" />
+			<description>
+			</description>
+		</method>
+		<method name="add_outline_at_index">
+			<return type="void" />
+			<argument index="0" name="outline" type="PoolVector2Array" />
+			<argument index="1" name="index" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="add_polygon">
+			<return type="void" />
+			<argument index="0" name="polygon" type="PoolIntArray" />
+			<description>
+			</description>
+		</method>
+		<method name="clear_outlines">
+			<return type="void" />
+			<description>
+			</description>
+		</method>
+		<method name="clear_polygons">
+			<return type="void" />
+			<description>
+			</description>
+		</method>
+		<method name="get_outline" qualifiers="const">
+			<return type="PoolVector2Array" />
+			<argument index="0" name="idx" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="get_outline_count" qualifiers="const">
+			<return type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="get_polygon">
+			<return type="PoolIntArray" />
+			<argument index="0" name="idx" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="get_polygon_count" qualifiers="const">
+			<return type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="get_vertices" qualifiers="const">
+			<return type="PoolVector2Array" />
+			<description>
+			</description>
+		</method>
+		<method name="make_polygons_from_outlines">
+			<return type="void" />
+			<description>
+			</description>
+		</method>
+		<method name="remove_outline">
+			<return type="void" />
+			<argument index="0" name="idx" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="set_outline">
+			<return type="void" />
+			<argument index="0" name="idx" type="int" />
+			<argument index="1" name="outline" type="PoolVector2Array" />
+			<description>
+			</description>
+		</method>
+		<method name="set_vertices">
+			<return type="void" />
+			<argument index="0" name="vertices" type="PoolVector2Array" />
+			<description>
+			</description>
+		</method>
+	</methods>
+	<constants>
+	</constants>
+</class>

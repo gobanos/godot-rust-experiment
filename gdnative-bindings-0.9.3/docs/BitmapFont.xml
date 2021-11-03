@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="BitmapFont" inherits="Font" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+		<method name="add_char">
+			<return type="void" />
+			<argument index="0" name="character" type="int" />
+			<argument index="1" name="texture" type="int" />
+			<argument index="2" name="rect" type="Rect2" />
+			<argument index="3" name="align" type="Vector2" default="Vector2( 0, 0 )" />
+			<argument index="4" name="advance" type="float" default="-1" />
+			<description>
+			</description>
+		</method>
+		<method name="add_kerning_pair">
+			<return type="void" />
+			<argument index="0" name="char_a" type="int" />
+			<argument index="1" name="char_b" type="int" />
+			<argument index="2" name="kerning" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="add_texture">
+			<return type="void" />
+			<argument index="0" name="texture" type="Texture" />
+			<description>
+			</description>
+		</method>
+		<method name="clear">
+			<return type="void" />
+			<description>
+			</description>
+		</method>
+		<method name="create_from_fnt">
+			<return type="int" enum="Error" />
+			<argument index="0" name="path" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="get_kerning_pair" qualifiers="const">
+			<return type="int" />
+			<argument index="0" name="char_a" type="int" />
+			<argument index="1" name="char_b" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="get_texture" qualifiers="const">
+			<return type="Texture" />
+			<argument index="0" name="idx" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="get_texture_count" qualifiers="const">
+			<return type="int" />
+			<description>
+			</description>
+		</method>
+	</methods>
+	<members>
+		<member name="ascent" type="float" setter="set_ascent" getter="get_ascent" default="0.0">
+		</member>
+		<member name="distance_field" type="bool" setter="set_distance_field_hint" getter="is_distance_field_hint" default="false">
+		</member>
+		<member name="fallback" type="BitmapFont" setter="set_fallback" getter="get_fallback">
+		</member>
+		<member name="height" type="float" setter="set_height" getter="get_height" default="1.0">
+		</member>
+	</members>
+	<constants>
+	</constants>
+</class>

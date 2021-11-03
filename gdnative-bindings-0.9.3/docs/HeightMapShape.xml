@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="HeightMapShape" inherits="Shape" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+	</methods>
+	<members>
+		<member name="map_data" type="PoolRealArray" setter="set_map_data" getter="get_map_data" default="PoolRealArray( 0, 0, 0, 0 )">
+		</member>
+		<member name="map_depth" type="int" setter="set_map_depth" getter="get_map_depth" default="2">
+		</member>
+		<member name="map_width" type="int" setter="set_map_width" getter="get_map_width" default="2">
+		</member>
+	</members>
+	<constants>
+	</constants>
+</class>

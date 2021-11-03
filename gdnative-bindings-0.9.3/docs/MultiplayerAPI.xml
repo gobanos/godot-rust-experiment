@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="MultiplayerAPI" inherits="Reference" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+		<method name="clear">
+			<return type="void" />
+			<description>
+			</description>
+		</method>
+		<method name="get_network_connected_peers" qualifiers="const">
+			<return type="PoolIntArray" />
+			<description>
+			</description>
+		</method>
+		<method name="get_network_unique_id" qualifiers="const">
+			<return type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="get_rpc_sender_id" qualifiers="const">
+			<return type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="has_network_peer" qualifiers="const">
+			<return type="bool" />
+			<description>
+			</description>
+		</method>
+		<method name="is_network_server" qualifiers="const">
+			<return type="bool" />
+			<description>
+			</description>
+		</method>
+		<method name="poll">
+			<return type="void" />
+			<description>
+			</description>
+		</method>
+		<method name="send_bytes">
+			<return type="int" enum="Error" />
+			<argument index="0" name="bytes" type="PoolByteArray" />
+			<argument index="1" name="id" type="int" default="0" />
+			<argument index="2" name="mode" type="int" enum="NetworkedMultiplayerPeer.TransferMode" default="2" />
+			<description>
+			</description>
+		</method>
+	</methods>
+	<members>
+		<member name="allow_object_decoding" type="bool" setter="set_allow_object_decoding" getter="is_object_decoding_allowed" default="false">
+		</member>
+		<member name="network_peer" type="NetworkedMultiplayerPeer" setter="set_network_peer" getter="get_network_peer">
+		</member>
+		<member name="refuse_new_network_connections" type="bool" setter="set_refuse_new_network_connections" getter="is_refusing_new_network_connections" default="false">
+		</member>
+		<member name="root_node" type="Node" setter="set_root_node" getter="get_root_node">
+		</member>
+	</members>
+	<signals>
+		<signal name="connected_to_server">
+			<description>
+			</description>
+		</signal>
+		<signal name="connection_failed">
+			<description>
+			</description>
+		</signal>
+		<signal name="network_peer_connected">
+			<argument index="0" name="id" type="int" />
+			<description>
+			</description>
+		</signal>
+		<signal name="network_peer_disconnected">
+			<argument index="0" name="id" type="int" />
+			<description>
+			</description>
+		</signal>
+		<signal name="network_peer_packet">
+			<argument index="0" name="id" type="int" />
+			<argument index="1" name="packet" type="PoolByteArray" />
+			<description>
+			</description>
+		</signal>
+		<signal name="server_disconnected">
+			<description>
+			</description>
+		</signal>
+	</signals>
+	<constants>
+		<constant name="RPC_MODE_DISABLED" value="0" enum="RPCMode">
+		</constant>
+		<constant name="RPC_MODE_REMOTE" value="1" enum="RPCMode">
+		</constant>
+		<constant name="RPC_MODE_MASTER" value="2" enum="RPCMode">
+		</constant>
+		<constant name="RPC_MODE_PUPPET" value="3" enum="RPCMode">
+		</constant>
+		<constant name="RPC_MODE_SLAVE" value="3" enum="RPCMode">
+		</constant>
+		<constant name="RPC_MODE_REMOTESYNC" value="4" enum="RPCMode">
+		</constant>
+		<constant name="RPC_MODE_SYNC" value="4" enum="RPCMode">
+		</constant>
+		<constant name="RPC_MODE_MASTERSYNC" value="5" enum="RPCMode">
+		</constant>
+		<constant name="RPC_MODE_PUPPETSYNC" value="6" enum="RPCMode">
+		</constant>
+	</constants>
+</class>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="Physics2DDirectSpaceState" inherits="Object" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+		<method name="cast_motion">
+			<return type="Array" />
+			<argument index="0" name="shape" type="Physics2DShapeQueryParameters" />
+			<description>
+			</description>
+		</method>
+		<method name="collide_shape">
+			<return type="Array" />
+			<argument index="0" name="shape" type="Physics2DShapeQueryParameters" />
+			<argument index="1" name="max_results" type="int" default="32" />
+			<description>
+			</description>
+		</method>
+		<method name="get_rest_info">
+			<return type="Dictionary" />
+			<argument index="0" name="shape" type="Physics2DShapeQueryParameters" />
+			<description>
+			</description>
+		</method>
+		<method name="intersect_point">
+			<return type="Array" />
+			<argument index="0" name="point" type="Vector2" />
+			<argument index="1" name="max_results" type="int" default="32" />
+			<argument index="2" name="exclude" type="Array" default="[  ]" />
+			<argument index="3" name="collision_layer" type="int" default="2147483647" />
+			<argument index="4" name="collide_with_bodies" type="bool" default="true" />
+			<argument index="5" name="collide_with_areas" type="bool" default="false" />
+			<description>
+			</description>
+		</method>
+		<method name="intersect_point_on_canvas">
+			<return type="Array" />
+			<argument index="0" name="point" type="Vector2" />
+			<argument index="1" name="canvas_instance_id" type="int" />
+			<argument index="2" name="max_results" type="int" default="32" />
+			<argument index="3" name="exclude" type="Array" default="[  ]" />
+			<argument index="4" name="collision_layer" type="int" default="2147483647" />
+			<argument index="5" name="collide_with_bodies" type="bool" default="true" />
+			<argument index="6" name="collide_with_areas" type="bool" default="false" />
+			<description>
+			</description>
+		</method>
+		<method name="intersect_ray">
+			<return type="Dictionary" />
+			<argument index="0" name="from" type="Vector2" />
+			<argument index="1" name="to" type="Vector2" />
+			<argument index="2" name="exclude" type="Array" default="[  ]" />
+			<argument index="3" name="collision_layer" type="int" default="2147483647" />
+			<argument index="4" name="collide_with_bodies" type="bool" default="true" />
+			<argument index="5" name="collide_with_areas" type="bool" default="false" />
+			<description>
+			</description>
+		</method>
+		<method name="intersect_shape">
+			<return type="Array" />
+			<argument index="0" name="shape" type="Physics2DShapeQueryParameters" />
+			<argument index="1" name="max_results" type="int" default="32" />
+			<description>
+			</description>
+		</method>
+	</methods>
+	<constants>
+	</constants>
+</class>

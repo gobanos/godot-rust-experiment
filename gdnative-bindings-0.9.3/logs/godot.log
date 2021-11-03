@@ -1,0 +1,45 @@
+Godot Engine v3.3.4.stable.official.faf3f883d - https://godotengine.org
+OpenGL ES 3.0 Renderer: GeForce GTX 1070 Ti/PCIe/SSE2
+OpenGL ES Batching: ON
+ 
+Loading docs...
+Loading docs from: foobar/modules/gdscript/doc_classes
+Loading docs from: foobar/modules/gdnative/doc_classes
+Loading docs from: foobar/modules/minimp3/doc_classes
+Loading docs from: foobar/modules/stb_vorbis/doc_classes
+Loading docs from: foobar/modules/csg/doc_classes
+Loading docs from: foobar/modules/fbx/doc_classes
+Loading docs from: foobar/modules/gridmap/doc_classes
+Loading docs from: foobar/modules/mobile_vr/doc_classes
+Loading docs from: foobar/modules/enet/doc_classes
+Loading docs from: foobar/modules/opensimplex/doc_classes
+Loading docs from: foobar/modules/regex/doc_classes
+Loading docs from: foobar/modules/upnp/doc_classes
+Loading docs from: foobar/modules/theora/doc_classes
+Loading docs from: foobar/modules/webm/doc_classes
+Loading docs from: foobar/modules/visual_script/doc_classes
+Loading docs from: foobar/modules/webrtc/doc_classes
+Loading docs from: foobar/modules/websocket/doc_classes
+Loading docs from: foobar/modules/webxr/doc_classes
+Loading docs from: foobar/doc/classes
+Merging docs...
+Erasing old docs at: foobar/doc/classes
+Erasing old docs at: foobar/modules/csg/doc_classes
+Erasing old docs at: foobar/modules/enet/doc_classes
+Erasing old docs at: foobar/modules/fbx/doc_classes
+Erasing old docs at: foobar/modules/gdnative/doc_classes
+Erasing old docs at: foobar/modules/gdscript/doc_classes
+Erasing old docs at: foobar/modules/gridmap/doc_classes
+Erasing old docs at: foobar/modules/minimp3/doc_classes
+Erasing old docs at: foobar/modules/mobile_vr/doc_classes
+Erasing old docs at: foobar/modules/opensimplex/doc_classes
+Erasing old docs at: foobar/modules/regex/doc_classes
+Erasing old docs at: foobar/modules/stb_vorbis/doc_classes
+Erasing old docs at: foobar/modules/theora/doc_classes
+Erasing old docs at: foobar/modules/upnp/doc_classes
+Erasing old docs at: foobar/modules/visual_script/doc_classes
+Erasing old docs at: foobar/modules/webm/doc_classes
+Erasing old docs at: foobar/modules/webrtc/doc_classes
+Erasing old docs at: foobar/modules/websocket/doc_classes
+Erasing old docs at: foobar/modules/webxr/doc_classes
+Generating new docs...

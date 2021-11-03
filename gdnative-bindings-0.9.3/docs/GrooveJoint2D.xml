@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="GrooveJoint2D" inherits="Joint2D" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+	</methods>
+	<members>
+		<member name="initial_offset" type="float" setter="set_initial_offset" getter="get_initial_offset" default="25.0">
+		</member>
+		<member name="length" type="float" setter="set_length" getter="get_length" default="50.0">
+		</member>
+	</members>
+	<constants>
+	</constants>
+</class>

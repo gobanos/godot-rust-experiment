@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="ImageTexture" inherits="Texture" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+		<method name="create">
+			<return type="void" />
+			<argument index="0" name="width" type="int" />
+			<argument index="1" name="height" type="int" />
+			<argument index="2" name="format" type="int" enum="Image.Format" />
+			<argument index="3" name="flags" type="int" default="7" />
+			<description>
+			</description>
+		</method>
+		<method name="create_from_image">
+			<return type="void" />
+			<argument index="0" name="image" type="Image" />
+			<argument index="1" name="flags" type="int" default="7" />
+			<description>
+			</description>
+		</method>
+		<method name="get_format" qualifiers="const">
+			<return type="int" enum="Image.Format" />
+			<description>
+			</description>
+		</method>
+		<method name="load">
+			<return type="int" enum="Error" />
+			<argument index="0" name="path" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="set_data">
+			<return type="void" />
+			<argument index="0" name="image" type="Image" />
+			<description>
+			</description>
+		</method>
+		<method name="set_size_override">
+			<return type="void" />
+			<argument index="0" name="size" type="Vector2" />
+			<description>
+			</description>
+		</method>
+	</methods>
+	<members>
+		<member name="flags" type="int" setter="set_flags" getter="get_flags" override="true" default="7" />
+		<member name="lossy_quality" type="float" setter="set_lossy_storage_quality" getter="get_lossy_storage_quality" default="0.7">
+		</member>
+		<member name="storage" type="int" setter="set_storage" getter="get_storage" enum="ImageTexture.Storage" default="0">
+		</member>
+	</members>
+	<constants>
+		<constant name="STORAGE_RAW" value="0" enum="Storage">
+		</constant>
+		<constant name="STORAGE_COMPRESS_LOSSY" value="1" enum="Storage">
+		</constant>
+		<constant name="STORAGE_COMPRESS_LOSSLESS" value="2" enum="Storage">
+		</constant>
+	</constants>
+</class>

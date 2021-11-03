@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="Shader" inherits="Resource" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+		<method name="get_default_texture_param" qualifiers="const">
+			<return type="Texture" />
+			<argument index="0" name="param" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="get_mode" qualifiers="const">
+			<return type="int" enum="Shader.Mode" />
+			<description>
+			</description>
+		</method>
+		<method name="has_param" qualifiers="const">
+			<return type="bool" />
+			<argument index="0" name="name" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="set_default_texture_param">
+			<return type="void" />
+			<argument index="0" name="param" type="String" />
+			<argument index="1" name="texture" type="Texture" />
+			<description>
+			</description>
+		</method>
+	</methods>
+	<members>
+		<member name="code" type="String" setter="set_code" getter="get_code" default="&quot;&quot;">
+		</member>
+		<member name="custom_defines" type="String" setter="set_custom_defines" getter="get_custom_defines" default="&quot;&quot;">
+		</member>
+	</members>
+	<constants>
+		<constant name="MODE_SPATIAL" value="0" enum="Mode">
+		</constant>
+		<constant name="MODE_CANVAS_ITEM" value="1" enum="Mode">
+		</constant>
+		<constant name="MODE_PARTICLES" value="2" enum="Mode">
+		</constant>
+	</constants>
+</class>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="Transform2D" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+		<method name="Transform2D">
+			<return type="Transform2D" />
+			<argument index="0" name="from" type="Transform" />
+			<description>
+			</description>
+		</method>
+		<method name="Transform2D">
+			<return type="Transform2D" />
+			<argument index="0" name="x_axis" type="Vector2" />
+			<argument index="1" name="y_axis" type="Vector2" />
+			<argument index="2" name="origin" type="Vector2" />
+			<description>
+			</description>
+		</method>
+		<method name="Transform2D">
+			<return type="Transform2D" />
+			<argument index="0" name="rotation" type="float" />
+			<argument index="1" name="position" type="Vector2" />
+			<description>
+			</description>
+		</method>
+		<method name="affine_inverse">
+			<return type="Transform2D" />
+			<description>
+			</description>
+		</method>
+		<method name="basis_xform">
+			<return type="Vector2" />
+			<argument index="0" name="v" type="Vector2" />
+			<description>
+			</description>
+		</method>
+		<method name="basis_xform_inv">
+			<return type="Vector2" />
+			<argument index="0" name="v" type="Vector2" />
+			<description>
+			</description>
+		</method>
+		<method name="get_origin">
+			<return type="Vector2" />
+			<description>
+			</description>
+		</method>
+		<method name="get_rotation">
+			<return type="float" />
+			<description>
+			</description>
+		</method>
+		<method name="get_scale">
+			<return type="Vector2" />
+			<description>
+			</description>
+		</method>
+		<method name="interpolate_with">
+			<return type="Transform2D" />
+			<argument index="0" name="transform" type="Transform2D" />
+			<argument index="1" name="weight" type="float" />
+			<description>
+			</description>
+		</method>
+		<method name="inverse">
+			<return type="Transform2D" />
+			<description>
+			</description>
+		</method>
+		<method name="is_equal_approx">
+			<return type="bool" />
+			<argument index="0" name="transform" type="Transform2D" />
+			<description>
+			</description>
+		</method>
+		<method name="orthonormalized">
+			<return type="Transform2D" />
+			<description>
+			</description>
+		</method>
+		<method name="rotated">
+			<return type="Transform2D" />
+			<argument index="0" name="phi" type="float" />
+			<description>
+			</description>
+		</method>
+		<method name="scaled">
+			<return type="Transform2D" />
+			<argument index="0" name="scale" type="Vector2" />
+			<description>
+			</description>
+		</method>
+		<method name="translated">
+			<return type="Transform2D" />
+			<argument index="0" name="offset" type="Vector2" />
+			<description>
+			</description>
+		</method>
+		<method name="xform">
+			<return type="Variant" />
+			<argument index="0" name="v" type="Variant" />
+			<description>
+			</description>
+		</method>
+		<method name="xform_inv">
+			<return type="Variant" />
+			<argument index="0" name="v" type="Variant" />
+			<description>
+			</description>
+		</method>
+	</methods>
+	<members>
+		<member name="origin" type="Vector2" setter="" getter="" default="Vector2( 0, 0 )">
+		</member>
+		<member name="x" type="Vector2" setter="" getter="" default="Vector2( 1, 0 )">
+		</member>
+		<member name="y" type="Vector2" setter="" getter="" default="Vector2( 0, 1 )">
+		</member>
+	</members>
+	<constants>
+		<constant name="IDENTITY" value="Transform2D( 1, 0, 0, 1, 0, 0 )">
+		</constant>
+		<constant name="FLIP_X" value="Transform2D( -1, 0, 0, 1, 0, 0 )">
+		</constant>
+		<constant name="FLIP_Y" value="Transform2D( 1, 0, 0, -1, 0, 0 )">
+		</constant>
+	</constants>
+</class>

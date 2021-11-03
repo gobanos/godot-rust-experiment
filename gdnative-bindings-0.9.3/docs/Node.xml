@@ -1,0 +1,610 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="Node" inherits="Object" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+		<method name="_enter_tree" qualifiers="virtual">
+			<return type="void" />
+			<description>
+			</description>
+		</method>
+		<method name="_exit_tree" qualifiers="virtual">
+			<return type="void" />
+			<description>
+			</description>
+		</method>
+		<method name="_get_configuration_warning" qualifiers="virtual">
+			<return type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="_input" qualifiers="virtual">
+			<return type="void" />
+			<argument index="0" name="event" type="InputEvent" />
+			<description>
+			</description>
+		</method>
+		<method name="_physics_process" qualifiers="virtual">
+			<return type="void" />
+			<argument index="0" name="delta" type="float" />
+			<description>
+			</description>
+		</method>
+		<method name="_process" qualifiers="virtual">
+			<return type="void" />
+			<argument index="0" name="delta" type="float" />
+			<description>
+			</description>
+		</method>
+		<method name="_ready" qualifiers="virtual">
+			<return type="void" />
+			<description>
+			</description>
+		</method>
+		<method name="_unhandled_input" qualifiers="virtual">
+			<return type="void" />
+			<argument index="0" name="event" type="InputEvent" />
+			<description>
+			</description>
+		</method>
+		<method name="_unhandled_key_input" qualifiers="virtual">
+			<return type="void" />
+			<argument index="0" name="event" type="InputEventKey" />
+			<description>
+			</description>
+		</method>
+		<method name="add_child">
+			<return type="void" />
+			<argument index="0" name="node" type="Node" />
+			<argument index="1" name="legible_unique_name" type="bool" default="false" />
+			<description>
+			</description>
+		</method>
+		<method name="add_child_below_node">
+			<return type="void" />
+			<argument index="0" name="node" type="Node" />
+			<argument index="1" name="child_node" type="Node" />
+			<argument index="2" name="legible_unique_name" type="bool" default="false" />
+			<description>
+			</description>
+		</method>
+		<method name="add_to_group">
+			<return type="void" />
+			<argument index="0" name="group" type="String" />
+			<argument index="1" name="persistent" type="bool" default="false" />
+			<description>
+			</description>
+		</method>
+		<method name="can_process" qualifiers="const">
+			<return type="bool" />
+			<description>
+			</description>
+		</method>
+		<method name="duplicate" qualifiers="const">
+			<return type="Node" />
+			<argument index="0" name="flags" type="int" default="15" />
+			<description>
+			</description>
+		</method>
+		<method name="find_node" qualifiers="const">
+			<return type="Node" />
+			<argument index="0" name="mask" type="String" />
+			<argument index="1" name="recursive" type="bool" default="true" />
+			<argument index="2" name="owned" type="bool" default="true" />
+			<description>
+			</description>
+		</method>
+		<method name="find_parent" qualifiers="const">
+			<return type="Node" />
+			<argument index="0" name="mask" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="get_child" qualifiers="const">
+			<return type="Node" />
+			<argument index="0" name="idx" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="get_child_count" qualifiers="const">
+			<return type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="get_children" qualifiers="const">
+			<return type="Array" />
+			<description>
+			</description>
+		</method>
+		<method name="get_groups" qualifiers="const">
+			<return type="Array" />
+			<description>
+			</description>
+		</method>
+		<method name="get_index" qualifiers="const">
+			<return type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="get_network_master" qualifiers="const">
+			<return type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="get_node" qualifiers="const">
+			<return type="Node" />
+			<argument index="0" name="path" type="NodePath" />
+			<description>
+			</description>
+		</method>
+		<method name="get_node_and_resource">
+			<return type="Array" />
+			<argument index="0" name="path" type="NodePath" />
+			<description>
+			</description>
+		</method>
+		<method name="get_node_or_null" qualifiers="const">
+			<return type="Node" />
+			<argument index="0" name="path" type="NodePath" />
+			<description>
+			</description>
+		</method>
+		<method name="get_parent" qualifiers="const">
+			<return type="Node" />
+			<description>
+			</description>
+		</method>
+		<method name="get_path" qualifiers="const">
+			<return type="NodePath" />
+			<description>
+			</description>
+		</method>
+		<method name="get_path_to" qualifiers="const">
+			<return type="NodePath" />
+			<argument index="0" name="node" type="Node" />
+			<description>
+			</description>
+		</method>
+		<method name="get_physics_process_delta_time" qualifiers="const">
+			<return type="float" />
+			<description>
+			</description>
+		</method>
+		<method name="get_position_in_parent" qualifiers="const">
+			<return type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="get_process_delta_time" qualifiers="const">
+			<return type="float" />
+			<description>
+			</description>
+		</method>
+		<method name="get_scene_instance_load_placeholder" qualifiers="const">
+			<return type="bool" />
+			<description>
+			</description>
+		</method>
+		<method name="get_tree" qualifiers="const">
+			<return type="SceneTree" />
+			<description>
+			</description>
+		</method>
+		<method name="get_viewport" qualifiers="const">
+			<return type="Viewport" />
+			<description>
+			</description>
+		</method>
+		<method name="has_node" qualifiers="const">
+			<return type="bool" />
+			<argument index="0" name="path" type="NodePath" />
+			<description>
+			</description>
+		</method>
+		<method name="has_node_and_resource" qualifiers="const">
+			<return type="bool" />
+			<argument index="0" name="path" type="NodePath" />
+			<description>
+			</description>
+		</method>
+		<method name="is_a_parent_of" qualifiers="const">
+			<return type="bool" />
+			<argument index="0" name="node" type="Node" />
+			<description>
+			</description>
+		</method>
+		<method name="is_displayed_folded" qualifiers="const">
+			<return type="bool" />
+			<description>
+			</description>
+		</method>
+		<method name="is_greater_than" qualifiers="const">
+			<return type="bool" />
+			<argument index="0" name="node" type="Node" />
+			<description>
+			</description>
+		</method>
+		<method name="is_in_group" qualifiers="const">
+			<return type="bool" />
+			<argument index="0" name="group" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="is_inside_tree" qualifiers="const">
+			<return type="bool" />
+			<description>
+			</description>
+		</method>
+		<method name="is_network_master" qualifiers="const">
+			<return type="bool" />
+			<description>
+			</description>
+		</method>
+		<method name="is_physics_processing" qualifiers="const">
+			<return type="bool" />
+			<description>
+			</description>
+		</method>
+		<method name="is_physics_processing_internal" qualifiers="const">
+			<return type="bool" />
+			<description>
+			</description>
+		</method>
+		<method name="is_processing" qualifiers="const">
+			<return type="bool" />
+			<description>
+			</description>
+		</method>
+		<method name="is_processing_input" qualifiers="const">
+			<return type="bool" />
+			<description>
+			</description>
+		</method>
+		<method name="is_processing_internal" qualifiers="const">
+			<return type="bool" />
+			<description>
+			</description>
+		</method>
+		<method name="is_processing_unhandled_input" qualifiers="const">
+			<return type="bool" />
+			<description>
+			</description>
+		</method>
+		<method name="is_processing_unhandled_key_input" qualifiers="const">
+			<return type="bool" />
+			<description>
+			</description>
+		</method>
+		<method name="move_child">
+			<return type="void" />
+			<argument index="0" name="child_node" type="Node" />
+			<argument index="1" name="to_position" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="print_stray_nodes">
+			<return type="void" />
+			<description>
+			</description>
+		</method>
+		<method name="print_tree">
+			<return type="void" />
+			<description>
+			</description>
+		</method>
+		<method name="print_tree_pretty">
+			<return type="void" />
+			<description>
+			</description>
+		</method>
+		<method name="propagate_call">
+			<return type="void" />
+			<argument index="0" name="method" type="String" />
+			<argument index="1" name="args" type="Array" default="[  ]" />
+			<argument index="2" name="parent_first" type="bool" default="false" />
+			<description>
+			</description>
+		</method>
+		<method name="propagate_notification">
+			<return type="void" />
+			<argument index="0" name="what" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="queue_free">
+			<return type="void" />
+			<description>
+			</description>
+		</method>
+		<method name="raise">
+			<return type="void" />
+			<description>
+			</description>
+		</method>
+		<method name="remove_and_skip">
+			<return type="void" />
+			<description>
+			</description>
+		</method>
+		<method name="remove_child">
+			<return type="void" />
+			<argument index="0" name="node" type="Node" />
+			<description>
+			</description>
+		</method>
+		<method name="remove_from_group">
+			<return type="void" />
+			<argument index="0" name="group" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="replace_by">
+			<return type="void" />
+			<argument index="0" name="node" type="Node" />
+			<argument index="1" name="keep_data" type="bool" default="false" />
+			<description>
+			</description>
+		</method>
+		<method name="request_ready">
+			<return type="void" />
+			<description>
+			</description>
+		</method>
+		<method name="rpc" qualifiers="vararg">
+			<return type="Variant" />
+			<argument index="0" name="method" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="rpc_config">
+			<return type="void" />
+			<argument index="0" name="method" type="String" />
+			<argument index="1" name="mode" type="int" enum="MultiplayerAPI.RPCMode" />
+			<description>
+			</description>
+		</method>
+		<method name="rpc_id" qualifiers="vararg">
+			<return type="Variant" />
+			<argument index="0" name="peer_id" type="int" />
+			<argument index="1" name="method" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="rpc_unreliable" qualifiers="vararg">
+			<return type="Variant" />
+			<argument index="0" name="method" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="rpc_unreliable_id" qualifiers="vararg">
+			<return type="Variant" />
+			<argument index="0" name="peer_id" type="int" />
+			<argument index="1" name="method" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="rset">
+			<return type="void" />
+			<argument index="0" name="property" type="String" />
+			<argument index="1" name="value" type="Variant" />
+			<description>
+			</description>
+		</method>
+		<method name="rset_config">
+			<return type="void" />
+			<argument index="0" name="property" type="String" />
+			<argument index="1" name="mode" type="int" enum="MultiplayerAPI.RPCMode" />
+			<description>
+			</description>
+		</method>
+		<method name="rset_id">
+			<return type="void" />
+			<argument index="0" name="peer_id" type="int" />
+			<argument index="1" name="property" type="String" />
+			<argument index="2" name="value" type="Variant" />
+			<description>
+			</description>
+		</method>
+		<method name="rset_unreliable">
+			<return type="void" />
+			<argument index="0" name="property" type="String" />
+			<argument index="1" name="value" type="Variant" />
+			<description>
+			</description>
+		</method>
+		<method name="rset_unreliable_id">
+			<return type="void" />
+			<argument index="0" name="peer_id" type="int" />
+			<argument index="1" name="property" type="String" />
+			<argument index="2" name="value" type="Variant" />
+			<description>
+			</description>
+		</method>
+		<method name="set_display_folded">
+			<return type="void" />
+			<argument index="0" name="fold" type="bool" />
+			<description>
+			</description>
+		</method>
+		<method name="set_network_master">
+			<return type="void" />
+			<argument index="0" name="id" type="int" />
+			<argument index="1" name="recursive" type="bool" default="true" />
+			<description>
+			</description>
+		</method>
+		<method name="set_physics_process">
+			<return type="void" />
+			<argument index="0" name="enable" type="bool" />
+			<description>
+			</description>
+		</method>
+		<method name="set_physics_process_internal">
+			<return type="void" />
+			<argument index="0" name="enable" type="bool" />
+			<description>
+			</description>
+		</method>
+		<method name="set_process">
+			<return type="void" />
+			<argument index="0" name="enable" type="bool" />
+			<description>
+			</description>
+		</method>
+		<method name="set_process_input">
+			<return type="void" />
+			<argument index="0" name="enable" type="bool" />
+			<description>
+			</description>
+		</method>
+		<method name="set_process_internal">
+			<return type="void" />
+			<argument index="0" name="enable" type="bool" />
+			<description>
+			</description>
+		</method>
+		<method name="set_process_unhandled_input">
+			<return type="void" />
+			<argument index="0" name="enable" type="bool" />
+			<description>
+			</description>
+		</method>
+		<method name="set_process_unhandled_key_input">
+			<return type="void" />
+			<argument index="0" name="enable" type="bool" />
+			<description>
+			</description>
+		</method>
+		<method name="set_scene_instance_load_placeholder">
+			<return type="void" />
+			<argument index="0" name="load_placeholder" type="bool" />
+			<description>
+			</description>
+		</method>
+		<method name="update_configuration_warning">
+			<return type="void" />
+			<description>
+			</description>
+		</method>
+	</methods>
+	<members>
+		<member name="custom_multiplayer" type="MultiplayerAPI" setter="set_custom_multiplayer" getter="get_custom_multiplayer">
+		</member>
+		<member name="filename" type="String" setter="set_filename" getter="get_filename">
+		</member>
+		<member name="multiplayer" type="MultiplayerAPI" setter="" getter="get_multiplayer">
+		</member>
+		<member name="name" type="String" setter="set_name" getter="get_name">
+		</member>
+		<member name="owner" type="Node" setter="set_owner" getter="get_owner">
+		</member>
+		<member name="pause_mode" type="int" setter="set_pause_mode" getter="get_pause_mode" enum="Node.PauseMode" default="0">
+		</member>
+		<member name="process_priority" type="int" setter="set_process_priority" getter="get_process_priority" default="0">
+		</member>
+	</members>
+	<signals>
+		<signal name="ready">
+			<description>
+			</description>
+		</signal>
+		<signal name="renamed">
+			<description>
+			</description>
+		</signal>
+		<signal name="tree_entered">
+			<description>
+			</description>
+		</signal>
+		<signal name="tree_exited">
+			<description>
+			</description>
+		</signal>
+		<signal name="tree_exiting">
+			<description>
+			</description>
+		</signal>
+	</signals>
+	<constants>
+		<constant name="NOTIFICATION_ENTER_TREE" value="10">
+		</constant>
+		<constant name="NOTIFICATION_EXIT_TREE" value="11">
+		</constant>
+		<constant name="NOTIFICATION_MOVED_IN_PARENT" value="12">
+		</constant>
+		<constant name="NOTIFICATION_READY" value="13">
+		</constant>
+		<constant name="NOTIFICATION_PAUSED" value="14">
+		</constant>
+		<constant name="NOTIFICATION_UNPAUSED" value="15">
+		</constant>
+		<constant name="NOTIFICATION_PHYSICS_PROCESS" value="16">
+		</constant>
+		<constant name="NOTIFICATION_PROCESS" value="17">
+		</constant>
+		<constant name="NOTIFICATION_PARENTED" value="18">
+		</constant>
+		<constant name="NOTIFICATION_UNPARENTED" value="19">
+		</constant>
+		<constant name="NOTIFICATION_INSTANCED" value="20">
+		</constant>
+		<constant name="NOTIFICATION_DRAG_BEGIN" value="21">
+		</constant>
+		<constant name="NOTIFICATION_DRAG_END" value="22">
+		</constant>
+		<constant name="NOTIFICATION_PATH_CHANGED" value="23">
+		</constant>
+		<constant name="NOTIFICATION_INTERNAL_PROCESS" value="25">
+		</constant>
+		<constant name="NOTIFICATION_INTERNAL_PHYSICS_PROCESS" value="26">
+		</constant>
+		<constant name="NOTIFICATION_POST_ENTER_TREE" value="27">
+		</constant>
+		<constant name="NOTIFICATION_WM_MOUSE_ENTER" value="1002">
+		</constant>
+		<constant name="NOTIFICATION_WM_MOUSE_EXIT" value="1003">
+		</constant>
+		<constant name="NOTIFICATION_WM_FOCUS_IN" value="1004">
+		</constant>
+		<constant name="NOTIFICATION_WM_FOCUS_OUT" value="1005">
+		</constant>
+		<constant name="NOTIFICATION_WM_QUIT_REQUEST" value="1006">
+		</constant>
+		<constant name="NOTIFICATION_WM_GO_BACK_REQUEST" value="1007">
+		</constant>
+		<constant name="NOTIFICATION_WM_UNFOCUS_REQUEST" value="1008">
+		</constant>
+		<constant name="NOTIFICATION_OS_MEMORY_WARNING" value="1009">
+		</constant>
+		<constant name="NOTIFICATION_TRANSLATION_CHANGED" value="1010">
+		</constant>
+		<constant name="NOTIFICATION_WM_ABOUT" value="1011">
+		</constant>
+		<constant name="NOTIFICATION_CRASH" value="1012">
+		</constant>
+		<constant name="NOTIFICATION_OS_IME_UPDATE" value="1013">
+		</constant>
+		<constant name="NOTIFICATION_APP_RESUMED" value="1014">
+		</constant>
+		<constant name="NOTIFICATION_APP_PAUSED" value="1015">
+		</constant>
+		<constant name="PAUSE_MODE_INHERIT" value="0" enum="PauseMode">
+		</constant>
+		<constant name="PAUSE_MODE_STOP" value="1" enum="PauseMode">
+		</constant>
+		<constant name="PAUSE_MODE_PROCESS" value="2" enum="PauseMode">
+		</constant>
+		<constant name="DUPLICATE_SIGNALS" value="1" enum="DuplicateFlags">
+		</constant>
+		<constant name="DUPLICATE_GROUPS" value="2" enum="DuplicateFlags">
+		</constant>
+		<constant name="DUPLICATE_SCRIPTS" value="4" enum="DuplicateFlags">
+		</constant>
+		<constant name="DUPLICATE_USE_INSTANCING" value="8" enum="DuplicateFlags">
+		</constant>
+	</constants>
+</class>

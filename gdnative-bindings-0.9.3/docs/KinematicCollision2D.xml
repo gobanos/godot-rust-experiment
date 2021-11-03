@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="KinematicCollision2D" inherits="Reference" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+	</methods>
+	<members>
+		<member name="collider" type="Object" setter="" getter="get_collider">
+		</member>
+		<member name="collider_id" type="int" setter="" getter="get_collider_id" default="0">
+		</member>
+		<member name="collider_metadata" type="Variant" setter="" getter="get_collider_metadata">
+		</member>
+		<member name="collider_rid" type="RID" setter="" getter="get_collider_rid">
+		</member>
+		<member name="collider_shape" type="Object" setter="" getter="get_collider_shape">
+		</member>
+		<member name="collider_shape_index" type="int" setter="" getter="get_collider_shape_index" default="0">
+		</member>
+		<member name="collider_velocity" type="Vector2" setter="" getter="get_collider_velocity" default="Vector2( 0, 0 )">
+		</member>
+		<member name="local_shape" type="Object" setter="" getter="get_local_shape">
+		</member>
+		<member name="normal" type="Vector2" setter="" getter="get_normal" default="Vector2( 0, 0 )">
+		</member>
+		<member name="position" type="Vector2" setter="" getter="get_position" default="Vector2( 0, 0 )">
+		</member>
+		<member name="remainder" type="Vector2" setter="" getter="get_remainder" default="Vector2( 0, 0 )">
+		</member>
+		<member name="travel" type="Vector2" setter="" getter="get_travel" default="Vector2( 0, 0 )">
+		</member>
+	</members>
+	<constants>
+	</constants>
+</class>

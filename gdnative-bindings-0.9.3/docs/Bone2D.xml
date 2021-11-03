@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="Bone2D" inherits="Node2D" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+		<method name="apply_rest">
+			<return type="void" />
+			<description>
+			</description>
+		</method>
+		<method name="get_index_in_skeleton" qualifiers="const">
+			<return type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="get_skeleton_rest" qualifiers="const">
+			<return type="Transform2D" />
+			<description>
+			</description>
+		</method>
+	</methods>
+	<members>
+		<member name="default_length" type="float" setter="set_default_length" getter="get_default_length" default="16.0">
+		</member>
+		<member name="rest" type="Transform2D" setter="set_rest" getter="get_rest" default="Transform2D( 0, 0, 0, 0, 0, 0 )">
+		</member>
+	</members>
+	<constants>
+	</constants>
+</class>

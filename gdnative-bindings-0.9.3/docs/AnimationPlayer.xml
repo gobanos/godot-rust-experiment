@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="AnimationPlayer" inherits="Node" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+		<method name="add_animation">
+			<return type="int" enum="Error" />
+			<argument index="0" name="name" type="String" />
+			<argument index="1" name="animation" type="Animation" />
+			<description>
+			</description>
+		</method>
+		<method name="advance">
+			<return type="void" />
+			<argument index="0" name="delta" type="float" />
+			<description>
+			</description>
+		</method>
+		<method name="animation_get_next" qualifiers="const">
+			<return type="String" />
+			<argument index="0" name="anim_from" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="animation_set_next">
+			<return type="void" />
+			<argument index="0" name="anim_from" type="String" />
+			<argument index="1" name="anim_to" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="clear_caches">
+			<return type="void" />
+			<description>
+			</description>
+		</method>
+		<method name="clear_queue">
+			<return type="void" />
+			<description>
+			</description>
+		</method>
+		<method name="find_animation" qualifiers="const">
+			<return type="String" />
+			<argument index="0" name="animation" type="Animation" />
+			<description>
+			</description>
+		</method>
+		<method name="get_animation" qualifiers="const">
+			<return type="Animation" />
+			<argument index="0" name="name" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="get_animation_list" qualifiers="const">
+			<return type="PoolStringArray" />
+			<description>
+			</description>
+		</method>
+		<method name="get_blend_time" qualifiers="const">
+			<return type="float" />
+			<argument index="0" name="anim_from" type="String" />
+			<argument index="1" name="anim_to" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="get_playing_speed" qualifiers="const">
+			<return type="float" />
+			<description>
+			</description>
+		</method>
+		<method name="get_queue">
+			<return type="PoolStringArray" />
+			<description>
+			</description>
+		</method>
+		<method name="has_animation" qualifiers="const">
+			<return type="bool" />
+			<argument index="0" name="name" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="is_playing" qualifiers="const">
+			<return type="bool" />
+			<description>
+			</description>
+		</method>
+		<method name="play">
+			<return type="void" />
+			<argument index="0" name="name" type="String" default="&quot;&quot;" />
+			<argument index="1" name="custom_blend" type="float" default="-1" />
+			<argument index="2" name="custom_speed" type="float" default="1.0" />
+			<argument index="3" name="from_end" type="bool" default="false" />
+			<description>
+			</description>
+		</method>
+		<method name="play_backwards">
+			<return type="void" />
+			<argument index="0" name="name" type="String" default="&quot;&quot;" />
+			<argument index="1" name="custom_blend" type="float" default="-1" />
+			<description>
+			</description>
+		</method>
+		<method name="queue">
+			<return type="void" />
+			<argument index="0" name="name" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="remove_animation">
+			<return type="void" />
+			<argument index="0" name="name" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="rename_animation">
+			<return type="void" />
+			<argument index="0" name="name" type="String" />
+			<argument index="1" name="newname" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="seek">
+			<return type="void" />
+			<argument index="0" name="seconds" type="float" />
+			<argument index="1" name="update" type="bool" default="false" />
+			<description>
+			</description>
+		</method>
+		<method name="set_blend_time">
+			<return type="void" />
+			<argument index="0" name="anim_from" type="String" />
+			<argument index="1" name="anim_to" type="String" />
+			<argument index="2" name="sec" type="float" />
+			<description>
+			</description>
+		</method>
+		<method name="stop">
+			<return type="void" />
+			<argument index="0" name="reset" type="bool" default="true" />
+			<description>
+			</description>
+		</method>
+	</methods>
+	<members>
+		<member name="assigned_animation" type="String" setter="set_assigned_animation" getter="get_assigned_animation">
+		</member>
+		<member name="autoplay" type="String" setter="set_autoplay" getter="get_autoplay" default="&quot;&quot;">
+		</member>
+		<member name="current_animation" type="String" setter="set_current_animation" getter="get_current_animation" default="&quot;&quot;">
+		</member>
+		<member name="current_animation_length" type="float" setter="" getter="get_current_animation_length">
+		</member>
+		<member name="current_animation_position" type="float" setter="" getter="get_current_animation_position">
+		</member>
+		<member name="method_call_mode" type="int" setter="set_method_call_mode" getter="get_method_call_mode" enum="AnimationPlayer.AnimationMethodCallMode" default="0">
+		</member>
+		<member name="playback_active" type="bool" setter="set_active" getter="is_active">
+		</member>
+		<member name="playback_default_blend_time" type="float" setter="set_default_blend_time" getter="get_default_blend_time" default="0.0">
+		</member>
+		<member name="playback_process_mode" type="int" setter="set_animation_process_mode" getter="get_animation_process_mode" enum="AnimationPlayer.AnimationProcessMode" default="1">
+		</member>
+		<member name="playback_speed" type="float" setter="set_speed_scale" getter="get_speed_scale" default="1.0">
+		</member>
+		<member name="root_node" type="NodePath" setter="set_root" getter="get_root" default="NodePath(&quot;..&quot;)">
+		</member>
+	</members>
+	<signals>
+		<signal name="animation_changed">
+			<argument index="0" name="old_name" type="String" />
+			<argument index="1" name="new_name" type="String" />
+			<description>
+			</description>
+		</signal>
+		<signal name="animation_finished">
+			<argument index="0" name="anim_name" type="String" />
+			<description>
+			</description>
+		</signal>
+		<signal name="animation_started">
+			<argument index="0" name="anim_name" type="String" />
+			<description>
+			</description>
+		</signal>
+		<signal name="caches_cleared">
+			<description>
+			</description>
+		</signal>
+	</signals>
+	<constants>
+		<constant name="ANIMATION_PROCESS_PHYSICS" value="0" enum="AnimationProcessMode">
+		</constant>
+		<constant name="ANIMATION_PROCESS_IDLE" value="1" enum="AnimationProcessMode">
+		</constant>
+		<constant name="ANIMATION_PROCESS_MANUAL" value="2" enum="AnimationProcessMode">
+		</constant>
+		<constant name="ANIMATION_METHOD_CALL_DEFERRED" value="0" enum="AnimationMethodCallMode">
+		</constant>
+		<constant name="ANIMATION_METHOD_CALL_IMMEDIATE" value="1" enum="AnimationMethodCallMode">
+		</constant>
+	</constants>
+</class>

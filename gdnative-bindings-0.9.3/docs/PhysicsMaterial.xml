@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="PhysicsMaterial" inherits="Resource" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+	</methods>
+	<members>
+		<member name="absorbent" type="bool" setter="set_absorbent" getter="is_absorbent" default="false">
+		</member>
+		<member name="bounce" type="float" setter="set_bounce" getter="get_bounce" default="0.0">
+		</member>
+		<member name="friction" type="float" setter="set_friction" getter="get_friction" default="1.0">
+		</member>
+		<member name="rough" type="bool" setter="set_rough" getter="is_rough" default="false">
+		</member>
+	</members>
+	<constants>
+	</constants>
+</class>

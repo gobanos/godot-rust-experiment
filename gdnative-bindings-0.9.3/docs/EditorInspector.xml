@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="EditorInspector" inherits="ScrollContainer" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+		<method name="refresh">
+			<return type="void" />
+			<description>
+			</description>
+		</method>
+	</methods>
+	<members>
+		<member name="scroll_horizontal_enabled" type="bool" setter="set_enable_h_scroll" getter="is_h_scroll_enabled" override="true" default="false" />
+	</members>
+	<signals>
+		<signal name="object_id_selected">
+			<argument index="0" name="id" type="int" />
+			<description>
+			</description>
+		</signal>
+		<signal name="property_edited">
+			<argument index="0" name="property" type="String" />
+			<description>
+			</description>
+		</signal>
+		<signal name="property_keyed">
+			<argument index="0" name="property" type="String" />
+			<description>
+			</description>
+		</signal>
+		<signal name="property_selected">
+			<argument index="0" name="property" type="String" />
+			<description>
+			</description>
+		</signal>
+		<signal name="property_toggled">
+			<argument index="0" name="property" type="String" />
+			<argument index="1" name="checked" type="bool" />
+			<description>
+			</description>
+		</signal>
+		<signal name="resource_selected">
+			<argument index="0" name="res" type="Object" />
+			<argument index="1" name="prop" type="String" />
+			<description>
+			</description>
+		</signal>
+		<signal name="restart_requested">
+			<description>
+			</description>
+		</signal>
+	</signals>
+	<constants>
+	</constants>
+</class>

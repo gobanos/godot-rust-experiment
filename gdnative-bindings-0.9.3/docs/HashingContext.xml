@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="HashingContext" inherits="Reference" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+		<method name="finish">
+			<return type="PoolByteArray" />
+			<description>
+			</description>
+		</method>
+		<method name="start">
+			<return type="int" enum="Error" />
+			<argument index="0" name="type" type="int" enum="HashingContext.HashType" />
+			<description>
+			</description>
+		</method>
+		<method name="update">
+			<return type="int" enum="Error" />
+			<argument index="0" name="chunk" type="PoolByteArray" />
+			<description>
+			</description>
+		</method>
+	</methods>
+	<constants>
+		<constant name="HASH_MD5" value="0" enum="HashType">
+		</constant>
+		<constant name="HASH_SHA1" value="1" enum="HashType">
+		</constant>
+		<constant name="HASH_SHA256" value="2" enum="HashType">
+		</constant>
+	</constants>
+</class>

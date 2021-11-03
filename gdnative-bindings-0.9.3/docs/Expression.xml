@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="Expression" inherits="Reference" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+		<method name="execute">
+			<return type="Variant" />
+			<argument index="0" name="inputs" type="Array" default="[  ]" />
+			<argument index="1" name="base_instance" type="Object" default="null" />
+			<argument index="2" name="show_error" type="bool" default="true" />
+			<description>
+			</description>
+		</method>
+		<method name="get_error_text" qualifiers="const">
+			<return type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="has_execute_failed" qualifiers="const">
+			<return type="bool" />
+			<description>
+			</description>
+		</method>
+		<method name="parse">
+			<return type="int" enum="Error" />
+			<argument index="0" name="expression" type="String" />
+			<argument index="1" name="input_names" type="PoolStringArray" default="PoolStringArray(  )" />
+			<description>
+			</description>
+		</method>
+	</methods>
+	<constants>
+	</constants>
+</class>

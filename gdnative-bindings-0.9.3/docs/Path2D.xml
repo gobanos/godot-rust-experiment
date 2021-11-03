@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="Path2D" inherits="Node2D" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+	</methods>
+	<members>
+		<member name="curve" type="Curve2D" setter="set_curve" getter="get_curve">
+		</member>
+		<member name="self_modulate" type="Color" setter="set_self_modulate" getter="get_self_modulate" override="true" default="Color( 0.5, 0.6, 1, 0.7 )" />
+	</members>
+	<constants>
+	</constants>
+</class>

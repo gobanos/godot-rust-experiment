@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="World2D" inherits="Resource" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+	</methods>
+	<members>
+		<member name="canvas" type="RID" setter="" getter="get_canvas">
+		</member>
+		<member name="direct_space_state" type="Physics2DDirectSpaceState" setter="" getter="get_direct_space_state">
+		</member>
+		<member name="space" type="RID" setter="" getter="get_space">
+		</member>
+	</members>
+	<constants>
+	</constants>
+</class>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="EditorSettings" inherits="Resource" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+		<method name="add_property_info">
+			<return type="void" />
+			<argument index="0" name="info" type="Dictionary" />
+			<description>
+			</description>
+		</method>
+		<method name="erase">
+			<return type="void" />
+			<argument index="0" name="property" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="get_favorites" qualifiers="const">
+			<return type="PoolStringArray" />
+			<description>
+			</description>
+		</method>
+		<method name="get_project_metadata" qualifiers="const">
+			<return type="Variant" />
+			<argument index="0" name="section" type="String" />
+			<argument index="1" name="key" type="String" />
+			<argument index="2" name="default" type="Variant" default="null" />
+			<description>
+			</description>
+		</method>
+		<method name="get_project_settings_dir" qualifiers="const">
+			<return type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="get_recent_dirs" qualifiers="const">
+			<return type="PoolStringArray" />
+			<description>
+			</description>
+		</method>
+		<method name="get_setting" qualifiers="const">
+			<return type="Variant" />
+			<argument index="0" name="name" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="get_settings_dir" qualifiers="const">
+			<return type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="has_setting" qualifiers="const">
+			<return type="bool" />
+			<argument index="0" name="name" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="property_can_revert">
+			<return type="bool" />
+			<argument index="0" name="name" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="property_get_revert">
+			<return type="Variant" />
+			<argument index="0" name="name" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="set_favorites">
+			<return type="void" />
+			<argument index="0" name="dirs" type="PoolStringArray" />
+			<description>
+			</description>
+		</method>
+		<method name="set_initial_value">
+			<return type="void" />
+			<argument index="0" name="name" type="String" />
+			<argument index="1" name="value" type="Variant" />
+			<argument index="2" name="update_current" type="bool" />
+			<description>
+			</description>
+		</method>
+		<method name="set_project_metadata">
+			<return type="void" />
+			<argument index="0" name="section" type="String" />
+			<argument index="1" name="key" type="String" />
+			<argument index="2" name="data" type="Variant" />
+			<description>
+			</description>
+		</method>
+		<method name="set_recent_dirs">
+			<return type="void" />
+			<argument index="0" name="dirs" type="PoolStringArray" />
+			<description>
+			</description>
+		</method>
+		<method name="set_setting">
+			<return type="void" />
+			<argument index="0" name="name" type="String" />
+			<argument index="1" name="value" type="Variant" />
+			<description>
+			</description>
+		</method>
+	</methods>
+	<signals>
+		<signal name="settings_changed">
+			<description>
+			</description>
+		</signal>
+	</signals>
+	<constants>
+		<constant name="NOTIFICATION_EDITOR_SETTINGS_CHANGED" value="10000">
+		</constant>
+	</constants>
+</class>

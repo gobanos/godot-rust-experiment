@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="ClassDB" inherits="Object" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+		<method name="can_instance" qualifiers="const">
+			<return type="bool" />
+			<argument index="0" name="class" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="class_exists" qualifiers="const">
+			<return type="bool" />
+			<argument index="0" name="class" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="class_get_category" qualifiers="const">
+			<return type="String" />
+			<argument index="0" name="class" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="class_get_integer_constant" qualifiers="const">
+			<return type="int" />
+			<argument index="0" name="class" type="String" />
+			<argument index="1" name="name" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="class_get_integer_constant_list" qualifiers="const">
+			<return type="PoolStringArray" />
+			<argument index="0" name="class" type="String" />
+			<argument index="1" name="no_inheritance" type="bool" default="false" />
+			<description>
+			</description>
+		</method>
+		<method name="class_get_method_list" qualifiers="const">
+			<return type="Array" />
+			<argument index="0" name="class" type="String" />
+			<argument index="1" name="no_inheritance" type="bool" default="false" />
+			<description>
+			</description>
+		</method>
+		<method name="class_get_property" qualifiers="const">
+			<return type="Variant" />
+			<argument index="0" name="object" type="Object" />
+			<argument index="1" name="property" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="class_get_property_list" qualifiers="const">
+			<return type="Array" />
+			<argument index="0" name="class" type="String" />
+			<argument index="1" name="no_inheritance" type="bool" default="false" />
+			<description>
+			</description>
+		</method>
+		<method name="class_get_signal" qualifiers="const">
+			<return type="Dictionary" />
+			<argument index="0" name="class" type="String" />
+			<argument index="1" name="signal" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="class_get_signal_list" qualifiers="const">
+			<return type="Array" />
+			<argument index="0" name="class" type="String" />
+			<argument index="1" name="no_inheritance" type="bool" default="false" />
+			<description>
+			</description>
+		</method>
+		<method name="class_has_integer_constant" qualifiers="const">
+			<return type="bool" />
+			<argument index="0" name="class" type="String" />
+			<argument index="1" name="name" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="class_has_method" qualifiers="const">
+			<return type="bool" />
+			<argument index="0" name="class" type="String" />
+			<argument index="1" name="method" type="String" />
+			<argument index="2" name="no_inheritance" type="bool" default="false" />
+			<description>
+			</description>
+		</method>
+		<method name="class_has_signal" qualifiers="const">
+			<return type="bool" />
+			<argument index="0" name="class" type="String" />
+			<argument index="1" name="signal" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="class_set_property" qualifiers="const">
+			<return type="int" enum="Error" />
+			<argument index="0" name="object" type="Object" />
+			<argument index="1" name="property" type="String" />
+			<argument index="2" name="value" type="Variant" />
+			<description>
+			</description>
+		</method>
+		<method name="get_class_list" qualifiers="const">
+			<return type="PoolStringArray" />
+			<description>
+			</description>
+		</method>
+		<method name="get_inheriters_from_class" qualifiers="const">
+			<return type="PoolStringArray" />
+			<argument index="0" name="class" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="get_parent_class" qualifiers="const">
+			<return type="String" />
+			<argument index="0" name="class" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="instance" qualifiers="const">
+			<return type="Variant" />
+			<argument index="0" name="class" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="is_class_enabled" qualifiers="const">
+			<return type="bool" />
+			<argument index="0" name="class" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="is_parent_class" qualifiers="const">
+			<return type="bool" />
+			<argument index="0" name="class" type="String" />
+			<argument index="1" name="inherits" type="String" />
+			<description>
+			</description>
+		</method>
+	</methods>
+	<constants>
+	</constants>
+</class>

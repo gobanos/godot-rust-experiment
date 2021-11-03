@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="PopupMenu" inherits="Popup" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+		<method name="add_check_item">
+			<return type="void" />
+			<argument index="0" name="label" type="String" />
+			<argument index="1" name="id" type="int" default="-1" />
+			<argument index="2" name="accel" type="int" default="0" />
+			<description>
+			</description>
+		</method>
+		<method name="add_check_shortcut">
+			<return type="void" />
+			<argument index="0" name="shortcut" type="ShortCut" />
+			<argument index="1" name="id" type="int" default="-1" />
+			<argument index="2" name="global" type="bool" default="false" />
+			<description>
+			</description>
+		</method>
+		<method name="add_icon_check_item">
+			<return type="void" />
+			<argument index="0" name="texture" type="Texture" />
+			<argument index="1" name="label" type="String" />
+			<argument index="2" name="id" type="int" default="-1" />
+			<argument index="3" name="accel" type="int" default="0" />
+			<description>
+			</description>
+		</method>
+		<method name="add_icon_check_shortcut">
+			<return type="void" />
+			<argument index="0" name="texture" type="Texture" />
+			<argument index="1" name="shortcut" type="ShortCut" />
+			<argument index="2" name="id" type="int" default="-1" />
+			<argument index="3" name="global" type="bool" default="false" />
+			<description>
+			</description>
+		</method>
+		<method name="add_icon_item">
+			<return type="void" />
+			<argument index="0" name="texture" type="Texture" />
+			<argument index="1" name="label" type="String" />
+			<argument index="2" name="id" type="int" default="-1" />
+			<argument index="3" name="accel" type="int" default="0" />
+			<description>
+			</description>
+		</method>
+		<method name="add_icon_radio_check_item">
+			<return type="void" />
+			<argument index="0" name="texture" type="Texture" />
+			<argument index="1" name="label" type="String" />
+			<argument index="2" name="id" type="int" default="-1" />
+			<argument index="3" name="accel" type="int" default="0" />
+			<description>
+			</description>
+		</method>
+		<method name="add_icon_radio_check_shortcut">
+			<return type="void" />
+			<argument index="0" name="texture" type="Texture" />
+			<argument index="1" name="shortcut" type="ShortCut" />
+			<argument index="2" name="id" type="int" default="-1" />
+			<argument index="3" name="global" type="bool" default="false" />
+			<description>
+			</description>
+		</method>
+		<method name="add_icon_shortcut">
+			<return type="void" />
+			<argument index="0" name="texture" type="Texture" />
+			<argument index="1" name="shortcut" type="ShortCut" />
+			<argument index="2" name="id" type="int" default="-1" />
+			<argument index="3" name="global" type="bool" default="false" />
+			<description>
+			</description>
+		</method>
+		<method name="add_item">
+			<return type="void" />
+			<argument index="0" name="label" type="String" />
+			<argument index="1" name="id" type="int" default="-1" />
+			<argument index="2" name="accel" type="int" default="0" />
+			<description>
+			</description>
+		</method>
+		<method name="add_multistate_item">
+			<return type="void" />
+			<argument index="0" name="label" type="String" />
+			<argument index="1" name="max_states" type="int" />
+			<argument index="2" name="default_state" type="int" default="0" />
+			<argument index="3" name="id" type="int" default="-1" />
+			<argument index="4" name="accel" type="int" default="0" />
+			<description>
+			</description>
+		</method>
+		<method name="add_radio_check_item">
+			<return type="void" />
+			<argument index="0" name="label" type="String" />
+			<argument index="1" name="id" type="int" default="-1" />
+			<argument index="2" name="accel" type="int" default="0" />
+			<description>
+			</description>
+		</method>
+		<method name="add_radio_check_shortcut">
+			<return type="void" />
+			<argument index="0" name="shortcut" type="ShortCut" />
+			<argument index="1" name="id" type="int" default="-1" />
+			<argument index="2" name="global" type="bool" default="false" />
+			<description>
+			</description>
+		</method>
+		<method name="add_separator">
+			<return type="void" />
+			<argument index="0" name="label" type="String" default="&quot;&quot;" />
+			<argument index="1" name="id" type="int" default="-1" />
+			<description>
+			</description>
+		</method>
+		<method name="add_shortcut">
+			<return type="void" />
+			<argument index="0" name="shortcut" type="ShortCut" />
+			<argument index="1" name="id" type="int" default="-1" />
+			<argument index="2" name="global" type="bool" default="false" />
+			<description>
+			</description>
+		</method>
+		<method name="add_submenu_item">
+			<return type="void" />
+			<argument index="0" name="label" type="String" />
+			<argument index="1" name="submenu" type="String" />
+			<argument index="2" name="id" type="int" default="-1" />
+			<description>
+			</description>
+		</method>
+		<method name="clear">
+			<return type="void" />
+			<description>
+			</description>
+		</method>
+		<method name="get_current_index" qualifiers="const">
+			<return type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="get_item_accelerator" qualifiers="const">
+			<return type="int" />
+			<argument index="0" name="idx" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="get_item_count" qualifiers="const">
+			<return type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="get_item_icon" qualifiers="const">
+			<return type="Texture" />
+			<argument index="0" name="idx" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="get_item_id" qualifiers="const">
+			<return type="int" />
+			<argument index="0" name="idx" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="get_item_index" qualifiers="const">
+			<return type="int" />
+			<argument index="0" name="id" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="get_item_metadata" qualifiers="const">
+			<return type="Variant" />
+			<argument index="0" name="idx" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="get_item_shortcut" qualifiers="const">
+			<return type="ShortCut" />
+			<argument index="0" name="idx" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="get_item_submenu" qualifiers="const">
+			<return type="String" />
+			<argument index="0" name="idx" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="get_item_text" qualifiers="const">
+			<return type="String" />
+			<argument index="0" name="idx" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="get_item_tooltip" qualifiers="const">
+			<return type="String" />
+			<argument index="0" name="idx" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="is_hide_on_window_lose_focus" qualifiers="const">
+			<return type="bool" />
+			<description>
+			</description>
+		</method>
+		<method name="is_item_checkable" qualifiers="const">
+			<return type="bool" />
+			<argument index="0" name="idx" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="is_item_checked" qualifiers="const">
+			<return type="bool" />
+			<argument index="0" name="idx" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="is_item_disabled" qualifiers="const">
+			<return type="bool" />
+			<argument index="0" name="idx" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="is_item_radio_checkable" qualifiers="const">
+			<return type="bool" />
+			<argument index="0" name="idx" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="is_item_separator" qualifiers="const">
+			<return type="bool" />
+			<argument index="0" name="idx" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="is_item_shortcut_disabled" qualifiers="const">
+			<return type="bool" />
+			<argument index="0" name="idx" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="remove_item">
+			<return type="void" />
+			<argument index="0" name="idx" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="set_hide_on_window_lose_focus">
+			<return type="void" />
+			<argument index="0" name="enable" type="bool" />
+			<description>
+			</description>
+		</method>
+		<method name="set_item_accelerator">
+			<return type="void" />
+			<argument index="0" name="idx" type="int" />
+			<argument index="1" name="accel" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="set_item_as_checkable">
+			<return type="void" />
+			<argument index="0" name="idx" type="int" />
+			<argument index="1" name="enable" type="bool" />
+			<description>
+			</description>
+		</method>
+		<method name="set_item_as_radio_checkable">
+			<return type="void" />
+			<argument index="0" name="idx" type="int" />
+			<argument index="1" name="enable" type="bool" />
+			<description>
+			</description>
+		</method>
+		<method name="set_item_as_separator">
+			<return type="void" />
+			<argument index="0" name="idx" type="int" />
+			<argument index="1" name="enable" type="bool" />
+			<description>
+			</description>
+		</method>
+		<method name="set_item_checked">
+			<return type="void" />
+			<argument index="0" name="idx" type="int" />
+			<argument index="1" name="checked" type="bool" />
+			<description>
+			</description>
+		</method>
+		<method name="set_item_disabled">
+			<return type="void" />
+			<argument index="0" name="idx" type="int" />
+			<argument index="1" name="disabled" type="bool" />
+			<description>
+			</description>
+		</method>
+		<method name="set_item_icon">
+			<return type="void" />
+			<argument index="0" name="idx" type="int" />
+			<argument index="1" name="icon" type="Texture" />
+			<description>
+			</description>
+		</method>
+		<method name="set_item_id">
+			<return type="void" />
+			<argument index="0" name="idx" type="int" />
+			<argument index="1" name="id" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="set_item_metadata">
+			<return type="void" />
+			<argument index="0" name="idx" type="int" />
+			<argument index="1" name="metadata" type="Variant" />
+			<description>
+			</description>
+		</method>
+		<method name="set_item_multistate">
+			<return type="void" />
+			<argument index="0" name="idx" type="int" />
+			<argument index="1" name="state" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="set_item_shortcut">
+			<return type="void" />
+			<argument index="0" name="idx" type="int" />
+			<argument index="1" name="shortcut" type="ShortCut" />
+			<argument index="2" name="global" type="bool" default="false" />
+			<description>
+			</description>
+		</method>
+		<method name="set_item_shortcut_disabled">
+			<return type="void" />
+			<argument index="0" name="idx" type="int" />
+			<argument index="1" name="disabled" type="bool" />
+			<description>
+			</description>
+		</method>
+		<method name="set_item_submenu">
+			<return type="void" />
+			<argument index="0" name="idx" type="int" />
+			<argument index="1" name="submenu" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="set_item_text">
+			<return type="void" />
+			<argument index="0" name="idx" type="int" />
+			<argument index="1" name="text" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="set_item_tooltip">
+			<return type="void" />
+			<argument index="0" name="idx" type="int" />
+			<argument index="1" name="tooltip" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="toggle_item_checked">
+			<return type="void" />
+			<argument index="0" name="idx" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="toggle_item_multistate">
+			<return type="void" />
+			<argument index="0" name="idx" type="int" />
+			<description>
+			</description>
+		</method>
+	</methods>
+	<members>
+		<member name="allow_search" type="bool" setter="set_allow_search" getter="get_allow_search" default="false">
+		</member>
+		<member name="focus_mode" type="int" setter="set_focus_mode" getter="get_focus_mode" override="true" enum="Control.FocusMode" default="2" />
+		<member name="hide_on_checkable_item_selection" type="bool" setter="set_hide_on_checkable_item_selection" getter="is_hide_on_checkable_item_selection" default="true">
+		</member>
+		<member name="hide_on_item_selection" type="bool" setter="set_hide_on_item_selection" getter="is_hide_on_item_selection" default="true">
+		</member>
+		<member name="hide_on_state_item_selection" type="bool" setter="set_hide_on_state_item_selection" getter="is_hide_on_state_item_selection" default="false">
+		</member>
+		<member name="submenu_popup_delay" type="float" setter="set_submenu_popup_delay" getter="get_submenu_popup_delay" default="0.3">
+		</member>
+	</members>
+	<signals>
+		<signal name="id_focused">
+			<argument index="0" name="id" type="int" />
+			<description>
+			</description>
+		</signal>
+		<signal name="id_pressed">
+			<argument index="0" name="id" type="int" />
+			<description>
+			</description>
+		</signal>
+		<signal name="index_pressed">
+			<argument index="0" name="index" type="int" />
+			<description>
+			</description>
+		</signal>
+	</signals>
+	<constants>
+	</constants>
+	<theme_items>
+		<theme_item name="checked" type="Texture">
+		</theme_item>
+		<theme_item name="font" type="Font">
+		</theme_item>
+		<theme_item name="font_color" type="Color" default="Color( 0.88, 0.88, 0.88, 1 )">
+		</theme_item>
+		<theme_item name="font_color_accel" type="Color" default="Color( 0.7, 0.7, 0.7, 0.8 )">
+		</theme_item>
+		<theme_item name="font_color_disabled" type="Color" default="Color( 0.4, 0.4, 0.4, 0.8 )">
+		</theme_item>
+		<theme_item name="font_color_hover" type="Color" default="Color( 0.88, 0.88, 0.88, 1 )">
+		</theme_item>
+		<theme_item name="font_color_separator" type="Color" default="Color( 0.88, 0.88, 0.88, 1 )">
+		</theme_item>
+		<theme_item name="hover" type="StyleBox">
+		</theme_item>
+		<theme_item name="hseparation" type="int" default="4">
+		</theme_item>
+		<theme_item name="labeled_separator_left" type="StyleBox">
+		</theme_item>
+		<theme_item name="labeled_separator_right" type="StyleBox">
+		</theme_item>
+		<theme_item name="panel" type="StyleBox">
+		</theme_item>
+		<theme_item name="panel_disabled" type="StyleBox">
+		</theme_item>
+		<theme_item name="radio_checked" type="Texture">
+		</theme_item>
+		<theme_item name="radio_unchecked" type="Texture">
+		</theme_item>
+		<theme_item name="separator" type="StyleBox">
+		</theme_item>
+		<theme_item name="submenu" type="Texture">
+		</theme_item>
+		<theme_item name="unchecked" type="Texture">
+		</theme_item>
+		<theme_item name="vseparation" type="int" default="4">
+		</theme_item>
+	</theme_items>
+</class>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="AnimatedTexture" inherits="Texture" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+		<method name="get_frame_delay" qualifiers="const">
+			<return type="float" />
+			<argument index="0" name="frame" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="get_frame_texture" qualifiers="const">
+			<return type="Texture" />
+			<argument index="0" name="frame" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="set_frame_delay">
+			<return type="void" />
+			<argument index="0" name="frame" type="int" />
+			<argument index="1" name="delay" type="float" />
+			<description>
+			</description>
+		</method>
+		<method name="set_frame_texture">
+			<return type="void" />
+			<argument index="0" name="frame" type="int" />
+			<argument index="1" name="texture" type="Texture" />
+			<description>
+			</description>
+		</method>
+	</methods>
+	<members>
+		<member name="current_frame" type="int" setter="set_current_frame" getter="get_current_frame">
+		</member>
+		<member name="flags" type="int" setter="set_flags" getter="get_flags" override="true" default="0" />
+		<member name="fps" type="float" setter="set_fps" getter="get_fps" default="4.0">
+		</member>
+		<member name="frames" type="int" setter="set_frames" getter="get_frames" default="1">
+		</member>
+		<member name="oneshot" type="bool" setter="set_oneshot" getter="get_oneshot" default="false">
+		</member>
+		<member name="pause" type="bool" setter="set_pause" getter="get_pause" default="false">
+		</member>
+	</members>
+	<constants>
+		<constant name="MAX_FRAMES" value="256">
+		</constant>
+	</constants>
+</class>

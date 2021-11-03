@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="VisibilityEnabler" inherits="VisibilityNotifier" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+		<method name="is_enabler_enabled" qualifiers="const">
+			<return type="bool" />
+			<argument index="0" name="enabler" type="int" enum="VisibilityEnabler.Enabler" />
+			<description>
+			</description>
+		</method>
+		<method name="set_enabler">
+			<return type="void" />
+			<argument index="0" name="enabler" type="int" enum="VisibilityEnabler.Enabler" />
+			<argument index="1" name="enabled" type="bool" />
+			<description>
+			</description>
+		</method>
+	</methods>
+	<members>
+		<member name="freeze_bodies" type="bool" setter="set_enabler" getter="is_enabler_enabled" default="true">
+		</member>
+		<member name="pause_animations" type="bool" setter="set_enabler" getter="is_enabler_enabled" default="true">
+		</member>
+	</members>
+	<constants>
+		<constant name="ENABLER_PAUSE_ANIMATIONS" value="0" enum="Enabler">
+		</constant>
+		<constant name="ENABLER_FREEZE_BODIES" value="1" enum="Enabler">
+		</constant>
+		<constant name="ENABLER_MAX" value="2" enum="Enabler">
+		</constant>
+	</constants>
+</class>

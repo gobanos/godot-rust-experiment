@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="MeshInstance" inherits="GeometryInstance" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+		<method name="create_convex_collision">
+			<return type="void" />
+			<description>
+			</description>
+		</method>
+		<method name="create_debug_tangents">
+			<return type="void" />
+			<description>
+			</description>
+		</method>
+		<method name="create_trimesh_collision">
+			<return type="void" />
+			<description>
+			</description>
+		</method>
+		<method name="get_active_material" qualifiers="const">
+			<return type="Material" />
+			<argument index="0" name="surface" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="get_surface_material" qualifiers="const">
+			<return type="Material" />
+			<argument index="0" name="surface" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="get_surface_material_count" qualifiers="const">
+			<return type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="set_surface_material">
+			<return type="void" />
+			<argument index="0" name="surface" type="int" />
+			<argument index="1" name="material" type="Material" />
+			<description>
+			</description>
+		</method>
+	</methods>
+	<members>
+		<member name="mesh" type="Mesh" setter="set_mesh" getter="get_mesh">
+		</member>
+		<member name="skeleton" type="NodePath" setter="set_skeleton_path" getter="get_skeleton_path" default="NodePath(&quot;..&quot;)">
+		</member>
+		<member name="skin" type="Skin" setter="set_skin" getter="get_skin">
+		</member>
+		<member name="software_skinning_transform_normals" type="bool" setter="set_software_skinning_transform_normals" getter="is_software_skinning_transform_normals_enabled" default="true">
+		</member>
+	</members>
+	<constants>
+	</constants>
+</class>

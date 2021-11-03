@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="Directory" inherits="Reference" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+		<method name="change_dir">
+			<return type="int" enum="Error" />
+			<argument index="0" name="todir" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="copy">
+			<return type="int" enum="Error" />
+			<argument index="0" name="from" type="String" />
+			<argument index="1" name="to" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="current_is_dir" qualifiers="const">
+			<return type="bool" />
+			<description>
+			</description>
+		</method>
+		<method name="dir_exists">
+			<return type="bool" />
+			<argument index="0" name="path" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="file_exists">
+			<return type="bool" />
+			<argument index="0" name="path" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="get_current_dir">
+			<return type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="get_current_drive">
+			<return type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="get_drive">
+			<return type="String" />
+			<argument index="0" name="idx" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="get_drive_count">
+			<return type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="get_next">
+			<return type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="get_space_left">
+			<return type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="list_dir_begin">
+			<return type="int" enum="Error" />
+			<argument index="0" name="skip_navigational" type="bool" default="false" />
+			<argument index="1" name="skip_hidden" type="bool" default="false" />
+			<description>
+			</description>
+		</method>
+		<method name="list_dir_end">
+			<return type="void" />
+			<description>
+			</description>
+		</method>
+		<method name="make_dir">
+			<return type="int" enum="Error" />
+			<argument index="0" name="path" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="make_dir_recursive">
+			<return type="int" enum="Error" />
+			<argument index="0" name="path" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="open">
+			<return type="int" enum="Error" />
+			<argument index="0" name="path" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="remove">
+			<return type="int" enum="Error" />
+			<argument index="0" name="path" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="rename">
+			<return type="int" enum="Error" />
+			<argument index="0" name="from" type="String" />
+			<argument index="1" name="to" type="String" />
+			<description>
+			</description>
+		</method>
+	</methods>
+	<constants>
+	</constants>
+</class>

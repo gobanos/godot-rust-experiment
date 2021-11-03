@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="Light2D" inherits="Node2D" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+	</methods>
+	<members>
+		<member name="color" type="Color" setter="set_color" getter="get_color" default="Color( 1, 1, 1, 1 )">
+		</member>
+		<member name="editor_only" type="bool" setter="set_editor_only" getter="is_editor_only" default="false">
+		</member>
+		<member name="enabled" type="bool" setter="set_enabled" getter="is_enabled" default="true">
+		</member>
+		<member name="energy" type="float" setter="set_energy" getter="get_energy" default="1.0">
+		</member>
+		<member name="mode" type="int" setter="set_mode" getter="get_mode" enum="Light2D.Mode" default="0">
+		</member>
+		<member name="offset" type="Vector2" setter="set_texture_offset" getter="get_texture_offset" default="Vector2( 0, 0 )">
+		</member>
+		<member name="range_height" type="float" setter="set_height" getter="get_height" default="0.0">
+		</member>
+		<member name="range_item_cull_mask" type="int" setter="set_item_cull_mask" getter="get_item_cull_mask" default="1">
+		</member>
+		<member name="range_layer_max" type="int" setter="set_layer_range_max" getter="get_layer_range_max" default="0">
+		</member>
+		<member name="range_layer_min" type="int" setter="set_layer_range_min" getter="get_layer_range_min" default="0">
+		</member>
+		<member name="range_z_max" type="int" setter="set_z_range_max" getter="get_z_range_max" default="1024">
+		</member>
+		<member name="range_z_min" type="int" setter="set_z_range_min" getter="get_z_range_min" default="-1024">
+		</member>
+		<member name="shadow_buffer_size" type="int" setter="set_shadow_buffer_size" getter="get_shadow_buffer_size" default="2048">
+		</member>
+		<member name="shadow_color" type="Color" setter="set_shadow_color" getter="get_shadow_color" default="Color( 0, 0, 0, 0 )">
+		</member>
+		<member name="shadow_enabled" type="bool" setter="set_shadow_enabled" getter="is_shadow_enabled" default="false">
+		</member>
+		<member name="shadow_filter" type="int" setter="set_shadow_filter" getter="get_shadow_filter" enum="Light2D.ShadowFilter" default="0">
+		</member>
+		<member name="shadow_filter_smooth" type="float" setter="set_shadow_smooth" getter="get_shadow_smooth" default="0.0">
+		</member>
+		<member name="shadow_gradient_length" type="float" setter="set_shadow_gradient_length" getter="get_shadow_gradient_length" default="0.0">
+		</member>
+		<member name="shadow_item_cull_mask" type="int" setter="set_item_shadow_cull_mask" getter="get_item_shadow_cull_mask" default="1">
+		</member>
+		<member name="texture" type="Texture" setter="set_texture" getter="get_texture">
+		</member>
+		<member name="texture_scale" type="float" setter="set_texture_scale" getter="get_texture_scale" default="1.0">
+		</member>
+	</members>
+	<constants>
+		<constant name="MODE_ADD" value="0" enum="Mode">
+		</constant>
+		<constant name="MODE_SUB" value="1" enum="Mode">
+		</constant>
+		<constant name="MODE_MIX" value="2" enum="Mode">
+		</constant>
+		<constant name="MODE_MASK" value="3" enum="Mode">
+		</constant>
+		<constant name="SHADOW_FILTER_NONE" value="0" enum="ShadowFilter">
+		</constant>
+		<constant name="SHADOW_FILTER_PCF3" value="1" enum="ShadowFilter">
+		</constant>
+		<constant name="SHADOW_FILTER_PCF5" value="2" enum="ShadowFilter">
+		</constant>
+		<constant name="SHADOW_FILTER_PCF7" value="3" enum="ShadowFilter">
+		</constant>
+		<constant name="SHADOW_FILTER_PCF9" value="4" enum="ShadowFilter">
+		</constant>
+		<constant name="SHADOW_FILTER_PCF13" value="5" enum="ShadowFilter">
+		</constant>
+	</constants>
+</class>

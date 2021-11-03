@@ -1,0 +1,813 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="ProjectSettings" inherits="Object" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+		<method name="add_property_info">
+			<return type="void" />
+			<argument index="0" name="hint" type="Dictionary" />
+			<description>
+			</description>
+		</method>
+		<method name="clear">
+			<return type="void" />
+			<argument index="0" name="name" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="get_order" qualifiers="const">
+			<return type="int" />
+			<argument index="0" name="name" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="get_setting" qualifiers="const">
+			<return type="Variant" />
+			<argument index="0" name="name" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="globalize_path" qualifiers="const">
+			<return type="String" />
+			<argument index="0" name="path" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="has_setting" qualifiers="const">
+			<return type="bool" />
+			<argument index="0" name="name" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="load_resource_pack">
+			<return type="bool" />
+			<argument index="0" name="pack" type="String" />
+			<argument index="1" name="replace_files" type="bool" default="true" />
+			<argument index="2" name="offset" type="int" default="0" />
+			<description>
+			</description>
+		</method>
+		<method name="localize_path" qualifiers="const">
+			<return type="String" />
+			<argument index="0" name="path" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="property_can_revert">
+			<return type="bool" />
+			<argument index="0" name="name" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="property_get_revert">
+			<return type="Variant" />
+			<argument index="0" name="name" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="save">
+			<return type="int" enum="Error" />
+			<description>
+			</description>
+		</method>
+		<method name="save_custom">
+			<return type="int" enum="Error" />
+			<argument index="0" name="file" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="set_initial_value">
+			<return type="void" />
+			<argument index="0" name="name" type="String" />
+			<argument index="1" name="value" type="Variant" />
+			<description>
+			</description>
+		</method>
+		<method name="set_order">
+			<return type="void" />
+			<argument index="0" name="name" type="String" />
+			<argument index="1" name="position" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="set_setting">
+			<return type="void" />
+			<argument index="0" name="name" type="String" />
+			<argument index="1" name="value" type="Variant" />
+			<description>
+			</description>
+		</method>
+	</methods>
+	<members>
+		<member name="android/modules" type="String" setter="" getter="" default="&quot;&quot;">
+		</member>
+		<member name="application/boot_splash/bg_color" type="Color" setter="" getter="" default="Color( 0.14, 0.14, 0.14, 1 )">
+		</member>
+		<member name="application/boot_splash/fullsize" type="bool" setter="" getter="" default="true">
+		</member>
+		<member name="application/boot_splash/image" type="String" setter="" getter="" default="&quot;&quot;">
+		</member>
+		<member name="application/boot_splash/use_filter" type="bool" setter="" getter="" default="true">
+		</member>
+		<member name="application/config/custom_user_dir_name" type="String" setter="" getter="" default="&quot;&quot;">
+		</member>
+		<member name="application/config/description" type="String" setter="" getter="" default="&quot;&quot;">
+		</member>
+		<member name="application/config/icon" type="String" setter="" getter="" default="&quot;&quot;">
+		</member>
+		<member name="application/config/macos_native_icon" type="String" setter="" getter="" default="&quot;&quot;">
+		</member>
+		<member name="application/config/name" type="String" setter="" getter="" default="&quot;&quot;">
+		</member>
+		<member name="application/config/project_settings_override" type="String" setter="" getter="" default="&quot;&quot;">
+		</member>
+		<member name="application/config/use_custom_user_dir" type="bool" setter="" getter="" default="false">
+		</member>
+		<member name="application/config/windows_native_icon" type="String" setter="" getter="" default="&quot;&quot;">
+		</member>
+		<member name="application/run/disable_stderr" type="bool" setter="" getter="" default="false">
+		</member>
+		<member name="application/run/disable_stdout" type="bool" setter="" getter="" default="false">
+		</member>
+		<member name="application/run/flush_stdout_on_print" type="bool" setter="" getter="" default="false">
+		</member>
+		<member name="application/run/flush_stdout_on_print.debug" type="bool" setter="" getter="" default="true">
+		</member>
+		<member name="application/run/frame_delay_msec" type="int" setter="" getter="" default="0">
+		</member>
+		<member name="application/run/low_processor_mode" type="bool" setter="" getter="" default="false">
+		</member>
+		<member name="application/run/low_processor_mode_sleep_usec" type="int" setter="" getter="" default="6900">
+		</member>
+		<member name="application/run/main_scene" type="String" setter="" getter="" default="&quot;&quot;">
+		</member>
+		<member name="audio/channel_disable_threshold_db" type="float" setter="" getter="" default="-60.0">
+		</member>
+		<member name="audio/channel_disable_time" type="float" setter="" getter="" default="2.0">
+		</member>
+		<member name="audio/default_bus_layout" type="String" setter="" getter="" default="&quot;res://default_bus_layout.tres&quot;">
+		</member>
+		<member name="audio/driver" type="String" setter="" getter="" default="&quot;PulseAudio&quot;">
+		</member>
+		<member name="audio/enable_audio_input" type="bool" setter="" getter="" default="false">
+		</member>
+		<member name="audio/mix_rate" type="int" setter="" getter="" default="44100">
+		</member>
+		<member name="audio/mix_rate.web" type="int" setter="" getter="" default="0">
+		</member>
+		<member name="audio/output_latency" type="int" setter="" getter="" default="15">
+		</member>
+		<member name="audio/output_latency.web" type="int" setter="" getter="" default="50">
+		</member>
+		<member name="audio/video_delay_compensation_ms" type="int" setter="" getter="" default="0">
+		</member>
+		<member name="compression/formats/gzip/compression_level" type="int" setter="" getter="" default="-1">
+		</member>
+		<member name="compression/formats/zlib/compression_level" type="int" setter="" getter="" default="-1">
+		</member>
+		<member name="compression/formats/zstd/compression_level" type="int" setter="" getter="" default="3">
+		</member>
+		<member name="compression/formats/zstd/long_distance_matching" type="bool" setter="" getter="" default="false">
+		</member>
+		<member name="compression/formats/zstd/window_log_size" type="int" setter="" getter="" default="27">
+		</member>
+		<member name="debug/gdscript/completion/autocomplete_setters_and_getters" type="bool" setter="" getter="" default="false">
+		</member>
+		<member name="debug/gdscript/warnings/constant_used_as_function" type="bool" setter="" getter="" default="true">
+		</member>
+		<member name="debug/gdscript/warnings/deprecated_keyword" type="bool" setter="" getter="" default="true">
+		</member>
+		<member name="debug/gdscript/warnings/enable" type="bool" setter="" getter="" default="true">
+		</member>
+		<member name="debug/gdscript/warnings/exclude_addons" type="bool" setter="" getter="" default="true">
+		</member>
+		<member name="debug/gdscript/warnings/function_conflicts_constant" type="bool" setter="" getter="" default="true">
+		</member>
+		<member name="debug/gdscript/warnings/function_conflicts_variable" type="bool" setter="" getter="" default="true">
+		</member>
+		<member name="debug/gdscript/warnings/function_may_yield" type="bool" setter="" getter="" default="true">
+		</member>
+		<member name="debug/gdscript/warnings/function_used_as_property" type="bool" setter="" getter="" default="true">
+		</member>
+		<member name="debug/gdscript/warnings/incompatible_ternary" type="bool" setter="" getter="" default="true">
+		</member>
+		<member name="debug/gdscript/warnings/integer_division" type="bool" setter="" getter="" default="true">
+		</member>
+		<member name="debug/gdscript/warnings/narrowing_conversion" type="bool" setter="" getter="" default="true">
+		</member>
+		<member name="debug/gdscript/warnings/property_used_as_function" type="bool" setter="" getter="" default="true">
+		</member>
+		<member name="debug/gdscript/warnings/return_value_discarded" type="bool" setter="" getter="" default="true">
+		</member>
+		<member name="debug/gdscript/warnings/shadowed_variable" type="bool" setter="" getter="" default="true">
+		</member>
+		<member name="debug/gdscript/warnings/standalone_expression" type="bool" setter="" getter="" default="true">
+		</member>
+		<member name="debug/gdscript/warnings/standalone_ternary" type="bool" setter="" getter="" default="true">
+		</member>
+		<member name="debug/gdscript/warnings/treat_warnings_as_errors" type="bool" setter="" getter="" default="false">
+		</member>
+		<member name="debug/gdscript/warnings/unassigned_variable" type="bool" setter="" getter="" default="true">
+		</member>
+		<member name="debug/gdscript/warnings/unassigned_variable_op_assign" type="bool" setter="" getter="" default="true">
+		</member>
+		<member name="debug/gdscript/warnings/unreachable_code" type="bool" setter="" getter="" default="true">
+		</member>
+		<member name="debug/gdscript/warnings/unsafe_call_argument" type="bool" setter="" getter="" default="false">
+		</member>
+		<member name="debug/gdscript/warnings/unsafe_cast" type="bool" setter="" getter="" default="false">
+		</member>
+		<member name="debug/gdscript/warnings/unsafe_method_access" type="bool" setter="" getter="" default="false">
+		</member>
+		<member name="debug/gdscript/warnings/unsafe_property_access" type="bool" setter="" getter="" default="false">
+		</member>
+		<member name="debug/gdscript/warnings/unused_argument" type="bool" setter="" getter="" default="true">
+		</member>
+		<member name="debug/gdscript/warnings/unused_class_variable" type="bool" setter="" getter="" default="false">
+		</member>
+		<member name="debug/gdscript/warnings/unused_signal" type="bool" setter="" getter="" default="true">
+		</member>
+		<member name="debug/gdscript/warnings/unused_variable" type="bool" setter="" getter="" default="true">
+		</member>
+		<member name="debug/gdscript/warnings/variable_conflicts_function" type="bool" setter="" getter="" default="true">
+		</member>
+		<member name="debug/gdscript/warnings/void_assignment" type="bool" setter="" getter="" default="true">
+		</member>
+		<member name="debug/settings/crash_handler/message" type="String" setter="" getter="" default="&quot;Please include this when reporting the bug on https://github.com/godotengine/godot/issues&quot;">
+		</member>
+		<member name="debug/settings/fps/force_fps" type="int" setter="" getter="" default="0">
+		</member>
+		<member name="debug/settings/gdscript/max_call_stack" type="int" setter="" getter="" default="1024">
+		</member>
+		<member name="debug/settings/profiler/max_functions" type="int" setter="" getter="" default="16384">
+		</member>
+		<member name="debug/settings/stdout/print_fps" type="bool" setter="" getter="" default="false">
+		</member>
+		<member name="debug/settings/stdout/verbose_stdout" type="bool" setter="" getter="" default="false">
+		</member>
+		<member name="debug/settings/visual_script/max_call_stack" type="int" setter="" getter="" default="1024">
+		</member>
+		<member name="debug/shapes/collision/contact_color" type="Color" setter="" getter="" default="Color( 1, 0.2, 0.1, 0.8 )">
+		</member>
+		<member name="debug/shapes/collision/draw_2d_outlines" type="bool" setter="" getter="" default="true">
+		</member>
+		<member name="debug/shapes/collision/max_contacts_displayed" type="int" setter="" getter="" default="10000">
+		</member>
+		<member name="debug/shapes/collision/shape_color" type="Color" setter="" getter="" default="Color( 0, 0.6, 0.7, 0.42 )">
+		</member>
+		<member name="debug/shapes/navigation/disabled_geometry_color" type="Color" setter="" getter="" default="Color( 1, 0.7, 0.1, 0.4 )">
+		</member>
+		<member name="debug/shapes/navigation/geometry_color" type="Color" setter="" getter="" default="Color( 0.1, 1, 0.7, 0.4 )">
+		</member>
+		<member name="display/mouse_cursor/custom_image" type="String" setter="" getter="" default="&quot;&quot;">
+		</member>
+		<member name="display/mouse_cursor/custom_image_hotspot" type="Vector2" setter="" getter="" default="Vector2( 0, 0 )">
+		</member>
+		<member name="display/mouse_cursor/tooltip_position_offset" type="Vector2" setter="" getter="" default="Vector2( 10, 10 )">
+		</member>
+		<member name="display/window/dpi/allow_hidpi" type="bool" setter="" getter="" default="false">
+		</member>
+		<member name="display/window/energy_saving/keep_screen_on" type="bool" setter="" getter="" default="true">
+		</member>
+		<member name="display/window/handheld/orientation" type="String" setter="" getter="" default="&quot;landscape&quot;">
+		</member>
+		<member name="display/window/ios/hide_home_indicator" type="bool" setter="" getter="" default="true">
+		</member>
+		<member name="display/window/per_pixel_transparency/allowed" type="bool" setter="" getter="" default="false">
+		</member>
+		<member name="display/window/per_pixel_transparency/enabled" type="bool" setter="" getter="" default="false">
+		</member>
+		<member name="display/window/size/always_on_top" type="bool" setter="" getter="" default="false">
+		</member>
+		<member name="display/window/size/borderless" type="bool" setter="" getter="" default="false">
+		</member>
+		<member name="display/window/size/fullscreen" type="bool" setter="" getter="" default="false">
+		</member>
+		<member name="display/window/size/height" type="int" setter="" getter="" default="600">
+		</member>
+		<member name="display/window/size/resizable" type="bool" setter="" getter="" default="true">
+		</member>
+		<member name="display/window/size/test_height" type="int" setter="" getter="" default="0">
+		</member>
+		<member name="display/window/size/test_width" type="int" setter="" getter="" default="0">
+		</member>
+		<member name="display/window/size/width" type="int" setter="" getter="" default="1024">
+		</member>
+		<member name="display/window/tablet_driver" type="String" setter="" getter="" default="&quot;&quot;">
+		</member>
+		<member name="display/window/vsync/use_vsync" type="bool" setter="" getter="" default="true">
+		</member>
+		<member name="display/window/vsync/vsync_via_compositor" type="bool" setter="" getter="" default="false">
+		</member>
+		<member name="editor/script_templates_search_path" type="String" setter="" getter="" default="&quot;res://script_templates&quot;">
+		</member>
+		<member name="editor/search_in_file_extensions" type="PoolStringArray" setter="" getter="" default="PoolStringArray( &quot;gd&quot;, &quot;gdshader&quot;, &quot;shader&quot; )">
+		</member>
+		<member name="gui/common/default_scroll_deadzone" type="int" setter="" getter="" default="0">
+		</member>
+		<member name="gui/common/swap_ok_cancel" type="bool" setter="" getter="" default="false">
+		</member>
+		<member name="gui/common/text_edit_undo_stack_max_size" type="int" setter="" getter="" default="1024">
+		</member>
+		<member name="gui/theme/custom" type="String" setter="" getter="" default="&quot;&quot;">
+		</member>
+		<member name="gui/theme/custom_font" type="String" setter="" getter="" default="&quot;&quot;">
+		</member>
+		<member name="gui/theme/use_hidpi" type="bool" setter="" getter="" default="false">
+		</member>
+		<member name="gui/timers/incremental_search_max_interval_msec" type="int" setter="" getter="" default="2000">
+		</member>
+		<member name="gui/timers/text_edit_idle_detect_sec" type="float" setter="" getter="" default="3">
+		</member>
+		<member name="gui/timers/tooltip_delay_sec" type="float" setter="" getter="" default="0.5">
+		</member>
+		<member name="input/ui_accept" type="Dictionary" setter="" getter="">
+		</member>
+		<member name="input/ui_cancel" type="Dictionary" setter="" getter="">
+		</member>
+		<member name="input/ui_down" type="Dictionary" setter="" getter="">
+		</member>
+		<member name="input/ui_end" type="Dictionary" setter="" getter="">
+		</member>
+		<member name="input/ui_focus_next" type="Dictionary" setter="" getter="">
+		</member>
+		<member name="input/ui_focus_prev" type="Dictionary" setter="" getter="">
+		</member>
+		<member name="input/ui_home" type="Dictionary" setter="" getter="">
+		</member>
+		<member name="input/ui_left" type="Dictionary" setter="" getter="">
+		</member>
+		<member name="input/ui_page_down" type="Dictionary" setter="" getter="">
+		</member>
+		<member name="input/ui_page_up" type="Dictionary" setter="" getter="">
+		</member>
+		<member name="input/ui_right" type="Dictionary" setter="" getter="">
+		</member>
+		<member name="input/ui_select" type="Dictionary" setter="" getter="">
+		</member>
+		<member name="input/ui_up" type="Dictionary" setter="" getter="">
+		</member>
+		<member name="input_devices/pointing/emulate_mouse_from_touch" type="bool" setter="" getter="" default="true">
+		</member>
+		<member name="input_devices/pointing/emulate_touch_from_mouse" type="bool" setter="" getter="" default="false">
+		</member>
+		<member name="input_devices/pointing/ios/touch_delay" type="float" setter="" getter="" default="0.15">
+		</member>
+		<member name="layer_names/2d_physics/layer_1" type="String" setter="" getter="" default="&quot;&quot;">
+		</member>
+		<member name="layer_names/2d_physics/layer_10" type="String" setter="" getter="" default="&quot;&quot;">
+		</member>
+		<member name="layer_names/2d_physics/layer_11" type="String" setter="" getter="" default="&quot;&quot;">
+		</member>
+		<member name="layer_names/2d_physics/layer_12" type="String" setter="" getter="" default="&quot;&quot;">
+		</member>
+		<member name="layer_names/2d_physics/layer_13" type="String" setter="" getter="" default="&quot;&quot;">
+		</member>
+		<member name="layer_names/2d_physics/layer_14" type="String" setter="" getter="" default="&quot;&quot;">
+		</member>
+		<member name="layer_names/2d_physics/layer_15" type="String" setter="" getter="" default="&quot;&quot;">
+		</member>
+		<member name="layer_names/2d_physics/layer_16" type="String" setter="" getter="" default="&quot;&quot;">
+		</member>
+		<member name="layer_names/2d_physics/layer_17" type="String" setter="" getter="" default="&quot;&quot;">
+		</member>
+		<member name="layer_names/2d_physics/layer_18" type="String" setter="" getter="" default="&quot;&quot;">
+		</member>
+		<member name="layer_names/2d_physics/layer_19" type="String" setter="" getter="" default="&quot;&quot;">
+		</member>
+		<member name="layer_names/2d_physics/layer_2" type="String" setter="" getter="" default="&quot;&quot;">
+		</member>
+		<member name="layer_names/2d_physics/layer_20" type="String" setter="" getter="" default="&quot;&quot;">
+		</member>
+		<member name="layer_names/2d_physics/layer_3" type="String" setter="" getter="" default="&quot;&quot;">
+		</member>
+		<member name="layer_names/2d_physics/layer_4" type="String" setter="" getter="" default="&quot;&quot;">
+		</member>
+		<member name="layer_names/2d_physics/layer_5" type="String" setter="" getter="" default="&quot;&quot;">
+		</member>
+		<member name="layer_names/2d_physics/layer_6" type="String" setter="" getter="" default="&quot;&quot;">
+		</member>
+		<member name="layer_names/2d_physics/layer_7" type="String" setter="" getter="" default="&quot;&quot;">
+		</member>
+		<member name="layer_names/2d_physics/layer_8" type="String" setter="" getter="" default="&quot;&quot;">
+		</member>
+		<member name="layer_names/2d_physics/layer_9" type="String" setter="" getter="" default="&quot;&quot;">
+		</member>
+		<member name="layer_names/2d_render/layer_1" type="String" setter="" getter="" default="&quot;&quot;">
+		</member>
+		<member name="layer_names/2d_render/layer_10" type="String" setter="" getter="" default="&quot;&quot;">
+		</member>
+		<member name="layer_names/2d_render/layer_11" type="String" setter="" getter="" default="&quot;&quot;">
+		</member>
+		<member name="layer_names/2d_render/layer_12" type="String" setter="" getter="" default="&quot;&quot;">
+		</member>
+		<member name="layer_names/2d_render/layer_13" type="String" setter="" getter="" default="&quot;&quot;">
+		</member>
+		<member name="layer_names/2d_render/layer_14" type="String" setter="" getter="" default="&quot;&quot;">
+		</member>
+		<member name="layer_names/2d_render/layer_15" type="String" setter="" getter="" default="&quot;&quot;">
+		</member>
+		<member name="layer_names/2d_render/layer_16" type="String" setter="" getter="" default="&quot;&quot;">
+		</member>
+		<member name="layer_names/2d_render/layer_17" type="String" setter="" getter="" default="&quot;&quot;">
+		</member>
+		<member name="layer_names/2d_render/layer_18" type="String" setter="" getter="" default="&quot;&quot;">
+		</member>
+		<member name="layer_names/2d_render/layer_19" type="String" setter="" getter="" default="&quot;&quot;">
+		</member>
+		<member name="layer_names/2d_render/layer_2" type="String" setter="" getter="" default="&quot;&quot;">
+		</member>
+		<member name="layer_names/2d_render/layer_20" type="String" setter="" getter="" default="&quot;&quot;">
+		</member>
+		<member name="layer_names/2d_render/layer_3" type="String" setter="" getter="" default="&quot;&quot;">
+		</member>
+		<member name="layer_names/2d_render/layer_4" type="String" setter="" getter="" default="&quot;&quot;">
+		</member>
+		<member name="layer_names/2d_render/layer_5" type="String" setter="" getter="" default="&quot;&quot;">
+		</member>
+		<member name="layer_names/2d_render/layer_6" type="String" setter="" getter="" default="&quot;&quot;">
+		</member>
+		<member name="layer_names/2d_render/layer_7" type="String" setter="" getter="" default="&quot;&quot;">
+		</member>
+		<member name="layer_names/2d_render/layer_8" type="String" setter="" getter="" default="&quot;&quot;">
+		</member>
+		<member name="layer_names/2d_render/layer_9" type="String" setter="" getter="" default="&quot;&quot;">
+		</member>
+		<member name="layer_names/3d_physics/layer_1" type="String" setter="" getter="" default="&quot;&quot;">
+		</member>
+		<member name="layer_names/3d_physics/layer_10" type="String" setter="" getter="" default="&quot;&quot;">
+		</member>
+		<member name="layer_names/3d_physics/layer_11" type="String" setter="" getter="" default="&quot;&quot;">
+		</member>
+		<member name="layer_names/3d_physics/layer_12" type="String" setter="" getter="" default="&quot;&quot;">
+		</member>
+		<member name="layer_names/3d_physics/layer_13" type="String" setter="" getter="" default="&quot;&quot;">
+		</member>
+		<member name="layer_names/3d_physics/layer_14" type="String" setter="" getter="" default="&quot;&quot;">
+		</member>
+		<member name="layer_names/3d_physics/layer_15" type="String" setter="" getter="" default="&quot;&quot;">
+		</member>
+		<member name="layer_names/3d_physics/layer_16" type="String" setter="" getter="" default="&quot;&quot;">
+		</member>
+		<member name="layer_names/3d_physics/layer_17" type="String" setter="" getter="" default="&quot;&quot;">
+		</member>
+		<member name="layer_names/3d_physics/layer_18" type="String" setter="" getter="" default="&quot;&quot;">
+		</member>
+		<member name="layer_names/3d_physics/layer_19" type="String" setter="" getter="" default="&quot;&quot;">
+		</member>
+		<member name="layer_names/3d_physics/layer_2" type="String" setter="" getter="" default="&quot;&quot;">
+		</member>
+		<member name="layer_names/3d_physics/layer_20" type="String" setter="" getter="" default="&quot;&quot;">
+		</member>
+		<member name="layer_names/3d_physics/layer_3" type="String" setter="" getter="" default="&quot;&quot;">
+		</member>
+		<member name="layer_names/3d_physics/layer_4" type="String" setter="" getter="" default="&quot;&quot;">
+		</member>
+		<member name="layer_names/3d_physics/layer_5" type="String" setter="" getter="" default="&quot;&quot;">
+		</member>
+		<member name="layer_names/3d_physics/layer_6" type="String" setter="" getter="" default="&quot;&quot;">
+		</member>
+		<member name="layer_names/3d_physics/layer_7" type="String" setter="" getter="" default="&quot;&quot;">
+		</member>
+		<member name="layer_names/3d_physics/layer_8" type="String" setter="" getter="" default="&quot;&quot;">
+		</member>
+		<member name="layer_names/3d_physics/layer_9" type="String" setter="" getter="" default="&quot;&quot;">
+		</member>
+		<member name="layer_names/3d_render/layer_1" type="String" setter="" getter="" default="&quot;&quot;">
+		</member>
+		<member name="layer_names/3d_render/layer_10" type="String" setter="" getter="" default="&quot;&quot;">
+		</member>
+		<member name="layer_names/3d_render/layer_11" type="String" setter="" getter="" default="&quot;&quot;">
+		</member>
+		<member name="layer_names/3d_render/layer_12" type="String" setter="" getter="" default="&quot;&quot;">
+		</member>
+		<member name="layer_names/3d_render/layer_13" type="String" setter="" getter="" default="&quot;&quot;">
+		</member>
+		<member name="layer_names/3d_render/layer_14" type="String" setter="" getter="" default="&quot;&quot;">
+		</member>
+		<member name="layer_names/3d_render/layer_15" type="String" setter="" getter="" default="&quot;&quot;">
+		</member>
+		<member name="layer_names/3d_render/layer_16" type="String" setter="" getter="" default="&quot;&quot;">
+		</member>
+		<member name="layer_names/3d_render/layer_17" type="String" setter="" getter="" default="&quot;&quot;">
+		</member>
+		<member name="layer_names/3d_render/layer_18" type="String" setter="" getter="" default="&quot;&quot;">
+		</member>
+		<member name="layer_names/3d_render/layer_19" type="String" setter="" getter="" default="&quot;&quot;">
+		</member>
+		<member name="layer_names/3d_render/layer_2" type="String" setter="" getter="" default="&quot;&quot;">
+		</member>
+		<member name="layer_names/3d_render/layer_20" type="String" setter="" getter="" default="&quot;&quot;">
+		</member>
+		<member name="layer_names/3d_render/layer_3" type="String" setter="" getter="" default="&quot;&quot;">
+		</member>
+		<member name="layer_names/3d_render/layer_4" type="String" setter="" getter="" default="&quot;&quot;">
+		</member>
+		<member name="layer_names/3d_render/layer_5" type="String" setter="" getter="" default="&quot;&quot;">
+		</member>
+		<member name="layer_names/3d_render/layer_6" type="String" setter="" getter="" default="&quot;&quot;">
+		</member>
+		<member name="layer_names/3d_render/layer_7" type="String" setter="" getter="" default="&quot;&quot;">
+		</member>
+		<member name="layer_names/3d_render/layer_8" type="String" setter="" getter="" default="&quot;&quot;">
+		</member>
+		<member name="layer_names/3d_render/layer_9" type="String" setter="" getter="" default="&quot;&quot;">
+		</member>
+		<member name="locale/fallback" type="String" setter="" getter="" default="&quot;en&quot;">
+		</member>
+		<member name="locale/test" type="String" setter="" getter="" default="&quot;&quot;">
+		</member>
+		<member name="logging/file_logging/enable_file_logging" type="bool" setter="" getter="" default="false">
+		</member>
+		<member name="logging/file_logging/enable_file_logging.pc" type="bool" setter="" getter="" default="true">
+		</member>
+		<member name="logging/file_logging/log_path" type="String" setter="" getter="" default="&quot;user://logs/godot.log&quot;">
+		</member>
+		<member name="logging/file_logging/max_log_files" type="int" setter="" getter="" default="5">
+		</member>
+		<member name="memory/limits/command_queue/multithreading_queue_size_kb" type="int" setter="" getter="" default="256">
+		</member>
+		<member name="memory/limits/message_queue/max_size_kb" type="int" setter="" getter="" default="4096">
+		</member>
+		<member name="memory/limits/multithreaded_server/rid_pool_prealloc" type="int" setter="" getter="" default="60">
+		</member>
+		<member name="network/limits/debugger_stdout/max_chars_per_second" type="int" setter="" getter="" default="2048">
+		</member>
+		<member name="network/limits/debugger_stdout/max_errors_per_second" type="int" setter="" getter="" default="100">
+		</member>
+		<member name="network/limits/debugger_stdout/max_messages_per_frame" type="int" setter="" getter="" default="10">
+		</member>
+		<member name="network/limits/debugger_stdout/max_warnings_per_second" type="int" setter="" getter="" default="100">
+		</member>
+		<member name="network/limits/packet_peer_stream/max_buffer_po2" type="int" setter="" getter="" default="16">
+		</member>
+		<member name="network/limits/tcp/connect_timeout_seconds" type="int" setter="" getter="" default="30">
+		</member>
+		<member name="network/limits/webrtc/max_channel_in_buffer_kb" type="int" setter="" getter="" default="64">
+		</member>
+		<member name="network/limits/websocket_client/max_in_buffer_kb" type="int" setter="" getter="" default="64">
+		</member>
+		<member name="network/limits/websocket_client/max_in_packets" type="int" setter="" getter="" default="1024">
+		</member>
+		<member name="network/limits/websocket_client/max_out_buffer_kb" type="int" setter="" getter="" default="64">
+		</member>
+		<member name="network/limits/websocket_client/max_out_packets" type="int" setter="" getter="" default="1024">
+		</member>
+		<member name="network/limits/websocket_server/max_in_buffer_kb" type="int" setter="" getter="" default="64">
+		</member>
+		<member name="network/limits/websocket_server/max_in_packets" type="int" setter="" getter="" default="1024">
+		</member>
+		<member name="network/limits/websocket_server/max_out_buffer_kb" type="int" setter="" getter="" default="64">
+		</member>
+		<member name="network/limits/websocket_server/max_out_packets" type="int" setter="" getter="" default="1024">
+		</member>
+		<member name="network/remote_fs/page_read_ahead" type="int" setter="" getter="" default="4">
+		</member>
+		<member name="network/remote_fs/page_size" type="int" setter="" getter="" default="65536">
+		</member>
+		<member name="network/ssl/certificates" type="String" setter="" getter="" default="&quot;&quot;">
+		</member>
+		<member name="node/name_casing" type="int" setter="" getter="" default="0">
+		</member>
+		<member name="node/name_num_separator" type="int" setter="" getter="" default="0">
+		</member>
+		<member name="physics/2d/bp_hash_table_size" type="int" setter="" getter="" default="4096">
+		</member>
+		<member name="physics/2d/cell_size" type="int" setter="" getter="" default="128">
+		</member>
+		<member name="physics/2d/default_angular_damp" type="float" setter="" getter="" default="1.0">
+		</member>
+		<member name="physics/2d/default_gravity" type="int" setter="" getter="" default="98">
+		</member>
+		<member name="physics/2d/default_gravity_vector" type="Vector2" setter="" getter="" default="Vector2( 0, 1 )">
+		</member>
+		<member name="physics/2d/default_linear_damp" type="float" setter="" getter="" default="0.1">
+		</member>
+		<member name="physics/2d/large_object_surface_threshold_in_cells" type="int" setter="" getter="" default="512">
+		</member>
+		<member name="physics/2d/physics_engine" type="String" setter="" getter="" default="&quot;DEFAULT&quot;">
+		</member>
+		<member name="physics/2d/sleep_threshold_angular" type="float" setter="" getter="" default="0.139626">
+		</member>
+		<member name="physics/2d/sleep_threshold_linear" type="float" setter="" getter="" default="2.0">
+		</member>
+		<member name="physics/2d/thread_model" type="int" setter="" getter="" default="1">
+		</member>
+		<member name="physics/2d/time_before_sleep" type="float" setter="" getter="" default="0.5">
+		</member>
+		<member name="physics/3d/active_soft_world" type="bool" setter="" getter="" default="true">
+		</member>
+		<member name="physics/3d/default_angular_damp" type="float" setter="" getter="" default="0.1">
+		</member>
+		<member name="physics/3d/default_gravity" type="float" setter="" getter="" default="9.8">
+		</member>
+		<member name="physics/3d/default_gravity_vector" type="Vector3" setter="" getter="" default="Vector3( 0, -1, 0 )">
+		</member>
+		<member name="physics/3d/default_linear_damp" type="float" setter="" getter="" default="0.1">
+		</member>
+		<member name="physics/3d/godot_physics/use_bvh" type="bool" setter="" getter="" default="true">
+		</member>
+		<member name="physics/3d/physics_engine" type="String" setter="" getter="" default="&quot;DEFAULT&quot;">
+		</member>
+		<member name="physics/common/enable_object_picking" type="bool" setter="" getter="" default="true">
+		</member>
+		<member name="physics/common/enable_pause_aware_picking" type="bool" setter="" getter="" default="false">
+		</member>
+		<member name="physics/common/physics_fps" type="int" setter="" getter="" default="60">
+		</member>
+		<member name="physics/common/physics_jitter_fix" type="float" setter="" getter="" default="0.5">
+		</member>
+		<member name="rendering/2d/opengl/batching_send_null" type="int" setter="" getter="" default="0">
+		</member>
+		<member name="rendering/2d/opengl/batching_stream" type="int" setter="" getter="" default="0">
+		</member>
+		<member name="rendering/2d/opengl/legacy_orphan_buffers" type="int" setter="" getter="" default="0">
+		</member>
+		<member name="rendering/2d/opengl/legacy_stream" type="int" setter="" getter="" default="0">
+		</member>
+		<member name="rendering/2d/options/ninepatch_mode" type="int" setter="" getter="" default="1">
+		</member>
+		<member name="rendering/2d/options/use_nvidia_rect_flicker_workaround" type="bool" setter="" getter="" default="false">
+		</member>
+		<member name="rendering/2d/options/use_software_skinning" type="bool" setter="" getter="" default="true">
+		</member>
+		<member name="rendering/2d/snapping/use_gpu_pixel_snap" type="bool" setter="" getter="" default="false">
+		</member>
+		<member name="rendering/batching/debug/diagnose_frame" type="bool" setter="" getter="" default="false">
+		</member>
+		<member name="rendering/batching/debug/flash_batching" type="bool" setter="" getter="" default="false">
+		</member>
+		<member name="rendering/batching/lights/max_join_items" type="int" setter="" getter="" default="32">
+		</member>
+		<member name="rendering/batching/lights/scissor_area_threshold" type="float" setter="" getter="" default="1.0">
+		</member>
+		<member name="rendering/batching/options/single_rect_fallback" type="bool" setter="" getter="" default="false">
+		</member>
+		<member name="rendering/batching/options/use_batching" type="bool" setter="" getter="" default="true">
+		</member>
+		<member name="rendering/batching/options/use_batching_in_editor" type="bool" setter="" getter="" default="true">
+		</member>
+		<member name="rendering/batching/parameters/batch_buffer_size" type="int" setter="" getter="" default="16384">
+		</member>
+		<member name="rendering/batching/parameters/colored_vertex_format_threshold" type="float" setter="" getter="" default="0.25">
+		</member>
+		<member name="rendering/batching/parameters/item_reordering_lookahead" type="int" setter="" getter="" default="4">
+		</member>
+		<member name="rendering/batching/parameters/max_join_item_commands" type="int" setter="" getter="" default="16">
+		</member>
+		<member name="rendering/batching/precision/uv_contract" type="bool" setter="" getter="" default="false">
+		</member>
+		<member name="rendering/batching/precision/uv_contract_amount" type="int" setter="" getter="" default="100">
+		</member>
+		<member name="rendering/cpu_lightmapper/quality/high_quality_ray_count" type="int" setter="" getter="" default="512">
+		</member>
+		<member name="rendering/cpu_lightmapper/quality/low_quality_ray_count" type="int" setter="" getter="" default="64">
+		</member>
+		<member name="rendering/cpu_lightmapper/quality/medium_quality_ray_count" type="int" setter="" getter="" default="256">
+		</member>
+		<member name="rendering/cpu_lightmapper/quality/ultra_quality_ray_count" type="int" setter="" getter="" default="1024">
+		</member>
+		<member name="rendering/environment/default_clear_color" type="Color" setter="" getter="" default="Color( 0.3, 0.3, 0.3, 1 )">
+		</member>
+		<member name="rendering/environment/default_environment" type="String" setter="" getter="" default="&quot;&quot;">
+		</member>
+		<member name="rendering/gles2/compatibility/disable_half_float" type="bool" setter="" getter="" default="false">
+		</member>
+		<member name="rendering/gles2/compatibility/enable_high_float.Android" type="bool" setter="" getter="" default="false">
+		</member>
+		<member name="rendering/limits/buffers/blend_shape_max_buffer_size_kb" type="int" setter="" getter="" default="4096">
+		</member>
+		<member name="rendering/limits/buffers/canvas_polygon_buffer_size_kb" type="int" setter="" getter="" default="128">
+		</member>
+		<member name="rendering/limits/buffers/canvas_polygon_index_buffer_size_kb" type="int" setter="" getter="" default="128">
+		</member>
+		<member name="rendering/limits/buffers/immediate_buffer_size_kb" type="int" setter="" getter="" default="2048">
+		</member>
+		<member name="rendering/limits/rendering/max_lights_per_object" type="int" setter="" getter="" default="32">
+		</member>
+		<member name="rendering/limits/rendering/max_renderable_elements" type="int" setter="" getter="" default="65536">
+		</member>
+		<member name="rendering/limits/rendering/max_renderable_lights" type="int" setter="" getter="" default="4096">
+		</member>
+		<member name="rendering/limits/rendering/max_renderable_reflections" type="int" setter="" getter="" default="1024">
+		</member>
+		<member name="rendering/limits/time/time_rollover_secs" type="float" setter="" getter="" default="3600">
+		</member>
+		<member name="rendering/quality/depth/hdr" type="bool" setter="" getter="" default="true">
+		</member>
+		<member name="rendering/quality/depth/hdr.mobile" type="bool" setter="" getter="" default="false">
+		</member>
+		<member name="rendering/quality/depth_prepass/disable_for_vendors" type="String" setter="" getter="" default="&quot;PowerVR,Mali,Adreno,Apple&quot;">
+		</member>
+		<member name="rendering/quality/depth_prepass/enable" type="bool" setter="" getter="" default="true">
+		</member>
+		<member name="rendering/quality/directional_shadow/size" type="int" setter="" getter="" default="4096">
+		</member>
+		<member name="rendering/quality/directional_shadow/size.mobile" type="int" setter="" getter="" default="2048">
+		</member>
+		<member name="rendering/quality/driver/driver_name" type="String" setter="" getter="" default="&quot;GLES3&quot;">
+		</member>
+		<member name="rendering/quality/driver/fallback_to_gles2" type="bool" setter="" getter="" default="false">
+		</member>
+		<member name="rendering/quality/filters/anisotropic_filter_level" type="int" setter="" getter="" default="4">
+		</member>
+		<member name="rendering/quality/filters/msaa" type="int" setter="" getter="" default="0">
+		</member>
+		<member name="rendering/quality/filters/use_debanding" type="bool" setter="" getter="" default="false">
+		</member>
+		<member name="rendering/quality/filters/use_fxaa" type="bool" setter="" getter="" default="false">
+		</member>
+		<member name="rendering/quality/filters/use_nearest_mipmap_filter" type="bool" setter="" getter="" default="false">
+		</member>
+		<member name="rendering/quality/intended_usage/framebuffer_allocation" type="int" setter="" getter="" default="2">
+		</member>
+		<member name="rendering/quality/intended_usage/framebuffer_allocation.mobile" type="int" setter="" getter="" default="3">
+		</member>
+		<member name="rendering/quality/lightmapping/use_bicubic_sampling" type="bool" setter="" getter="" default="true">
+		</member>
+		<member name="rendering/quality/lightmapping/use_bicubic_sampling.mobile" type="bool" setter="" getter="" default="false">
+		</member>
+		<member name="rendering/quality/reflections/atlas_size" type="int" setter="" getter="" default="2048">
+		</member>
+		<member name="rendering/quality/reflections/atlas_subdiv" type="int" setter="" getter="" default="8">
+		</member>
+		<member name="rendering/quality/reflections/high_quality_ggx" type="bool" setter="" getter="" default="true">
+		</member>
+		<member name="rendering/quality/reflections/high_quality_ggx.mobile" type="bool" setter="" getter="" default="false">
+		</member>
+		<member name="rendering/quality/reflections/irradiance_max_size" type="int" setter="" getter="" default="128">
+		</member>
+		<member name="rendering/quality/reflections/texture_array_reflections" type="bool" setter="" getter="" default="true">
+		</member>
+		<member name="rendering/quality/reflections/texture_array_reflections.mobile" type="bool" setter="" getter="" default="false">
+		</member>
+		<member name="rendering/quality/shading/force_blinn_over_ggx" type="bool" setter="" getter="" default="false">
+		</member>
+		<member name="rendering/quality/shading/force_blinn_over_ggx.mobile" type="bool" setter="" getter="" default="true">
+		</member>
+		<member name="rendering/quality/shading/force_lambert_over_burley" type="bool" setter="" getter="" default="false">
+		</member>
+		<member name="rendering/quality/shading/force_lambert_over_burley.mobile" type="bool" setter="" getter="" default="true">
+		</member>
+		<member name="rendering/quality/shading/force_vertex_shading" type="bool" setter="" getter="" default="false">
+		</member>
+		<member name="rendering/quality/shading/force_vertex_shading.mobile" type="bool" setter="" getter="" default="true">
+		</member>
+		<member name="rendering/quality/shadow_atlas/cubemap_size" type="int" setter="" getter="" default="512">
+		</member>
+		<member name="rendering/quality/shadow_atlas/quadrant_0_subdiv" type="int" setter="" getter="" default="1">
+		</member>
+		<member name="rendering/quality/shadow_atlas/quadrant_1_subdiv" type="int" setter="" getter="" default="2">
+		</member>
+		<member name="rendering/quality/shadow_atlas/quadrant_2_subdiv" type="int" setter="" getter="" default="3">
+		</member>
+		<member name="rendering/quality/shadow_atlas/quadrant_3_subdiv" type="int" setter="" getter="" default="4">
+		</member>
+		<member name="rendering/quality/shadow_atlas/size" type="int" setter="" getter="" default="4096">
+		</member>
+		<member name="rendering/quality/shadow_atlas/size.mobile" type="int" setter="" getter="" default="2048">
+		</member>
+		<member name="rendering/quality/shadows/filter_mode" type="int" setter="" getter="" default="1">
+		</member>
+		<member name="rendering/quality/shadows/filter_mode.mobile" type="int" setter="" getter="" default="0">
+		</member>
+		<member name="rendering/quality/skinning/force_software_skinning" type="bool" setter="" getter="" default="false">
+		</member>
+		<member name="rendering/quality/skinning/software_skinning_fallback" type="bool" setter="" getter="" default="true">
+		</member>
+		<member name="rendering/quality/spatial_partitioning/render_tree_balance" type="float" setter="" getter="" default="0.0">
+		</member>
+		<member name="rendering/quality/spatial_partitioning/use_bvh" type="bool" setter="" getter="" default="true">
+		</member>
+		<member name="rendering/quality/subsurface_scattering/follow_surface" type="bool" setter="" getter="" default="false">
+		</member>
+		<member name="rendering/quality/subsurface_scattering/quality" type="int" setter="" getter="" default="1">
+		</member>
+		<member name="rendering/quality/subsurface_scattering/scale" type="int" setter="" getter="" default="1.0">
+		</member>
+		<member name="rendering/quality/subsurface_scattering/weight_samples" type="bool" setter="" getter="" default="true">
+		</member>
+		<member name="rendering/quality/voxel_cone_tracing/high_quality" type="bool" setter="" getter="" default="false">
+		</member>
+		<member name="rendering/threads/thread_model" type="int" setter="" getter="" default="1">
+		</member>
+		<member name="rendering/vram_compression/import_bptc" type="bool" setter="" getter="" default="false">
+		</member>
+		<member name="rendering/vram_compression/import_etc" type="bool" setter="" getter="" default="false">
+		</member>
+		<member name="rendering/vram_compression/import_etc2" type="bool" setter="" getter="" default="true">
+		</member>
+		<member name="rendering/vram_compression/import_pvrtc" type="bool" setter="" getter="" default="false">
+		</member>
+		<member name="rendering/vram_compression/import_s3tc" type="bool" setter="" getter="" default="true">
+		</member>
+		<member name="world/2d/cell_size" type="int" setter="" getter="" default="100">
+		</member>
+	</members>
+	<constants>
+	</constants>
+</class>

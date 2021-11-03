@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="Object" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+		<method name="_get" qualifiers="virtual">
+			<return type="Variant" />
+			<argument index="0" name="property" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="_get_property_list" qualifiers="virtual">
+			<return type="Array" />
+			<description>
+			</description>
+		</method>
+		<method name="_init" qualifiers="virtual">
+			<return type="void" />
+			<description>
+			</description>
+		</method>
+		<method name="_notification" qualifiers="virtual">
+			<return type="void" />
+			<argument index="0" name="what" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="_set" qualifiers="virtual">
+			<return type="bool" />
+			<argument index="0" name="property" type="String" />
+			<argument index="1" name="value" type="Variant" />
+			<description>
+			</description>
+		</method>
+		<method name="_to_string" qualifiers="virtual">
+			<return type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="add_user_signal">
+			<return type="void" />
+			<argument index="0" name="signal" type="String" />
+			<argument index="1" name="arguments" type="Array" default="[  ]" />
+			<description>
+			</description>
+		</method>
+		<method name="call" qualifiers="vararg">
+			<return type="Variant" />
+			<argument index="0" name="method" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="call_deferred" qualifiers="vararg">
+			<return type="void" />
+			<argument index="0" name="method" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="callv">
+			<return type="Variant" />
+			<argument index="0" name="method" type="String" />
+			<argument index="1" name="arg_array" type="Array" />
+			<description>
+			</description>
+		</method>
+		<method name="can_translate_messages" qualifiers="const">
+			<return type="bool" />
+			<description>
+			</description>
+		</method>
+		<method name="connect">
+			<return type="int" enum="Error" />
+			<argument index="0" name="signal" type="String" />
+			<argument index="1" name="target" type="Object" />
+			<argument index="2" name="method" type="String" />
+			<argument index="3" name="binds" type="Array" default="[  ]" />
+			<argument index="4" name="flags" type="int" default="0" />
+			<description>
+			</description>
+		</method>
+		<method name="disconnect">
+			<return type="void" />
+			<argument index="0" name="signal" type="String" />
+			<argument index="1" name="target" type="Object" />
+			<argument index="2" name="method" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="emit_signal" qualifiers="vararg">
+			<return type="void" />
+			<argument index="0" name="signal" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="free">
+			<return type="void" />
+			<description>
+			</description>
+		</method>
+		<method name="get" qualifiers="const">
+			<return type="Variant" />
+			<argument index="0" name="property" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="get_class" qualifiers="const">
+			<return type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="get_incoming_connections" qualifiers="const">
+			<return type="Array" />
+			<description>
+			</description>
+		</method>
+		<method name="get_indexed" qualifiers="const">
+			<return type="Variant" />
+			<argument index="0" name="property" type="NodePath" />
+			<description>
+			</description>
+		</method>
+		<method name="get_instance_id" qualifiers="const">
+			<return type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="get_meta" qualifiers="const">
+			<return type="Variant" />
+			<argument index="0" name="name" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="get_meta_list" qualifiers="const">
+			<return type="PoolStringArray" />
+			<description>
+			</description>
+		</method>
+		<method name="get_method_list" qualifiers="const">
+			<return type="Array" />
+			<description>
+			</description>
+		</method>
+		<method name="get_property_list" qualifiers="const">
+			<return type="Array" />
+			<description>
+			</description>
+		</method>
+		<method name="get_script" qualifiers="const">
+			<return type="Reference" />
+			<description>
+			</description>
+		</method>
+		<method name="get_signal_connection_list" qualifiers="const">
+			<return type="Array" />
+			<argument index="0" name="signal" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="get_signal_list" qualifiers="const">
+			<return type="Array" />
+			<description>
+			</description>
+		</method>
+		<method name="has_meta" qualifiers="const">
+			<return type="bool" />
+			<argument index="0" name="name" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="has_method" qualifiers="const">
+			<return type="bool" />
+			<argument index="0" name="method" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="has_signal" qualifiers="const">
+			<return type="bool" />
+			<argument index="0" name="signal" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="has_user_signal" qualifiers="const">
+			<return type="bool" />
+			<argument index="0" name="signal" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="is_blocking_signals" qualifiers="const">
+			<return type="bool" />
+			<description>
+			</description>
+		</method>
+		<method name="is_class" qualifiers="const">
+			<return type="bool" />
+			<argument index="0" name="class" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="is_connected" qualifiers="const">
+			<return type="bool" />
+			<argument index="0" name="signal" type="String" />
+			<argument index="1" name="target" type="Object" />
+			<argument index="2" name="method" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="is_queued_for_deletion" qualifiers="const">
+			<return type="bool" />
+			<description>
+			</description>
+		</method>
+		<method name="notification">
+			<return type="void" />
+			<argument index="0" name="what" type="int" />
+			<argument index="1" name="reversed" type="bool" default="false" />
+			<description>
+			</description>
+		</method>
+		<method name="property_list_changed_notify">
+			<return type="void" />
+			<description>
+			</description>
+		</method>
+		<method name="remove_meta">
+			<return type="void" />
+			<argument index="0" name="name" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="set">
+			<return type="void" />
+			<argument index="0" name="property" type="String" />
+			<argument index="1" name="value" type="Variant" />
+			<description>
+			</description>
+		</method>
+		<method name="set_block_signals">
+			<return type="void" />
+			<argument index="0" name="enable" type="bool" />
+			<description>
+			</description>
+		</method>
+		<method name="set_deferred">
+			<return type="void" />
+			<argument index="0" name="property" type="String" />
+			<argument index="1" name="value" type="Variant" />
+			<description>
+			</description>
+		</method>
+		<method name="set_indexed">
+			<return type="void" />
+			<argument index="0" name="property" type="NodePath" />
+			<argument index="1" name="value" type="Variant" />
+			<description>
+			</description>
+		</method>
+		<method name="set_message_translation">
+			<return type="void" />
+			<argument index="0" name="enable" type="bool" />
+			<description>
+			</description>
+		</method>
+		<method name="set_meta">
+			<return type="void" />
+			<argument index="0" name="name" type="String" />
+			<argument index="1" name="value" type="Variant" />
+			<description>
+			</description>
+		</method>
+		<method name="set_script">
+			<return type="void" />
+			<argument index="0" name="script" type="Reference" />
+			<description>
+			</description>
+		</method>
+		<method name="to_string">
+			<return type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="tr" qualifiers="const">
+			<return type="String" />
+			<argument index="0" name="message" type="String" />
+			<description>
+			</description>
+		</method>
+	</methods>
+	<signals>
+		<signal name="script_changed">
+			<description>
+			</description>
+		</signal>
+	</signals>
+	<constants>
+		<constant name="NOTIFICATION_POSTINITIALIZE" value="0">
+		</constant>
+		<constant name="NOTIFICATION_PREDELETE" value="1">
+		</constant>
+		<constant name="CONNECT_DEFERRED" value="1" enum="ConnectFlags">
+		</constant>
+		<constant name="CONNECT_PERSIST" value="2" enum="ConnectFlags">
+		</constant>
+		<constant name="CONNECT_ONESHOT" value="4" enum="ConnectFlags">
+		</constant>
+		<constant name="CONNECT_REFERENCE_COUNTED" value="8" enum="ConnectFlags">
+		</constant>
+	</constants>
+</class>

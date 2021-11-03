@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="ScrollBar" inherits="Range" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+	</methods>
+	<members>
+		<member name="custom_step" type="float" setter="set_custom_step" getter="get_custom_step" default="-1.0">
+		</member>
+		<member name="size_flags_vertical" type="int" setter="set_v_size_flags" getter="get_v_size_flags" override="true" default="0" />
+		<member name="step" type="float" setter="set_step" getter="get_step" override="true" default="0.0" />
+	</members>
+	<signals>
+		<signal name="scrolling">
+			<description>
+			</description>
+		</signal>
+	</signals>
+	<constants>
+	</constants>
+</class>

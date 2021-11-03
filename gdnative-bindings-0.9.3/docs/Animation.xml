@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="Animation" inherits="Resource" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+		<method name="add_track">
+			<return type="int" />
+			<argument index="0" name="type" type="int" enum="Animation.TrackType" />
+			<argument index="1" name="at_position" type="int" default="-1" />
+			<description>
+			</description>
+		</method>
+		<method name="animation_track_get_key_animation" qualifiers="const">
+			<return type="String" />
+			<argument index="0" name="track_idx" type="int" />
+			<argument index="1" name="key_idx" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="animation_track_insert_key">
+			<return type="int" />
+			<argument index="0" name="track_idx" type="int" />
+			<argument index="1" name="time" type="float" />
+			<argument index="2" name="animation" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="animation_track_set_key_animation">
+			<return type="void" />
+			<argument index="0" name="track_idx" type="int" />
+			<argument index="1" name="key_idx" type="int" />
+			<argument index="2" name="animation" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="audio_track_get_key_end_offset" qualifiers="const">
+			<return type="float" />
+			<argument index="0" name="track_idx" type="int" />
+			<argument index="1" name="key_idx" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="audio_track_get_key_start_offset" qualifiers="const">
+			<return type="float" />
+			<argument index="0" name="track_idx" type="int" />
+			<argument index="1" name="key_idx" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="audio_track_get_key_stream" qualifiers="const">
+			<return type="Resource" />
+			<argument index="0" name="track_idx" type="int" />
+			<argument index="1" name="key_idx" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="audio_track_insert_key">
+			<return type="int" />
+			<argument index="0" name="track_idx" type="int" />
+			<argument index="1" name="time" type="float" />
+			<argument index="2" name="stream" type="Resource" />
+			<argument index="3" name="start_offset" type="float" default="0" />
+			<argument index="4" name="end_offset" type="float" default="0" />
+			<description>
+			</description>
+		</method>
+		<method name="audio_track_set_key_end_offset">
+			<return type="void" />
+			<argument index="0" name="track_idx" type="int" />
+			<argument index="1" name="key_idx" type="int" />
+			<argument index="2" name="offset" type="float" />
+			<description>
+			</description>
+		</method>
+		<method name="audio_track_set_key_start_offset">
+			<return type="void" />
+			<argument index="0" name="track_idx" type="int" />
+			<argument index="1" name="key_idx" type="int" />
+			<argument index="2" name="offset" type="float" />
+			<description>
+			</description>
+		</method>
+		<method name="audio_track_set_key_stream">
+			<return type="void" />
+			<argument index="0" name="track_idx" type="int" />
+			<argument index="1" name="key_idx" type="int" />
+			<argument index="2" name="stream" type="Resource" />
+			<description>
+			</description>
+		</method>
+		<method name="bezier_track_get_key_in_handle" qualifiers="const">
+			<return type="Vector2" />
+			<argument index="0" name="track_idx" type="int" />
+			<argument index="1" name="key_idx" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="bezier_track_get_key_out_handle" qualifiers="const">
+			<return type="Vector2" />
+			<argument index="0" name="track_idx" type="int" />
+			<argument index="1" name="key_idx" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="bezier_track_get_key_value" qualifiers="const">
+			<return type="float" />
+			<argument index="0" name="track_idx" type="int" />
+			<argument index="1" name="key_idx" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="bezier_track_insert_key">
+			<return type="int" />
+			<argument index="0" name="track_idx" type="int" />
+			<argument index="1" name="time" type="float" />
+			<argument index="2" name="value" type="float" />
+			<argument index="3" name="in_handle" type="Vector2" default="Vector2( 0, 0 )" />
+			<argument index="4" name="out_handle" type="Vector2" default="Vector2( 0, 0 )" />
+			<description>
+			</description>
+		</method>
+		<method name="bezier_track_interpolate" qualifiers="const">
+			<return type="float" />
+			<argument index="0" name="track_idx" type="int" />
+			<argument index="1" name="time" type="float" />
+			<description>
+			</description>
+		</method>
+		<method name="bezier_track_set_key_in_handle">
+			<return type="void" />
+			<argument index="0" name="track_idx" type="int" />
+			<argument index="1" name="key_idx" type="int" />
+			<argument index="2" name="in_handle" type="Vector2" />
+			<description>
+			</description>
+		</method>
+		<method name="bezier_track_set_key_out_handle">
+			<return type="void" />
+			<argument index="0" name="track_idx" type="int" />
+			<argument index="1" name="key_idx" type="int" />
+			<argument index="2" name="out_handle" type="Vector2" />
+			<description>
+			</description>
+		</method>
+		<method name="bezier_track_set_key_value">
+			<return type="void" />
+			<argument index="0" name="track_idx" type="int" />
+			<argument index="1" name="key_idx" type="int" />
+			<argument index="2" name="value" type="float" />
+			<description>
+			</description>
+		</method>
+		<method name="clear">
+			<return type="void" />
+			<description>
+			</description>
+		</method>
+		<method name="copy_track">
+			<return type="void" />
+			<argument index="0" name="track_idx" type="int" />
+			<argument index="1" name="to_animation" type="Animation" />
+			<description>
+			</description>
+		</method>
+		<method name="find_track" qualifiers="const">
+			<return type="int" />
+			<argument index="0" name="path" type="NodePath" />
+			<description>
+			</description>
+		</method>
+		<method name="get_track_count" qualifiers="const">
+			<return type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="method_track_get_key_indices" qualifiers="const">
+			<return type="PoolIntArray" />
+			<argument index="0" name="track_idx" type="int" />
+			<argument index="1" name="time_sec" type="float" />
+			<argument index="2" name="delta" type="float" />
+			<description>
+			</description>
+		</method>
+		<method name="method_track_get_name" qualifiers="const">
+			<return type="String" />
+			<argument index="0" name="track_idx" type="int" />
+			<argument index="1" name="key_idx" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="method_track_get_params" qualifiers="const">
+			<return type="Array" />
+			<argument index="0" name="track_idx" type="int" />
+			<argument index="1" name="key_idx" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="remove_track">
+			<return type="void" />
+			<argument index="0" name="track_idx" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="track_find_key" qualifiers="const">
+			<return type="int" />
+			<argument index="0" name="track_idx" type="int" />
+			<argument index="1" name="time" type="float" />
+			<argument index="2" name="exact" type="bool" default="false" />
+			<description>
+			</description>
+		</method>
+		<method name="track_get_interpolation_loop_wrap" qualifiers="const">
+			<return type="bool" />
+			<argument index="0" name="track_idx" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="track_get_interpolation_type" qualifiers="const">
+			<return type="int" enum="Animation.InterpolationType" />
+			<argument index="0" name="track_idx" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="track_get_key_count" qualifiers="const">
+			<return type="int" />
+			<argument index="0" name="track_idx" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="track_get_key_time" qualifiers="const">
+			<return type="float" />
+			<argument index="0" name="track_idx" type="int" />
+			<argument index="1" name="key_idx" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="track_get_key_transition" qualifiers="const">
+			<return type="float" />
+			<argument index="0" name="track_idx" type="int" />
+			<argument index="1" name="key_idx" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="track_get_key_value" qualifiers="const">
+			<return type="Variant" />
+			<argument index="0" name="track_idx" type="int" />
+			<argument index="1" name="key_idx" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="track_get_path" qualifiers="const">
+			<return type="NodePath" />
+			<argument index="0" name="track_idx" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="track_get_type" qualifiers="const">
+			<return type="int" enum="Animation.TrackType" />
+			<argument index="0" name="track_idx" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="track_insert_key">
+			<return type="void" />
+			<argument index="0" name="track_idx" type="int" />
+			<argument index="1" name="time" type="float" />
+			<argument index="2" name="key" type="Variant" />
+			<argument index="3" name="transition" type="float" default="1" />
+			<description>
+			</description>
+		</method>
+		<method name="track_is_enabled" qualifiers="const">
+			<return type="bool" />
+			<argument index="0" name="track_idx" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="track_is_imported" qualifiers="const">
+			<return type="bool" />
+			<argument index="0" name="track_idx" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="track_move_down">
+			<return type="void" />
+			<argument index="0" name="track_idx" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="track_move_to">
+			<return type="void" />
+			<argument index="0" name="track_idx" type="int" />
+			<argument index="1" name="to_idx" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="track_move_up">
+			<return type="void" />
+			<argument index="0" name="track_idx" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="track_remove_key">
+			<return type="void" />
+			<argument index="0" name="track_idx" type="int" />
+			<argument index="1" name="key_idx" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="track_remove_key_at_position">
+			<return type="void" />
+			<argument index="0" name="track_idx" type="int" />
+			<argument index="1" name="position" type="float" />
+			<description>
+			</description>
+		</method>
+		<method name="track_set_enabled">
+			<return type="void" />
+			<argument index="0" name="track_idx" type="int" />
+			<argument index="1" name="enabled" type="bool" />
+			<description>
+			</description>
+		</method>
+		<method name="track_set_imported">
+			<return type="void" />
+			<argument index="0" name="track_idx" type="int" />
+			<argument index="1" name="imported" type="bool" />
+			<description>
+			</description>
+		</method>
+		<method name="track_set_interpolation_loop_wrap">
+			<return type="void" />
+			<argument index="0" name="track_idx" type="int" />
+			<argument index="1" name="interpolation" type="bool" />
+			<description>
+			</description>
+		</method>
+		<method name="track_set_interpolation_type">
+			<return type="void" />
+			<argument index="0" name="track_idx" type="int" />
+			<argument index="1" name="interpolation" type="int" enum="Animation.InterpolationType" />
+			<description>
+			</description>
+		</method>
+		<method name="track_set_key_time">
+			<return type="void" />
+			<argument index="0" name="track_idx" type="int" />
+			<argument index="1" name="key_idx" type="int" />
+			<argument index="2" name="time" type="float" />
+			<description>
+			</description>
+		</method>
+		<method name="track_set_key_transition">
+			<return type="void" />
+			<argument index="0" name="track_idx" type="int" />
+			<argument index="1" name="key_idx" type="int" />
+			<argument index="2" name="transition" type="float" />
+			<description>
+			</description>
+		</method>
+		<method name="track_set_key_value">
+			<return type="void" />
+			<argument index="0" name="track_idx" type="int" />
+			<argument index="1" name="key" type="int" />
+			<argument index="2" name="value" type="Variant" />
+			<description>
+			</description>
+		</method>
+		<method name="track_set_path">
+			<return type="void" />
+			<argument index="0" name="track_idx" type="int" />
+			<argument index="1" name="path" type="NodePath" />
+			<description>
+			</description>
+		</method>
+		<method name="track_swap">
+			<return type="void" />
+			<argument index="0" name="track_idx" type="int" />
+			<argument index="1" name="with_idx" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="transform_track_insert_key">
+			<return type="int" />
+			<argument index="0" name="track_idx" type="int" />
+			<argument index="1" name="time" type="float" />
+			<argument index="2" name="location" type="Vector3" />
+			<argument index="3" name="rotation" type="Quat" />
+			<argument index="4" name="scale" type="Vector3" />
+			<description>
+			</description>
+		</method>
+		<method name="transform_track_interpolate" qualifiers="const">
+			<return type="Array" />
+			<argument index="0" name="track_idx" type="int" />
+			<argument index="1" name="time_sec" type="float" />
+			<description>
+			</description>
+		</method>
+		<method name="value_track_get_key_indices" qualifiers="const">
+			<return type="PoolIntArray" />
+			<argument index="0" name="track_idx" type="int" />
+			<argument index="1" name="time_sec" type="float" />
+			<argument index="2" name="delta" type="float" />
+			<description>
+			</description>
+		</method>
+		<method name="value_track_get_update_mode" qualifiers="const">
+			<return type="int" enum="Animation.UpdateMode" />
+			<argument index="0" name="track_idx" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="value_track_interpolate" qualifiers="const">
+			<return type="Variant" />
+			<argument index="0" name="track_idx" type="int" />
+			<argument index="1" name="time_sec" type="float" />
+			<description>
+			</description>
+		</method>
+		<method name="value_track_set_update_mode">
+			<return type="void" />
+			<argument index="0" name="track_idx" type="int" />
+			<argument index="1" name="mode" type="int" enum="Animation.UpdateMode" />
+			<description>
+			</description>
+		</method>
+	</methods>
+	<members>
+		<member name="length" type="float" setter="set_length" getter="get_length" default="1.0">
+		</member>
+		<member name="loop" type="bool" setter="set_loop" getter="has_loop" default="false">
+		</member>
+		<member name="step" type="float" setter="set_step" getter="get_step" default="0.1">
+		</member>
+	</members>
+	<signals>
+		<signal name="tracks_changed">
+			<description>
+			</description>
+		</signal>
+	</signals>
+	<constants>
+		<constant name="TYPE_VALUE" value="0" enum="TrackType">
+		</constant>
+		<constant name="TYPE_TRANSFORM" value="1" enum="TrackType">
+		</constant>
+		<constant name="TYPE_METHOD" value="2" enum="TrackType">
+		</constant>
+		<constant name="TYPE_BEZIER" value="3" enum="TrackType">
+		</constant>
+		<constant name="TYPE_AUDIO" value="4" enum="TrackType">
+		</constant>
+		<constant name="TYPE_ANIMATION" value="5" enum="TrackType">
+		</constant>
+		<constant name="INTERPOLATION_NEAREST" value="0" enum="InterpolationType">
+		</constant>
+		<constant name="INTERPOLATION_LINEAR" value="1" enum="InterpolationType">
+		</constant>
+		<constant name="INTERPOLATION_CUBIC" value="2" enum="InterpolationType">
+		</constant>
+		<constant name="UPDATE_CONTINUOUS" value="0" enum="UpdateMode">
+		</constant>
+		<constant name="UPDATE_DISCRETE" value="1" enum="UpdateMode">
+		</constant>
+		<constant name="UPDATE_TRIGGER" value="2" enum="UpdateMode">
+		</constant>
+		<constant name="UPDATE_CAPTURE" value="3" enum="UpdateMode">
+		</constant>
+	</constants>
+</class>

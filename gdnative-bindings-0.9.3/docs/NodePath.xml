@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="NodePath" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+		<method name="NodePath">
+			<return type="NodePath" />
+			<argument index="0" name="from" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="get_as_property_path">
+			<return type="NodePath" />
+			<description>
+			</description>
+		</method>
+		<method name="get_concatenated_subnames">
+			<return type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="get_name">
+			<return type="String" />
+			<argument index="0" name="idx" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="get_name_count">
+			<return type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="get_subname">
+			<return type="String" />
+			<argument index="0" name="idx" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="get_subname_count">
+			<return type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="is_absolute">
+			<return type="bool" />
+			<description>
+			</description>
+		</method>
+		<method name="is_empty">
+			<return type="bool" />
+			<description>
+			</description>
+		</method>
+	</methods>
+	<constants>
+	</constants>
+</class>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="WorldEnvironment" inherits="Node" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+	</methods>
+	<members>
+		<member name="environment" type="Environment" setter="set_environment" getter="get_environment">
+		</member>
+	</members>
+	<constants>
+	</constants>
+</class>

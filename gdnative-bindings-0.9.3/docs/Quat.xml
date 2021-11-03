@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="Quat" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+		<method name="Quat">
+			<return type="Quat" />
+			<argument index="0" name="from" type="Basis" />
+			<description>
+			</description>
+		</method>
+		<method name="Quat">
+			<return type="Quat" />
+			<argument index="0" name="euler" type="Vector3" />
+			<description>
+			</description>
+		</method>
+		<method name="Quat">
+			<return type="Quat" />
+			<argument index="0" name="axis" type="Vector3" />
+			<argument index="1" name="angle" type="float" />
+			<description>
+			</description>
+		</method>
+		<method name="Quat">
+			<return type="Quat" />
+			<argument index="0" name="x" type="float" />
+			<argument index="1" name="y" type="float" />
+			<argument index="2" name="z" type="float" />
+			<argument index="3" name="w" type="float" />
+			<description>
+			</description>
+		</method>
+		<method name="cubic_slerp">
+			<return type="Quat" />
+			<argument index="0" name="b" type="Quat" />
+			<argument index="1" name="pre_a" type="Quat" />
+			<argument index="2" name="post_b" type="Quat" />
+			<argument index="3" name="weight" type="float" />
+			<description>
+			</description>
+		</method>
+		<method name="dot">
+			<return type="float" />
+			<argument index="0" name="b" type="Quat" />
+			<description>
+			</description>
+		</method>
+		<method name="get_euler">
+			<return type="Vector3" />
+			<description>
+			</description>
+		</method>
+		<method name="inverse">
+			<return type="Quat" />
+			<description>
+			</description>
+		</method>
+		<method name="is_equal_approx">
+			<return type="bool" />
+			<argument index="0" name="quat" type="Quat" />
+			<description>
+			</description>
+		</method>
+		<method name="is_normalized">
+			<return type="bool" />
+			<description>
+			</description>
+		</method>
+		<method name="length">
+			<return type="float" />
+			<description>
+			</description>
+		</method>
+		<method name="length_squared">
+			<return type="float" />
+			<description>
+			</description>
+		</method>
+		<method name="normalized">
+			<return type="Quat" />
+			<description>
+			</description>
+		</method>
+		<method name="set_axis_angle">
+			<argument index="0" name="axis" type="Vector3" />
+			<argument index="1" name="angle" type="float" />
+			<description>
+			</description>
+		</method>
+		<method name="set_euler">
+			<argument index="0" name="euler" type="Vector3" />
+			<description>
+			</description>
+		</method>
+		<method name="slerp">
+			<return type="Quat" />
+			<argument index="0" name="to" type="Quat" />
+			<argument index="1" name="weight" type="float" />
+			<description>
+			</description>
+		</method>
+		<method name="slerpni">
+			<return type="Quat" />
+			<argument index="0" name="to" type="Quat" />
+			<argument index="1" name="weight" type="float" />
+			<description>
+			</description>
+		</method>
+		<method name="xform">
+			<return type="Vector3" />
+			<argument index="0" name="v" type="Vector3" />
+			<description>
+			</description>
+		</method>
+	</methods>
+	<members>
+		<member name="w" type="float" setter="" getter="" default="1.0">
+		</member>
+		<member name="x" type="float" setter="" getter="" default="0.0">
+		</member>
+		<member name="y" type="float" setter="" getter="" default="0.0">
+		</member>
+		<member name="z" type="float" setter="" getter="" default="0.0">
+		</member>
+	</members>
+	<constants>
+		<constant name="IDENTITY" value="Quat( 0, 0, 0, 1 )">
+		</constant>
+	</constants>
+</class>

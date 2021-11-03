@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="EditorFileSystem" inherits="Node" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+		<method name="get_file_type" qualifiers="const">
+			<return type="String" />
+			<argument index="0" name="path" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="get_filesystem">
+			<return type="EditorFileSystemDirectory" />
+			<description>
+			</description>
+		</method>
+		<method name="get_filesystem_path">
+			<return type="EditorFileSystemDirectory" />
+			<argument index="0" name="path" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="get_scanning_progress" qualifiers="const">
+			<return type="float" />
+			<description>
+			</description>
+		</method>
+		<method name="is_scanning" qualifiers="const">
+			<return type="bool" />
+			<description>
+			</description>
+		</method>
+		<method name="scan">
+			<return type="void" />
+			<description>
+			</description>
+		</method>
+		<method name="scan_sources">
+			<return type="void" />
+			<description>
+			</description>
+		</method>
+		<method name="update_file">
+			<return type="void" />
+			<argument index="0" name="path" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="update_script_classes">
+			<return type="void" />
+			<description>
+			</description>
+		</method>
+	</methods>
+	<signals>
+		<signal name="filesystem_changed">
+			<description>
+			</description>
+		</signal>
+		<signal name="resources_reimported">
+			<argument index="0" name="resources" type="PoolStringArray" />
+			<description>
+			</description>
+		</signal>
+		<signal name="resources_reload">
+			<argument index="0" name="resources" type="PoolStringArray" />
+			<description>
+			</description>
+		</signal>
+		<signal name="sources_changed">
+			<argument index="0" name="exist" type="bool" />
+			<description>
+			</description>
+		</signal>
+	</signals>
+	<constants>
+	</constants>
+</class>

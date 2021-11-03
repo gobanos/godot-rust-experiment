@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="SpinBox" inherits="Range" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+		<method name="apply">
+			<return type="void" />
+			<description>
+			</description>
+		</method>
+		<method name="get_line_edit">
+			<return type="LineEdit" />
+			<description>
+			</description>
+		</method>
+	</methods>
+	<members>
+		<member name="align" type="int" setter="set_align" getter="get_align" enum="LineEdit.Align" default="0">
+		</member>
+		<member name="editable" type="bool" setter="set_editable" getter="is_editable" default="true">
+		</member>
+		<member name="prefix" type="String" setter="set_prefix" getter="get_prefix" default="&quot;&quot;">
+		</member>
+		<member name="suffix" type="String" setter="set_suffix" getter="get_suffix" default="&quot;&quot;">
+		</member>
+	</members>
+	<constants>
+	</constants>
+	<theme_items>
+		<theme_item name="updown" type="Texture">
+		</theme_item>
+	</theme_items>
+</class>

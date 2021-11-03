@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="EditorResourcePreview" inherits="Node" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+		<method name="add_preview_generator">
+			<return type="void" />
+			<argument index="0" name="generator" type="EditorResourcePreviewGenerator" />
+			<description>
+			</description>
+		</method>
+		<method name="check_for_invalidation">
+			<return type="void" />
+			<argument index="0" name="path" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="queue_edited_resource_preview">
+			<return type="void" />
+			<argument index="0" name="resource" type="Resource" />
+			<argument index="1" name="receiver" type="Object" />
+			<argument index="2" name="receiver_func" type="String" />
+			<argument index="3" name="userdata" type="Variant" />
+			<description>
+			</description>
+		</method>
+		<method name="queue_resource_preview">
+			<return type="void" />
+			<argument index="0" name="path" type="String" />
+			<argument index="1" name="receiver" type="Object" />
+			<argument index="2" name="receiver_func" type="String" />
+			<argument index="3" name="userdata" type="Variant" />
+			<description>
+			</description>
+		</method>
+		<method name="remove_preview_generator">
+			<return type="void" />
+			<argument index="0" name="generator" type="EditorResourcePreviewGenerator" />
+			<description>
+			</description>
+		</method>
+	</methods>
+	<signals>
+		<signal name="preview_invalidated">
+			<argument index="0" name="path" type="String" />
+			<description>
+			</description>
+		</signal>
+	</signals>
+	<constants>
+	</constants>
+</class>

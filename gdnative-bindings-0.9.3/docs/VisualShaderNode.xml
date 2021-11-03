@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="VisualShaderNode" inherits="Resource" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+		<method name="get_default_input_values" qualifiers="const">
+			<return type="Array" />
+			<description>
+			</description>
+		</method>
+		<method name="get_input_port_default_value" qualifiers="const">
+			<return type="Variant" />
+			<argument index="0" name="port" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="set_default_input_values">
+			<return type="void" />
+			<argument index="0" name="values" type="Array" />
+			<description>
+			</description>
+		</method>
+		<method name="set_input_port_default_value">
+			<return type="void" />
+			<argument index="0" name="port" type="int" />
+			<argument index="1" name="value" type="Variant" />
+			<description>
+			</description>
+		</method>
+	</methods>
+	<members>
+		<member name="output_port_for_preview" type="int" setter="set_output_port_for_preview" getter="get_output_port_for_preview" default="-1">
+		</member>
+	</members>
+	<signals>
+		<signal name="editor_refresh_request">
+			<description>
+			</description>
+		</signal>
+	</signals>
+	<constants>
+		<constant name="PORT_TYPE_SCALAR" value="0" enum="PortType">
+		</constant>
+		<constant name="PORT_TYPE_VECTOR" value="1" enum="PortType">
+		</constant>
+		<constant name="PORT_TYPE_BOOLEAN" value="2" enum="PortType">
+		</constant>
+		<constant name="PORT_TYPE_TRANSFORM" value="3" enum="PortType">
+		</constant>
+		<constant name="PORT_TYPE_SAMPLER" value="4" enum="PortType">
+		</constant>
+		<constant name="PORT_TYPE_MAX" value="5" enum="PortType">
+		</constant>
+	</constants>
+</class>

@@ -1,0 +1,685 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="Control" inherits="CanvasItem" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+		<method name="_clips_input" qualifiers="virtual">
+			<return type="bool" />
+			<description>
+			</description>
+		</method>
+		<method name="_get_minimum_size" qualifiers="virtual">
+			<return type="Vector2" />
+			<description>
+			</description>
+		</method>
+		<method name="_gui_input" qualifiers="virtual">
+			<return type="void" />
+			<argument index="0" name="event" type="InputEvent" />
+			<description>
+			</description>
+		</method>
+		<method name="_make_custom_tooltip" qualifiers="virtual">
+			<return type="Control" />
+			<argument index="0" name="for_text" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="accept_event">
+			<return type="void" />
+			<description>
+			</description>
+		</method>
+		<method name="add_color_override">
+			<return type="void" />
+			<argument index="0" name="name" type="String" />
+			<argument index="1" name="color" type="Color" />
+			<description>
+			</description>
+		</method>
+		<method name="add_constant_override">
+			<return type="void" />
+			<argument index="0" name="name" type="String" />
+			<argument index="1" name="constant" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="add_font_override">
+			<return type="void" />
+			<argument index="0" name="name" type="String" />
+			<argument index="1" name="font" type="Font" />
+			<description>
+			</description>
+		</method>
+		<method name="add_icon_override">
+			<return type="void" />
+			<argument index="0" name="name" type="String" />
+			<argument index="1" name="texture" type="Texture" />
+			<description>
+			</description>
+		</method>
+		<method name="add_shader_override">
+			<return type="void" />
+			<argument index="0" name="name" type="String" />
+			<argument index="1" name="shader" type="Shader" />
+			<description>
+			</description>
+		</method>
+		<method name="add_stylebox_override">
+			<return type="void" />
+			<argument index="0" name="name" type="String" />
+			<argument index="1" name="stylebox" type="StyleBox" />
+			<description>
+			</description>
+		</method>
+		<method name="can_drop_data" qualifiers="virtual">
+			<return type="bool" />
+			<argument index="0" name="position" type="Vector2" />
+			<argument index="1" name="data" type="Variant" />
+			<description>
+			</description>
+		</method>
+		<method name="drop_data" qualifiers="virtual">
+			<return type="void" />
+			<argument index="0" name="position" type="Vector2" />
+			<argument index="1" name="data" type="Variant" />
+			<description>
+			</description>
+		</method>
+		<method name="find_next_valid_focus" qualifiers="const">
+			<return type="Control" />
+			<description>
+			</description>
+		</method>
+		<method name="find_prev_valid_focus" qualifiers="const">
+			<return type="Control" />
+			<description>
+			</description>
+		</method>
+		<method name="force_drag">
+			<return type="void" />
+			<argument index="0" name="data" type="Variant" />
+			<argument index="1" name="preview" type="Control" />
+			<description>
+			</description>
+		</method>
+		<method name="get_anchor" qualifiers="const">
+			<return type="float" />
+			<argument index="0" name="margin" type="int" enum="Margin" />
+			<description>
+			</description>
+		</method>
+		<method name="get_begin" qualifiers="const">
+			<return type="Vector2" />
+			<description>
+			</description>
+		</method>
+		<method name="get_color" qualifiers="const">
+			<return type="Color" />
+			<argument index="0" name="name" type="String" />
+			<argument index="1" name="node_type" type="String" default="&quot;&quot;" />
+			<description>
+			</description>
+		</method>
+		<method name="get_combined_minimum_size" qualifiers="const">
+			<return type="Vector2" />
+			<description>
+			</description>
+		</method>
+		<method name="get_constant" qualifiers="const">
+			<return type="int" />
+			<argument index="0" name="name" type="String" />
+			<argument index="1" name="node_type" type="String" default="&quot;&quot;" />
+			<description>
+			</description>
+		</method>
+		<method name="get_cursor_shape" qualifiers="const">
+			<return type="int" enum="Control.CursorShape" />
+			<argument index="0" name="position" type="Vector2" default="Vector2( 0, 0 )" />
+			<description>
+			</description>
+		</method>
+		<method name="get_drag_data" qualifiers="virtual">
+			<return type="Variant" />
+			<argument index="0" name="position" type="Vector2" />
+			<description>
+			</description>
+		</method>
+		<method name="get_end" qualifiers="const">
+			<return type="Vector2" />
+			<description>
+			</description>
+		</method>
+		<method name="get_focus_neighbour" qualifiers="const">
+			<return type="NodePath" />
+			<argument index="0" name="margin" type="int" enum="Margin" />
+			<description>
+			</description>
+		</method>
+		<method name="get_focus_owner" qualifiers="const">
+			<return type="Control" />
+			<description>
+			</description>
+		</method>
+		<method name="get_font" qualifiers="const">
+			<return type="Font" />
+			<argument index="0" name="name" type="String" />
+			<argument index="1" name="node_type" type="String" default="&quot;&quot;" />
+			<description>
+			</description>
+		</method>
+		<method name="get_global_rect" qualifiers="const">
+			<return type="Rect2" />
+			<description>
+			</description>
+		</method>
+		<method name="get_icon" qualifiers="const">
+			<return type="Texture" />
+			<argument index="0" name="name" type="String" />
+			<argument index="1" name="node_type" type="String" default="&quot;&quot;" />
+			<description>
+			</description>
+		</method>
+		<method name="get_margin" qualifiers="const">
+			<return type="float" />
+			<argument index="0" name="margin" type="int" enum="Margin" />
+			<description>
+			</description>
+		</method>
+		<method name="get_minimum_size" qualifiers="const">
+			<return type="Vector2" />
+			<description>
+			</description>
+		</method>
+		<method name="get_parent_area_size" qualifiers="const">
+			<return type="Vector2" />
+			<description>
+			</description>
+		</method>
+		<method name="get_parent_control" qualifiers="const">
+			<return type="Control" />
+			<description>
+			</description>
+		</method>
+		<method name="get_rect" qualifiers="const">
+			<return type="Rect2" />
+			<description>
+			</description>
+		</method>
+		<method name="get_rotation" qualifiers="const">
+			<return type="float" />
+			<description>
+			</description>
+		</method>
+		<method name="get_stylebox" qualifiers="const">
+			<return type="StyleBox" />
+			<argument index="0" name="name" type="String" />
+			<argument index="1" name="node_type" type="String" default="&quot;&quot;" />
+			<description>
+			</description>
+		</method>
+		<method name="get_tooltip" qualifiers="const">
+			<return type="String" />
+			<argument index="0" name="at_position" type="Vector2" default="Vector2( 0, 0 )" />
+			<description>
+			</description>
+		</method>
+		<method name="grab_click_focus">
+			<return type="void" />
+			<description>
+			</description>
+		</method>
+		<method name="grab_focus">
+			<return type="void" />
+			<description>
+			</description>
+		</method>
+		<method name="has_color" qualifiers="const">
+			<return type="bool" />
+			<argument index="0" name="name" type="String" />
+			<argument index="1" name="node_type" type="String" default="&quot;&quot;" />
+			<description>
+			</description>
+		</method>
+		<method name="has_color_override" qualifiers="const">
+			<return type="bool" />
+			<argument index="0" name="name" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="has_constant" qualifiers="const">
+			<return type="bool" />
+			<argument index="0" name="name" type="String" />
+			<argument index="1" name="node_type" type="String" default="&quot;&quot;" />
+			<description>
+			</description>
+		</method>
+		<method name="has_constant_override" qualifiers="const">
+			<return type="bool" />
+			<argument index="0" name="name" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="has_focus" qualifiers="const">
+			<return type="bool" />
+			<description>
+			</description>
+		</method>
+		<method name="has_font" qualifiers="const">
+			<return type="bool" />
+			<argument index="0" name="name" type="String" />
+			<argument index="1" name="node_type" type="String" default="&quot;&quot;" />
+			<description>
+			</description>
+		</method>
+		<method name="has_font_override" qualifiers="const">
+			<return type="bool" />
+			<argument index="0" name="name" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="has_icon" qualifiers="const">
+			<return type="bool" />
+			<argument index="0" name="name" type="String" />
+			<argument index="1" name="node_type" type="String" default="&quot;&quot;" />
+			<description>
+			</description>
+		</method>
+		<method name="has_icon_override" qualifiers="const">
+			<return type="bool" />
+			<argument index="0" name="name" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="has_point" qualifiers="virtual">
+			<return type="bool" />
+			<argument index="0" name="point" type="Vector2" />
+			<description>
+			</description>
+		</method>
+		<method name="has_shader_override" qualifiers="const">
+			<return type="bool" />
+			<argument index="0" name="name" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="has_stylebox" qualifiers="const">
+			<return type="bool" />
+			<argument index="0" name="name" type="String" />
+			<argument index="1" name="node_type" type="String" default="&quot;&quot;" />
+			<description>
+			</description>
+		</method>
+		<method name="has_stylebox_override" qualifiers="const">
+			<return type="bool" />
+			<argument index="0" name="name" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="minimum_size_changed">
+			<return type="void" />
+			<description>
+			</description>
+		</method>
+		<method name="release_focus">
+			<return type="void" />
+			<description>
+			</description>
+		</method>
+		<method name="set_anchor">
+			<return type="void" />
+			<argument index="0" name="margin" type="int" enum="Margin" />
+			<argument index="1" name="anchor" type="float" />
+			<argument index="2" name="keep_margin" type="bool" default="false" />
+			<argument index="3" name="push_opposite_anchor" type="bool" default="true" />
+			<description>
+			</description>
+		</method>
+		<method name="set_anchor_and_margin">
+			<return type="void" />
+			<argument index="0" name="margin" type="int" enum="Margin" />
+			<argument index="1" name="anchor" type="float" />
+			<argument index="2" name="offset" type="float" />
+			<argument index="3" name="push_opposite_anchor" type="bool" default="false" />
+			<description>
+			</description>
+		</method>
+		<method name="set_anchors_and_margins_preset">
+			<return type="void" />
+			<argument index="0" name="preset" type="int" enum="Control.LayoutPreset" />
+			<argument index="1" name="resize_mode" type="int" enum="Control.LayoutPresetMode" default="0" />
+			<argument index="2" name="margin" type="int" default="0" />
+			<description>
+			</description>
+		</method>
+		<method name="set_anchors_preset">
+			<return type="void" />
+			<argument index="0" name="preset" type="int" enum="Control.LayoutPreset" />
+			<argument index="1" name="keep_margins" type="bool" default="false" />
+			<description>
+			</description>
+		</method>
+		<method name="set_begin">
+			<return type="void" />
+			<argument index="0" name="position" type="Vector2" />
+			<description>
+			</description>
+		</method>
+		<method name="set_drag_forwarding">
+			<return type="void" />
+			<argument index="0" name="target" type="Control" />
+			<description>
+			</description>
+		</method>
+		<method name="set_drag_preview">
+			<return type="void" />
+			<argument index="0" name="control" type="Control" />
+			<description>
+			</description>
+		</method>
+		<method name="set_end">
+			<return type="void" />
+			<argument index="0" name="position" type="Vector2" />
+			<description>
+			</description>
+		</method>
+		<method name="set_focus_neighbour">
+			<return type="void" />
+			<argument index="0" name="margin" type="int" enum="Margin" />
+			<argument index="1" name="neighbour" type="NodePath" />
+			<description>
+			</description>
+		</method>
+		<method name="set_global_position">
+			<return type="void" />
+			<argument index="0" name="position" type="Vector2" />
+			<argument index="1" name="keep_margins" type="bool" default="false" />
+			<description>
+			</description>
+		</method>
+		<method name="set_margin">
+			<return type="void" />
+			<argument index="0" name="margin" type="int" enum="Margin" />
+			<argument index="1" name="offset" type="float" />
+			<description>
+			</description>
+		</method>
+		<method name="set_margins_preset">
+			<return type="void" />
+			<argument index="0" name="preset" type="int" enum="Control.LayoutPreset" />
+			<argument index="1" name="resize_mode" type="int" enum="Control.LayoutPresetMode" default="0" />
+			<argument index="2" name="margin" type="int" default="0" />
+			<description>
+			</description>
+		</method>
+		<method name="set_position">
+			<return type="void" />
+			<argument index="0" name="position" type="Vector2" />
+			<argument index="1" name="keep_margins" type="bool" default="false" />
+			<description>
+			</description>
+		</method>
+		<method name="set_rotation">
+			<return type="void" />
+			<argument index="0" name="radians" type="float" />
+			<description>
+			</description>
+		</method>
+		<method name="set_size">
+			<return type="void" />
+			<argument index="0" name="size" type="Vector2" />
+			<argument index="1" name="keep_margins" type="bool" default="false" />
+			<description>
+			</description>
+		</method>
+		<method name="show_modal">
+			<return type="void" />
+			<argument index="0" name="exclusive" type="bool" default="false" />
+			<description>
+			</description>
+		</method>
+		<method name="warp_mouse">
+			<return type="void" />
+			<argument index="0" name="to_position" type="Vector2" />
+			<description>
+			</description>
+		</method>
+	</methods>
+	<members>
+		<member name="anchor_bottom" type="float" setter="_set_anchor" getter="get_anchor" default="0.0">
+		</member>
+		<member name="anchor_left" type="float" setter="_set_anchor" getter="get_anchor" default="0.0">
+		</member>
+		<member name="anchor_right" type="float" setter="_set_anchor" getter="get_anchor" default="0.0">
+		</member>
+		<member name="anchor_top" type="float" setter="_set_anchor" getter="get_anchor" default="0.0">
+		</member>
+		<member name="focus_mode" type="int" setter="set_focus_mode" getter="get_focus_mode" enum="Control.FocusMode" default="0">
+		</member>
+		<member name="focus_neighbour_bottom" type="NodePath" setter="set_focus_neighbour" getter="get_focus_neighbour" default="NodePath(&quot;&quot;)">
+		</member>
+		<member name="focus_neighbour_left" type="NodePath" setter="set_focus_neighbour" getter="get_focus_neighbour" default="NodePath(&quot;&quot;)">
+		</member>
+		<member name="focus_neighbour_right" type="NodePath" setter="set_focus_neighbour" getter="get_focus_neighbour" default="NodePath(&quot;&quot;)">
+		</member>
+		<member name="focus_neighbour_top" type="NodePath" setter="set_focus_neighbour" getter="get_focus_neighbour" default="NodePath(&quot;&quot;)">
+		</member>
+		<member name="focus_next" type="NodePath" setter="set_focus_next" getter="get_focus_next" default="NodePath(&quot;&quot;)">
+		</member>
+		<member name="focus_previous" type="NodePath" setter="set_focus_previous" getter="get_focus_previous" default="NodePath(&quot;&quot;)">
+		</member>
+		<member name="grow_horizontal" type="int" setter="set_h_grow_direction" getter="get_h_grow_direction" enum="Control.GrowDirection" default="1">
+		</member>
+		<member name="grow_vertical" type="int" setter="set_v_grow_direction" getter="get_v_grow_direction" enum="Control.GrowDirection" default="1">
+		</member>
+		<member name="hint_tooltip" type="String" setter="set_tooltip" getter="_get_tooltip" default="&quot;&quot;">
+		</member>
+		<member name="input_pass_on_modal_close_click" type="bool" setter="set_pass_on_modal_close_click" getter="get_pass_on_modal_close_click" default="true">
+		</member>
+		<member name="margin_bottom" type="float" setter="set_margin" getter="get_margin" default="0.0">
+		</member>
+		<member name="margin_left" type="float" setter="set_margin" getter="get_margin" default="0.0">
+		</member>
+		<member name="margin_right" type="float" setter="set_margin" getter="get_margin" default="0.0">
+		</member>
+		<member name="margin_top" type="float" setter="set_margin" getter="get_margin" default="0.0">
+		</member>
+		<member name="mouse_default_cursor_shape" type="int" setter="set_default_cursor_shape" getter="get_default_cursor_shape" enum="Control.CursorShape" default="0">
+		</member>
+		<member name="mouse_filter" type="int" setter="set_mouse_filter" getter="get_mouse_filter" enum="Control.MouseFilter" default="0">
+		</member>
+		<member name="rect_clip_content" type="bool" setter="set_clip_contents" getter="is_clipping_contents" default="false">
+		</member>
+		<member name="rect_global_position" type="Vector2" setter="_set_global_position" getter="get_global_position">
+		</member>
+		<member name="rect_min_size" type="Vector2" setter="set_custom_minimum_size" getter="get_custom_minimum_size" default="Vector2( 0, 0 )">
+		</member>
+		<member name="rect_pivot_offset" type="Vector2" setter="set_pivot_offset" getter="get_pivot_offset" default="Vector2( 0, 0 )">
+		</member>
+		<member name="rect_position" type="Vector2" setter="_set_position" getter="get_position" default="Vector2( 0, 0 )">
+		</member>
+		<member name="rect_rotation" type="float" setter="set_rotation_degrees" getter="get_rotation_degrees" default="0.0">
+		</member>
+		<member name="rect_scale" type="Vector2" setter="set_scale" getter="get_scale" default="Vector2( 1, 1 )">
+		</member>
+		<member name="rect_size" type="Vector2" setter="_set_size" getter="get_size" default="Vector2( 0, 0 )">
+		</member>
+		<member name="size_flags_horizontal" type="int" setter="set_h_size_flags" getter="get_h_size_flags" default="1">
+		</member>
+		<member name="size_flags_stretch_ratio" type="float" setter="set_stretch_ratio" getter="get_stretch_ratio" default="1.0">
+		</member>
+		<member name="size_flags_vertical" type="int" setter="set_v_size_flags" getter="get_v_size_flags" default="1">
+		</member>
+		<member name="theme" type="Theme" setter="set_theme" getter="get_theme">
+		</member>
+	</members>
+	<signals>
+		<signal name="focus_entered">
+			<description>
+			</description>
+		</signal>
+		<signal name="focus_exited">
+			<description>
+			</description>
+		</signal>
+		<signal name="gui_input">
+			<argument index="0" name="event" type="InputEvent" />
+			<description>
+			</description>
+		</signal>
+		<signal name="minimum_size_changed">
+			<description>
+			</description>
+		</signal>
+		<signal name="modal_closed">
+			<description>
+			</description>
+		</signal>
+		<signal name="mouse_entered">
+			<description>
+			</description>
+		</signal>
+		<signal name="mouse_exited">
+			<description>
+			</description>
+		</signal>
+		<signal name="resized">
+			<description>
+			</description>
+		</signal>
+		<signal name="size_flags_changed">
+			<description>
+			</description>
+		</signal>
+	</signals>
+	<constants>
+		<constant name="FOCUS_NONE" value="0" enum="FocusMode">
+		</constant>
+		<constant name="FOCUS_CLICK" value="1" enum="FocusMode">
+		</constant>
+		<constant name="FOCUS_ALL" value="2" enum="FocusMode">
+		</constant>
+		<constant name="NOTIFICATION_RESIZED" value="40">
+		</constant>
+		<constant name="NOTIFICATION_MOUSE_ENTER" value="41">
+		</constant>
+		<constant name="NOTIFICATION_MOUSE_EXIT" value="42">
+		</constant>
+		<constant name="NOTIFICATION_FOCUS_ENTER" value="43">
+		</constant>
+		<constant name="NOTIFICATION_FOCUS_EXIT" value="44">
+		</constant>
+		<constant name="NOTIFICATION_THEME_CHANGED" value="45">
+		</constant>
+		<constant name="NOTIFICATION_MODAL_CLOSE" value="46">
+		</constant>
+		<constant name="NOTIFICATION_SCROLL_BEGIN" value="47">
+		</constant>
+		<constant name="NOTIFICATION_SCROLL_END" value="48">
+		</constant>
+		<constant name="CURSOR_ARROW" value="0" enum="CursorShape">
+		</constant>
+		<constant name="CURSOR_IBEAM" value="1" enum="CursorShape">
+		</constant>
+		<constant name="CURSOR_POINTING_HAND" value="2" enum="CursorShape">
+		</constant>
+		<constant name="CURSOR_CROSS" value="3" enum="CursorShape">
+		</constant>
+		<constant name="CURSOR_WAIT" value="4" enum="CursorShape">
+		</constant>
+		<constant name="CURSOR_BUSY" value="5" enum="CursorShape">
+		</constant>
+		<constant name="CURSOR_DRAG" value="6" enum="CursorShape">
+		</constant>
+		<constant name="CURSOR_CAN_DROP" value="7" enum="CursorShape">
+		</constant>
+		<constant name="CURSOR_FORBIDDEN" value="8" enum="CursorShape">
+		</constant>
+		<constant name="CURSOR_VSIZE" value="9" enum="CursorShape">
+		</constant>
+		<constant name="CURSOR_HSIZE" value="10" enum="CursorShape">
+		</constant>
+		<constant name="CURSOR_BDIAGSIZE" value="11" enum="CursorShape">
+		</constant>
+		<constant name="CURSOR_FDIAGSIZE" value="12" enum="CursorShape">
+		</constant>
+		<constant name="CURSOR_MOVE" value="13" enum="CursorShape">
+		</constant>
+		<constant name="CURSOR_VSPLIT" value="14" enum="CursorShape">
+		</constant>
+		<constant name="CURSOR_HSPLIT" value="15" enum="CursorShape">
+		</constant>
+		<constant name="CURSOR_HELP" value="16" enum="CursorShape">
+		</constant>
+		<constant name="PRESET_TOP_LEFT" value="0" enum="LayoutPreset">
+		</constant>
+		<constant name="PRESET_TOP_RIGHT" value="1" enum="LayoutPreset">
+		</constant>
+		<constant name="PRESET_BOTTOM_LEFT" value="2" enum="LayoutPreset">
+		</constant>
+		<constant name="PRESET_BOTTOM_RIGHT" value="3" enum="LayoutPreset">
+		</constant>
+		<constant name="PRESET_CENTER_LEFT" value="4" enum="LayoutPreset">
+		</constant>
+		<constant name="PRESET_CENTER_TOP" value="5" enum="LayoutPreset">
+		</constant>
+		<constant name="PRESET_CENTER_RIGHT" value="6" enum="LayoutPreset">
+		</constant>
+		<constant name="PRESET_CENTER_BOTTOM" value="7" enum="LayoutPreset">
+		</constant>
+		<constant name="PRESET_CENTER" value="8" enum="LayoutPreset">
+		</constant>
+		<constant name="PRESET_LEFT_WIDE" value="9" enum="LayoutPreset">
+		</constant>
+		<constant name="PRESET_TOP_WIDE" value="10" enum="LayoutPreset">
+		</constant>
+		<constant name="PRESET_RIGHT_WIDE" value="11" enum="LayoutPreset">
+		</constant>
+		<constant name="PRESET_BOTTOM_WIDE" value="12" enum="LayoutPreset">
+		</constant>
+		<constant name="PRESET_VCENTER_WIDE" value="13" enum="LayoutPreset">
+		</constant>
+		<constant name="PRESET_HCENTER_WIDE" value="14" enum="LayoutPreset">
+		</constant>
+		<constant name="PRESET_WIDE" value="15" enum="LayoutPreset">
+		</constant>
+		<constant name="PRESET_MODE_MINSIZE" value="0" enum="LayoutPresetMode">
+		</constant>
+		<constant name="PRESET_MODE_KEEP_WIDTH" value="1" enum="LayoutPresetMode">
+		</constant>
+		<constant name="PRESET_MODE_KEEP_HEIGHT" value="2" enum="LayoutPresetMode">
+		</constant>
+		<constant name="PRESET_MODE_KEEP_SIZE" value="3" enum="LayoutPresetMode">
+		</constant>
+		<constant name="SIZE_FILL" value="1" enum="SizeFlags">
+		</constant>
+		<constant name="SIZE_EXPAND" value="2" enum="SizeFlags">
+		</constant>
+		<constant name="SIZE_EXPAND_FILL" value="3" enum="SizeFlags">
+		</constant>
+		<constant name="SIZE_SHRINK_CENTER" value="4" enum="SizeFlags">
+		</constant>
+		<constant name="SIZE_SHRINK_END" value="8" enum="SizeFlags">
+		</constant>
+		<constant name="MOUSE_FILTER_STOP" value="0" enum="MouseFilter">
+		</constant>
+		<constant name="MOUSE_FILTER_PASS" value="1" enum="MouseFilter">
+		</constant>
+		<constant name="MOUSE_FILTER_IGNORE" value="2" enum="MouseFilter">
+		</constant>
+		<constant name="GROW_DIRECTION_BEGIN" value="0" enum="GrowDirection">
+		</constant>
+		<constant name="GROW_DIRECTION_END" value="1" enum="GrowDirection">
+		</constant>
+		<constant name="GROW_DIRECTION_BOTH" value="2" enum="GrowDirection">
+		</constant>
+		<constant name="ANCHOR_BEGIN" value="0" enum="Anchor">
+		</constant>
+		<constant name="ANCHOR_END" value="1" enum="Anchor">
+		</constant>
+	</constants>
+</class>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="CollisionObject" inherits="Spatial" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+		<method name="_input_event" qualifiers="virtual">
+			<return type="void" />
+			<argument index="0" name="camera" type="Object" />
+			<argument index="1" name="event" type="InputEvent" />
+			<argument index="2" name="click_position" type="Vector3" />
+			<argument index="3" name="click_normal" type="Vector3" />
+			<argument index="4" name="shape_idx" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="create_shape_owner">
+			<return type="int" />
+			<argument index="0" name="owner" type="Object" />
+			<description>
+			</description>
+		</method>
+		<method name="get_rid" qualifiers="const">
+			<return type="RID" />
+			<description>
+			</description>
+		</method>
+		<method name="get_shape_owners">
+			<return type="Array" />
+			<description>
+			</description>
+		</method>
+		<method name="is_shape_owner_disabled" qualifiers="const">
+			<return type="bool" />
+			<argument index="0" name="owner_id" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="remove_shape_owner">
+			<return type="void" />
+			<argument index="0" name="owner_id" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="shape_find_owner" qualifiers="const">
+			<return type="int" />
+			<argument index="0" name="shape_index" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="shape_owner_add_shape">
+			<return type="void" />
+			<argument index="0" name="owner_id" type="int" />
+			<argument index="1" name="shape" type="Shape" />
+			<description>
+			</description>
+		</method>
+		<method name="shape_owner_clear_shapes">
+			<return type="void" />
+			<argument index="0" name="owner_id" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="shape_owner_get_owner" qualifiers="const">
+			<return type="Object" />
+			<argument index="0" name="owner_id" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="shape_owner_get_shape" qualifiers="const">
+			<return type="Shape" />
+			<argument index="0" name="owner_id" type="int" />
+			<argument index="1" name="shape_id" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="shape_owner_get_shape_count" qualifiers="const">
+			<return type="int" />
+			<argument index="0" name="owner_id" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="shape_owner_get_shape_index" qualifiers="const">
+			<return type="int" />
+			<argument index="0" name="owner_id" type="int" />
+			<argument index="1" name="shape_id" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="shape_owner_get_transform" qualifiers="const">
+			<return type="Transform" />
+			<argument index="0" name="owner_id" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="shape_owner_remove_shape">
+			<return type="void" />
+			<argument index="0" name="owner_id" type="int" />
+			<argument index="1" name="shape_id" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="shape_owner_set_disabled">
+			<return type="void" />
+			<argument index="0" name="owner_id" type="int" />
+			<argument index="1" name="disabled" type="bool" />
+			<description>
+			</description>
+		</method>
+		<method name="shape_owner_set_transform">
+			<return type="void" />
+			<argument index="0" name="owner_id" type="int" />
+			<argument index="1" name="transform" type="Transform" />
+			<description>
+			</description>
+		</method>
+	</methods>
+	<members>
+		<member name="input_capture_on_drag" type="bool" setter="set_capture_input_on_drag" getter="get_capture_input_on_drag" default="false">
+		</member>
+		<member name="input_ray_pickable" type="bool" setter="set_ray_pickable" getter="is_ray_pickable" default="true">
+		</member>
+	</members>
+	<signals>
+		<signal name="input_event">
+			<argument index="0" name="camera" type="Node" />
+			<argument index="1" name="event" type="InputEvent" />
+			<argument index="2" name="click_position" type="Vector3" />
+			<argument index="3" name="click_normal" type="Vector3" />
+			<argument index="4" name="shape_idx" type="int" />
+			<description>
+			</description>
+		</signal>
+		<signal name="mouse_entered">
+			<description>
+			</description>
+		</signal>
+		<signal name="mouse_exited">
+			<description>
+			</description>
+		</signal>
+	</signals>
+	<constants>
+	</constants>
+</class>

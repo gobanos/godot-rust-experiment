@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="AudioStreamRandomPitch" inherits="AudioStream" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+	</methods>
+	<members>
+		<member name="audio_stream" type="AudioStream" setter="set_audio_stream" getter="get_audio_stream">
+		</member>
+		<member name="random_pitch" type="float" setter="set_random_pitch" getter="get_random_pitch" default="1.1">
+		</member>
+	</members>
+	<constants>
+	</constants>
+</class>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="RectangleShape2D" inherits="Shape2D" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+	</methods>
+	<members>
+		<member name="extents" type="Vector2" setter="set_extents" getter="get_extents" default="Vector2( 10, 10 )">
+		</member>
+	</members>
+	<constants>
+	</constants>
+</class>

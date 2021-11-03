@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="AudioEffectEQ" inherits="AudioEffect" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+		<method name="get_band_count" qualifiers="const">
+			<return type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="get_band_gain_db" qualifiers="const">
+			<return type="float" />
+			<argument index="0" name="band_idx" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="set_band_gain_db">
+			<return type="void" />
+			<argument index="0" name="band_idx" type="int" />
+			<argument index="1" name="volume_db" type="float" />
+			<description>
+			</description>
+		</method>
+	</methods>
+	<constants>
+	</constants>
+</class>

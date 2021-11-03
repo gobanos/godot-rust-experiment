@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="VisibilityNotifier" inherits="Spatial" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+		<method name="is_on_screen" qualifiers="const">
+			<return type="bool" />
+			<description>
+			</description>
+		</method>
+	</methods>
+	<members>
+		<member name="aabb" type="AABB" setter="set_aabb" getter="get_aabb" default="AABB( -1, -1, -1, 2, 2, 2 )">
+		</member>
+	</members>
+	<signals>
+		<signal name="camera_entered">
+			<argument index="0" name="camera" type="Camera" />
+			<description>
+			</description>
+		</signal>
+		<signal name="camera_exited">
+			<argument index="0" name="camera" type="Camera" />
+			<description>
+			</description>
+		</signal>
+		<signal name="screen_entered">
+			<description>
+			</description>
+		</signal>
+		<signal name="screen_exited">
+			<description>
+			</description>
+		</signal>
+	</signals>
+	<constants>
+	</constants>
+</class>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="bool" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+		<method name="bool">
+			<return type="bool" />
+			<argument index="0" name="from" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="bool">
+			<return type="bool" />
+			<argument index="0" name="from" type="float" />
+			<description>
+			</description>
+		</method>
+		<method name="bool">
+			<return type="bool" />
+			<argument index="0" name="from" type="String" />
+			<description>
+			</description>
+		</method>
+	</methods>
+	<constants>
+	</constants>
+</class>

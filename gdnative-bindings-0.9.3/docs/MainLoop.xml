@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="MainLoop" inherits="Object" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+		<method name="_drop_files" qualifiers="virtual">
+			<return type="void" />
+			<argument index="0" name="files" type="PoolStringArray" />
+			<argument index="1" name="from_screen" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="_finalize" qualifiers="virtual">
+			<return type="void" />
+			<description>
+			</description>
+		</method>
+		<method name="_global_menu_action" qualifiers="virtual">
+			<return type="void" />
+			<argument index="0" name="id" type="Variant" />
+			<argument index="1" name="meta" type="Variant" />
+			<description>
+			</description>
+		</method>
+		<method name="_idle" qualifiers="virtual">
+			<return type="bool" />
+			<argument index="0" name="delta" type="float" />
+			<description>
+			</description>
+		</method>
+		<method name="_initialize" qualifiers="virtual">
+			<return type="void" />
+			<description>
+			</description>
+		</method>
+		<method name="_input_event" qualifiers="virtual">
+			<return type="void" />
+			<argument index="0" name="event" type="InputEvent" />
+			<description>
+			</description>
+		</method>
+		<method name="_input_text" qualifiers="virtual">
+			<return type="void" />
+			<argument index="0" name="text" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="_iteration" qualifiers="virtual">
+			<return type="bool" />
+			<argument index="0" name="delta" type="float" />
+			<description>
+			</description>
+		</method>
+		<method name="finish">
+			<return type="void" />
+			<description>
+			</description>
+		</method>
+		<method name="idle">
+			<return type="bool" />
+			<argument index="0" name="delta" type="float" />
+			<description>
+			</description>
+		</method>
+		<method name="init">
+			<return type="void" />
+			<description>
+			</description>
+		</method>
+		<method name="input_event">
+			<return type="void" />
+			<argument index="0" name="event" type="InputEvent" />
+			<description>
+			</description>
+		</method>
+		<method name="input_text">
+			<return type="void" />
+			<argument index="0" name="text" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="iteration">
+			<return type="bool" />
+			<argument index="0" name="delta" type="float" />
+			<description>
+			</description>
+		</method>
+	</methods>
+	<signals>
+		<signal name="on_request_permissions_result">
+			<argument index="0" name="permission" type="String" />
+			<argument index="1" name="granted" type="bool" />
+			<description>
+			</description>
+		</signal>
+	</signals>
+	<constants>
+		<constant name="NOTIFICATION_WM_MOUSE_ENTER" value="1002">
+		</constant>
+		<constant name="NOTIFICATION_WM_MOUSE_EXIT" value="1003">
+		</constant>
+		<constant name="NOTIFICATION_WM_FOCUS_IN" value="1004">
+		</constant>
+		<constant name="NOTIFICATION_WM_FOCUS_OUT" value="1005">
+		</constant>
+		<constant name="NOTIFICATION_WM_QUIT_REQUEST" value="1006">
+		</constant>
+		<constant name="NOTIFICATION_WM_GO_BACK_REQUEST" value="1007">
+		</constant>
+		<constant name="NOTIFICATION_WM_UNFOCUS_REQUEST" value="1008">
+		</constant>
+		<constant name="NOTIFICATION_OS_MEMORY_WARNING" value="1009">
+		</constant>
+		<constant name="NOTIFICATION_TRANSLATION_CHANGED" value="1010">
+		</constant>
+		<constant name="NOTIFICATION_WM_ABOUT" value="1011">
+		</constant>
+		<constant name="NOTIFICATION_CRASH" value="1012">
+		</constant>
+		<constant name="NOTIFICATION_OS_IME_UPDATE" value="1013">
+		</constant>
+		<constant name="NOTIFICATION_APP_RESUMED" value="1014">
+		</constant>
+		<constant name="NOTIFICATION_APP_PAUSED" value="1015">
+		</constant>
+	</constants>
+</class>

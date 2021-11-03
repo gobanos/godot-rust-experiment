@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="PoolByteArray" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+		<method name="PoolByteArray">
+			<return type="PoolByteArray" />
+			<argument index="0" name="from" type="Array" />
+			<description>
+			</description>
+		</method>
+		<method name="append">
+			<argument index="0" name="byte" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="append_array">
+			<argument index="0" name="array" type="PoolByteArray" />
+			<description>
+			</description>
+		</method>
+		<method name="compress">
+			<return type="PoolByteArray" />
+			<argument index="0" name="compression_mode" type="int" default="0" />
+			<description>
+			</description>
+		</method>
+		<method name="decompress">
+			<return type="PoolByteArray" />
+			<argument index="0" name="buffer_size" type="int" />
+			<argument index="1" name="compression_mode" type="int" default="0" />
+			<description>
+			</description>
+		</method>
+		<method name="empty">
+			<return type="bool" />
+			<description>
+			</description>
+		</method>
+		<method name="get_string_from_ascii">
+			<return type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="get_string_from_utf8">
+			<return type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="hex_encode">
+			<return type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="insert">
+			<return type="int" />
+			<argument index="0" name="idx" type="int" />
+			<argument index="1" name="byte" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="invert">
+			<description>
+			</description>
+		</method>
+		<method name="push_back">
+			<argument index="0" name="byte" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="remove">
+			<argument index="0" name="idx" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="resize">
+			<argument index="0" name="idx" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="set">
+			<argument index="0" name="idx" type="int" />
+			<argument index="1" name="byte" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="size">
+			<return type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="subarray">
+			<return type="PoolByteArray" />
+			<argument index="0" name="from" type="int" />
+			<argument index="1" name="to" type="int" />
+			<description>
+			</description>
+		</method>
+	</methods>
+	<constants>
+	</constants>
+</class>

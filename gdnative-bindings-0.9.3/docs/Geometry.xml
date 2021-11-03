@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="Geometry" inherits="Object" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+		<method name="build_box_planes">
+			<return type="Array" />
+			<argument index="0" name="extents" type="Vector3" />
+			<description>
+			</description>
+		</method>
+		<method name="build_capsule_planes">
+			<return type="Array" />
+			<argument index="0" name="radius" type="float" />
+			<argument index="1" name="height" type="float" />
+			<argument index="2" name="sides" type="int" />
+			<argument index="3" name="lats" type="int" />
+			<argument index="4" name="axis" type="int" enum="Vector3.Axis" default="2" />
+			<description>
+			</description>
+		</method>
+		<method name="build_cylinder_planes">
+			<return type="Array" />
+			<argument index="0" name="radius" type="float" />
+			<argument index="1" name="height" type="float" />
+			<argument index="2" name="sides" type="int" />
+			<argument index="3" name="axis" type="int" enum="Vector3.Axis" default="2" />
+			<description>
+			</description>
+		</method>
+		<method name="clip_polygon">
+			<return type="PoolVector3Array" />
+			<argument index="0" name="points" type="PoolVector3Array" />
+			<argument index="1" name="plane" type="Plane" />
+			<description>
+			</description>
+		</method>
+		<method name="clip_polygons_2d">
+			<return type="Array" />
+			<argument index="0" name="polygon_a" type="PoolVector2Array" />
+			<argument index="1" name="polygon_b" type="PoolVector2Array" />
+			<description>
+			</description>
+		</method>
+		<method name="clip_polyline_with_polygon_2d">
+			<return type="Array" />
+			<argument index="0" name="polyline" type="PoolVector2Array" />
+			<argument index="1" name="polygon" type="PoolVector2Array" />
+			<description>
+			</description>
+		</method>
+		<method name="convex_hull_2d">
+			<return type="PoolVector2Array" />
+			<argument index="0" name="points" type="PoolVector2Array" />
+			<description>
+			</description>
+		</method>
+		<method name="exclude_polygons_2d">
+			<return type="Array" />
+			<argument index="0" name="polygon_a" type="PoolVector2Array" />
+			<argument index="1" name="polygon_b" type="PoolVector2Array" />
+			<description>
+			</description>
+		</method>
+		<method name="get_closest_point_to_segment">
+			<return type="Vector3" />
+			<argument index="0" name="point" type="Vector3" />
+			<argument index="1" name="s1" type="Vector3" />
+			<argument index="2" name="s2" type="Vector3" />
+			<description>
+			</description>
+		</method>
+		<method name="get_closest_point_to_segment_2d">
+			<return type="Vector2" />
+			<argument index="0" name="point" type="Vector2" />
+			<argument index="1" name="s1" type="Vector2" />
+			<argument index="2" name="s2" type="Vector2" />
+			<description>
+			</description>
+		</method>
+		<method name="get_closest_point_to_segment_uncapped">
+			<return type="Vector3" />
+			<argument index="0" name="point" type="Vector3" />
+			<argument index="1" name="s1" type="Vector3" />
+			<argument index="2" name="s2" type="Vector3" />
+			<description>
+			</description>
+		</method>
+		<method name="get_closest_point_to_segment_uncapped_2d">
+			<return type="Vector2" />
+			<argument index="0" name="point" type="Vector2" />
+			<argument index="1" name="s1" type="Vector2" />
+			<argument index="2" name="s2" type="Vector2" />
+			<description>
+			</description>
+		</method>
+		<method name="get_closest_points_between_segments">
+			<return type="PoolVector3Array" />
+			<argument index="0" name="p1" type="Vector3" />
+			<argument index="1" name="p2" type="Vector3" />
+			<argument index="2" name="q1" type="Vector3" />
+			<argument index="3" name="q2" type="Vector3" />
+			<description>
+			</description>
+		</method>
+		<method name="get_closest_points_between_segments_2d">
+			<return type="PoolVector2Array" />
+			<argument index="0" name="p1" type="Vector2" />
+			<argument index="1" name="q1" type="Vector2" />
+			<argument index="2" name="p2" type="Vector2" />
+			<argument index="3" name="q2" type="Vector2" />
+			<description>
+			</description>
+		</method>
+		<method name="get_uv84_normal_bit">
+			<return type="int" />
+			<argument index="0" name="normal" type="Vector3" />
+			<description>
+			</description>
+		</method>
+		<method name="intersect_polygons_2d">
+			<return type="Array" />
+			<argument index="0" name="polygon_a" type="PoolVector2Array" />
+			<argument index="1" name="polygon_b" type="PoolVector2Array" />
+			<description>
+			</description>
+		</method>
+		<method name="intersect_polyline_with_polygon_2d">
+			<return type="Array" />
+			<argument index="0" name="polyline" type="PoolVector2Array" />
+			<argument index="1" name="polygon" type="PoolVector2Array" />
+			<description>
+			</description>
+		</method>
+		<method name="is_point_in_circle">
+			<return type="bool" />
+			<argument index="0" name="point" type="Vector2" />
+			<argument index="1" name="circle_position" type="Vector2" />
+			<argument index="2" name="circle_radius" type="float" />
+			<description>
+			</description>
+		</method>
+		<method name="is_point_in_polygon">
+			<return type="bool" />
+			<argument index="0" name="point" type="Vector2" />
+			<argument index="1" name="polygon" type="PoolVector2Array" />
+			<description>
+			</description>
+		</method>
+		<method name="is_polygon_clockwise">
+			<return type="bool" />
+			<argument index="0" name="polygon" type="PoolVector2Array" />
+			<description>
+			</description>
+		</method>
+		<method name="line_intersects_line_2d">
+			<return type="Variant" />
+			<argument index="0" name="from_a" type="Vector2" />
+			<argument index="1" name="dir_a" type="Vector2" />
+			<argument index="2" name="from_b" type="Vector2" />
+			<argument index="3" name="dir_b" type="Vector2" />
+			<description>
+			</description>
+		</method>
+		<method name="make_atlas">
+			<return type="Dictionary" />
+			<argument index="0" name="sizes" type="PoolVector2Array" />
+			<description>
+			</description>
+		</method>
+		<method name="merge_polygons_2d">
+			<return type="Array" />
+			<argument index="0" name="polygon_a" type="PoolVector2Array" />
+			<argument index="1" name="polygon_b" type="PoolVector2Array" />
+			<description>
+			</description>
+		</method>
+		<method name="offset_polygon_2d">
+			<return type="Array" />
+			<argument index="0" name="polygon" type="PoolVector2Array" />
+			<argument index="1" name="delta" type="float" />
+			<argument index="2" name="join_type" type="int" enum="Geometry.PolyJoinType" default="0" />
+			<description>
+			</description>
+		</method>
+		<method name="offset_polyline_2d">
+			<return type="Array" />
+			<argument index="0" name="polyline" type="PoolVector2Array" />
+			<argument index="1" name="delta" type="float" />
+			<argument index="2" name="join_type" type="int" enum="Geometry.PolyJoinType" default="0" />
+			<argument index="3" name="end_type" type="int" enum="Geometry.PolyEndType" default="3" />
+			<description>
+			</description>
+		</method>
+		<method name="point_is_inside_triangle" qualifiers="const">
+			<return type="bool" />
+			<argument index="0" name="point" type="Vector2" />
+			<argument index="1" name="a" type="Vector2" />
+			<argument index="2" name="b" type="Vector2" />
+			<argument index="3" name="c" type="Vector2" />
+			<description>
+			</description>
+		</method>
+		<method name="ray_intersects_triangle">
+			<return type="Variant" />
+			<argument index="0" name="from" type="Vector3" />
+			<argument index="1" name="dir" type="Vector3" />
+			<argument index="2" name="a" type="Vector3" />
+			<argument index="3" name="b" type="Vector3" />
+			<argument index="4" name="c" type="Vector3" />
+			<description>
+			</description>
+		</method>
+		<method name="segment_intersects_circle">
+			<return type="float" />
+			<argument index="0" name="segment_from" type="Vector2" />
+			<argument index="1" name="segment_to" type="Vector2" />
+			<argument index="2" name="circle_position" type="Vector2" />
+			<argument index="3" name="circle_radius" type="float" />
+			<description>
+			</description>
+		</method>
+		<method name="segment_intersects_convex">
+			<return type="PoolVector3Array" />
+			<argument index="0" name="from" type="Vector3" />
+			<argument index="1" name="to" type="Vector3" />
+			<argument index="2" name="planes" type="Array" />
+			<description>
+			</description>
+		</method>
+		<method name="segment_intersects_cylinder">
+			<return type="PoolVector3Array" />
+			<argument index="0" name="from" type="Vector3" />
+			<argument index="1" name="to" type="Vector3" />
+			<argument index="2" name="height" type="float" />
+			<argument index="3" name="radius" type="float" />
+			<description>
+			</description>
+		</method>
+		<method name="segment_intersects_segment_2d">
+			<return type="Variant" />
+			<argument index="0" name="from_a" type="Vector2" />
+			<argument index="1" name="to_a" type="Vector2" />
+			<argument index="2" name="from_b" type="Vector2" />
+			<argument index="3" name="to_b" type="Vector2" />
+			<description>
+			</description>
+		</method>
+		<method name="segment_intersects_sphere">
+			<return type="PoolVector3Array" />
+			<argument index="0" name="from" type="Vector3" />
+			<argument index="1" name="to" type="Vector3" />
+			<argument index="2" name="sphere_position" type="Vector3" />
+			<argument index="3" name="sphere_radius" type="float" />
+			<description>
+			</description>
+		</method>
+		<method name="segment_intersects_triangle">
+			<return type="Variant" />
+			<argument index="0" name="from" type="Vector3" />
+			<argument index="1" name="to" type="Vector3" />
+			<argument index="2" name="a" type="Vector3" />
+			<argument index="3" name="b" type="Vector3" />
+			<argument index="4" name="c" type="Vector3" />
+			<description>
+			</description>
+		</method>
+		<method name="triangulate_delaunay_2d">
+			<return type="PoolIntArray" />
+			<argument index="0" name="points" type="PoolVector2Array" />
+			<description>
+			</description>
+		</method>
+		<method name="triangulate_polygon">
+			<return type="PoolIntArray" />
+			<argument index="0" name="polygon" type="PoolVector2Array" />
+			<description>
+			</description>
+		</method>
+	</methods>
+	<constants>
+		<constant name="OPERATION_UNION" value="0" enum="PolyBooleanOperation">
+		</constant>
+		<constant name="OPERATION_DIFFERENCE" value="1" enum="PolyBooleanOperation">
+		</constant>
+		<constant name="OPERATION_INTERSECTION" value="2" enum="PolyBooleanOperation">
+		</constant>
+		<constant name="OPERATION_XOR" value="3" enum="PolyBooleanOperation">
+		</constant>
+		<constant name="JOIN_SQUARE" value="0" enum="PolyJoinType">
+		</constant>
+		<constant name="JOIN_ROUND" value="1" enum="PolyJoinType">
+		</constant>
+		<constant name="JOIN_MITER" value="2" enum="PolyJoinType">
+		</constant>
+		<constant name="END_POLYGON" value="0" enum="PolyEndType">
+		</constant>
+		<constant name="END_JOINED" value="1" enum="PolyEndType">
+		</constant>
+		<constant name="END_BUTT" value="2" enum="PolyEndType">
+		</constant>
+		<constant name="END_SQUARE" value="3" enum="PolyEndType">
+		</constant>
+		<constant name="END_ROUND" value="4" enum="PolyEndType">
+		</constant>
+	</constants>
+</class>

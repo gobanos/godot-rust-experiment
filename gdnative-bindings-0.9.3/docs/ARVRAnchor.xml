@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="ARVRAnchor" inherits="Spatial" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+		<method name="get_anchor_name" qualifiers="const">
+			<return type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="get_is_active" qualifiers="const">
+			<return type="bool" />
+			<description>
+			</description>
+		</method>
+		<method name="get_mesh" qualifiers="const">
+			<return type="Mesh" />
+			<description>
+			</description>
+		</method>
+		<method name="get_plane" qualifiers="const">
+			<return type="Plane" />
+			<description>
+			</description>
+		</method>
+		<method name="get_size" qualifiers="const">
+			<return type="Vector3" />
+			<description>
+			</description>
+		</method>
+	</methods>
+	<members>
+		<member name="anchor_id" type="int" setter="set_anchor_id" getter="get_anchor_id" default="1">
+		</member>
+	</members>
+	<signals>
+		<signal name="mesh_updated">
+			<argument index="0" name="mesh" type="Mesh" />
+			<description>
+			</description>
+		</signal>
+	</signals>
+	<constants>
+	</constants>
+</class>

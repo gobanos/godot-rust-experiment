@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="ExternalTexture" inherits="Texture" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+		<method name="get_external_texture_id">
+			<return type="int" />
+			<description>
+			</description>
+		</method>
+	</methods>
+	<members>
+		<member name="flags" type="int" setter="set_flags" getter="get_flags" override="true" default="2048" />
+		<member name="size" type="Vector2" setter="set_size" getter="get_size" default="Vector2( 1, 1 )">
+		</member>
+	</members>
+	<constants>
+	</constants>
+</class>

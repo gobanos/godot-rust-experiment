@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="InputEventMouseButton" inherits="InputEventMouse" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+	</methods>
+	<members>
+		<member name="button_index" type="int" setter="set_button_index" getter="get_button_index" default="0">
+		</member>
+		<member name="doubleclick" type="bool" setter="set_doubleclick" getter="is_doubleclick" default="false">
+		</member>
+		<member name="factor" type="float" setter="set_factor" getter="get_factor" default="1.0">
+		</member>
+		<member name="pressed" type="bool" setter="set_pressed" getter="is_pressed" default="false">
+		</member>
+	</members>
+	<constants>
+	</constants>
+</class>

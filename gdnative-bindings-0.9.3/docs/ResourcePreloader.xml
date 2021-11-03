@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="ResourcePreloader" inherits="Node" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+		<method name="add_resource">
+			<return type="void" />
+			<argument index="0" name="name" type="String" />
+			<argument index="1" name="resource" type="Resource" />
+			<description>
+			</description>
+		</method>
+		<method name="get_resource" qualifiers="const">
+			<return type="Resource" />
+			<argument index="0" name="name" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="get_resource_list" qualifiers="const">
+			<return type="PoolStringArray" />
+			<description>
+			</description>
+		</method>
+		<method name="has_resource" qualifiers="const">
+			<return type="bool" />
+			<argument index="0" name="name" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="remove_resource">
+			<return type="void" />
+			<argument index="0" name="name" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="rename_resource">
+			<return type="void" />
+			<argument index="0" name="name" type="String" />
+			<argument index="1" name="newname" type="String" />
+			<description>
+			</description>
+		</method>
+	</methods>
+	<constants>
+	</constants>
+</class>

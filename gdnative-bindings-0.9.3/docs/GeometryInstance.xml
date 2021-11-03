@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="GeometryInstance" inherits="VisualInstance" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+		<method name="get_flag" qualifiers="const">
+			<return type="bool" />
+			<argument index="0" name="flag" type="int" enum="GeometryInstance.Flags" />
+			<description>
+			</description>
+		</method>
+		<method name="set_custom_aabb">
+			<return type="void" />
+			<argument index="0" name="aabb" type="AABB" />
+			<description>
+			</description>
+		</method>
+		<method name="set_flag">
+			<return type="void" />
+			<argument index="0" name="flag" type="int" enum="GeometryInstance.Flags" />
+			<argument index="1" name="value" type="bool" />
+			<description>
+			</description>
+		</method>
+	</methods>
+	<members>
+		<member name="cast_shadow" type="int" setter="set_cast_shadows_setting" getter="get_cast_shadows_setting" enum="GeometryInstance.ShadowCastingSetting" default="1">
+		</member>
+		<member name="extra_cull_margin" type="float" setter="set_extra_cull_margin" getter="get_extra_cull_margin" default="0.0">
+		</member>
+		<member name="generate_lightmap" type="bool" setter="set_generate_lightmap" getter="get_generate_lightmap" default="true">
+		</member>
+		<member name="lightmap_scale" type="int" setter="set_lightmap_scale" getter="get_lightmap_scale" enum="GeometryInstance.LightmapScale" default="0">
+		</member>
+		<member name="lod_max_distance" type="float" setter="set_lod_max_distance" getter="get_lod_max_distance" default="0.0">
+		</member>
+		<member name="lod_max_hysteresis" type="float" setter="set_lod_max_hysteresis" getter="get_lod_max_hysteresis" default="0.0">
+		</member>
+		<member name="lod_min_distance" type="float" setter="set_lod_min_distance" getter="get_lod_min_distance" default="0.0">
+		</member>
+		<member name="lod_min_hysteresis" type="float" setter="set_lod_min_hysteresis" getter="get_lod_min_hysteresis" default="0.0">
+		</member>
+		<member name="material_override" type="Material" setter="set_material_override" getter="get_material_override">
+		</member>
+		<member name="use_in_baked_light" type="bool" setter="set_flag" getter="get_flag" default="false">
+		</member>
+	</members>
+	<constants>
+		<constant name="LIGHTMAP_SCALE_1X" value="0" enum="LightmapScale">
+		</constant>
+		<constant name="LIGHTMAP_SCALE_2X" value="1" enum="LightmapScale">
+		</constant>
+		<constant name="LIGHTMAP_SCALE_4X" value="2" enum="LightmapScale">
+		</constant>
+		<constant name="LIGHTMAP_SCALE_8X" value="3" enum="LightmapScale">
+		</constant>
+		<constant name="LIGHTMAP_SCALE_MAX" value="4" enum="LightmapScale">
+		</constant>
+		<constant name="SHADOW_CASTING_SETTING_OFF" value="0" enum="ShadowCastingSetting">
+		</constant>
+		<constant name="SHADOW_CASTING_SETTING_ON" value="1" enum="ShadowCastingSetting">
+		</constant>
+		<constant name="SHADOW_CASTING_SETTING_DOUBLE_SIDED" value="2" enum="ShadowCastingSetting">
+		</constant>
+		<constant name="SHADOW_CASTING_SETTING_SHADOWS_ONLY" value="3" enum="ShadowCastingSetting">
+		</constant>
+		<constant name="FLAG_USE_BAKED_LIGHT" value="0" enum="Flags">
+		</constant>
+		<constant name="FLAG_DRAW_NEXT_FRAME_IF_VISIBLE" value="1" enum="Flags">
+		</constant>
+		<constant name="FLAG_MAX" value="2" enum="Flags">
+		</constant>
+	</constants>
+</class>

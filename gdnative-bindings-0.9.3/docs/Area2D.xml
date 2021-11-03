@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="Area2D" inherits="CollisionObject2D" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+		<method name="get_collision_layer_bit" qualifiers="const">
+			<return type="bool" />
+			<argument index="0" name="bit" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="get_collision_mask_bit" qualifiers="const">
+			<return type="bool" />
+			<argument index="0" name="bit" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="get_overlapping_areas" qualifiers="const">
+			<return type="Array" />
+			<description>
+			</description>
+		</method>
+		<method name="get_overlapping_bodies" qualifiers="const">
+			<return type="Array" />
+			<description>
+			</description>
+		</method>
+		<method name="overlaps_area" qualifiers="const">
+			<return type="bool" />
+			<argument index="0" name="area" type="Node" />
+			<description>
+			</description>
+		</method>
+		<method name="overlaps_body" qualifiers="const">
+			<return type="bool" />
+			<argument index="0" name="body" type="Node" />
+			<description>
+			</description>
+		</method>
+		<method name="set_collision_layer_bit">
+			<return type="void" />
+			<argument index="0" name="bit" type="int" />
+			<argument index="1" name="value" type="bool" />
+			<description>
+			</description>
+		</method>
+		<method name="set_collision_mask_bit">
+			<return type="void" />
+			<argument index="0" name="bit" type="int" />
+			<argument index="1" name="value" type="bool" />
+			<description>
+			</description>
+		</method>
+	</methods>
+	<members>
+		<member name="angular_damp" type="float" setter="set_angular_damp" getter="get_angular_damp" default="1.0">
+		</member>
+		<member name="audio_bus_name" type="String" setter="set_audio_bus_name" getter="get_audio_bus_name" default="&quot;Master&quot;">
+		</member>
+		<member name="audio_bus_override" type="bool" setter="set_audio_bus_override" getter="is_overriding_audio_bus" default="false">
+		</member>
+		<member name="collision_layer" type="int" setter="set_collision_layer" getter="get_collision_layer" default="1">
+		</member>
+		<member name="collision_mask" type="int" setter="set_collision_mask" getter="get_collision_mask" default="1">
+		</member>
+		<member name="gravity" type="float" setter="set_gravity" getter="get_gravity" default="98.0">
+		</member>
+		<member name="gravity_distance_scale" type="float" setter="set_gravity_distance_scale" getter="get_gravity_distance_scale" default="0.0">
+		</member>
+		<member name="gravity_point" type="bool" setter="set_gravity_is_point" getter="is_gravity_a_point" default="false">
+		</member>
+		<member name="gravity_vec" type="Vector2" setter="set_gravity_vector" getter="get_gravity_vector" default="Vector2( 0, 1 )">
+		</member>
+		<member name="linear_damp" type="float" setter="set_linear_damp" getter="get_linear_damp" default="0.1">
+		</member>
+		<member name="monitorable" type="bool" setter="set_monitorable" getter="is_monitorable" default="true">
+		</member>
+		<member name="monitoring" type="bool" setter="set_monitoring" getter="is_monitoring" default="true">
+		</member>
+		<member name="priority" type="float" setter="set_priority" getter="get_priority" default="0.0">
+		</member>
+		<member name="space_override" type="int" setter="set_space_override_mode" getter="get_space_override_mode" enum="Area2D.SpaceOverride" default="0">
+		</member>
+	</members>
+	<signals>
+		<signal name="area_entered">
+			<argument index="0" name="area" type="Area2D" />
+			<description>
+			</description>
+		</signal>
+		<signal name="area_exited">
+			<argument index="0" name="area" type="Area2D" />
+			<description>
+			</description>
+		</signal>
+		<signal name="area_shape_entered">
+			<argument index="0" name="area_id" type="int" />
+			<argument index="1" name="area" type="Area2D" />
+			<argument index="2" name="area_shape" type="int" />
+			<argument index="3" name="local_shape" type="int" />
+			<description>
+			</description>
+		</signal>
+		<signal name="area_shape_exited">
+			<argument index="0" name="area_id" type="int" />
+			<argument index="1" name="area" type="Area2D" />
+			<argument index="2" name="area_shape" type="int" />
+			<argument index="3" name="local_shape" type="int" />
+			<description>
+			</description>
+		</signal>
+		<signal name="body_entered">
+			<argument index="0" name="body" type="Node" />
+			<description>
+			</description>
+		</signal>
+		<signal name="body_exited">
+			<argument index="0" name="body" type="Node" />
+			<description>
+			</description>
+		</signal>
+		<signal name="body_shape_entered">
+			<argument index="0" name="body_id" type="int" />
+			<argument index="1" name="body" type="Node" />
+			<argument index="2" name="body_shape" type="int" />
+			<argument index="3" name="local_shape" type="int" />
+			<description>
+			</description>
+		</signal>
+		<signal name="body_shape_exited">
+			<argument index="0" name="body_id" type="int" />
+			<argument index="1" name="body" type="Node" />
+			<argument index="2" name="body_shape" type="int" />
+			<argument index="3" name="local_shape" type="int" />
+			<description>
+			</description>
+		</signal>
+	</signals>
+	<constants>
+		<constant name="SPACE_OVERRIDE_DISABLED" value="0" enum="SpaceOverride">
+		</constant>
+		<constant name="SPACE_OVERRIDE_COMBINE" value="1" enum="SpaceOverride">
+		</constant>
+		<constant name="SPACE_OVERRIDE_COMBINE_REPLACE" value="2" enum="SpaceOverride">
+		</constant>
+		<constant name="SPACE_OVERRIDE_REPLACE" value="3" enum="SpaceOverride">
+		</constant>
+		<constant name="SPACE_OVERRIDE_REPLACE_COMBINE" value="4" enum="SpaceOverride">
+		</constant>
+	</constants>
+</class>

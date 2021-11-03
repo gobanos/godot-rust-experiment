@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="ShortCut" inherits="Resource" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+		<method name="get_as_text" qualifiers="const">
+			<return type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="is_shortcut" qualifiers="const">
+			<return type="bool" />
+			<argument index="0" name="event" type="InputEvent" />
+			<description>
+			</description>
+		</method>
+		<method name="is_valid" qualifiers="const">
+			<return type="bool" />
+			<description>
+			</description>
+		</method>
+	</methods>
+	<members>
+		<member name="shortcut" type="InputEvent" setter="set_shortcut" getter="get_shortcut">
+		</member>
+	</members>
+	<constants>
+	</constants>
+</class>

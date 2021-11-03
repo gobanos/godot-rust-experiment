@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="CenterContainer" inherits="Container" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+	</methods>
+	<members>
+		<member name="use_top_left" type="bool" setter="set_use_top_left" getter="is_using_top_left" default="false">
+		</member>
+	</members>
+	<constants>
+	</constants>
+</class>

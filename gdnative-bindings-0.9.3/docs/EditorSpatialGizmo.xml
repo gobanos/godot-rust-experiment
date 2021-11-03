@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="EditorSpatialGizmo" inherits="SpatialGizmo" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+		<method name="add_collision_segments">
+			<return type="void" />
+			<argument index="0" name="segments" type="PoolVector3Array" />
+			<description>
+			</description>
+		</method>
+		<method name="add_collision_triangles">
+			<return type="void" />
+			<argument index="0" name="triangles" type="TriangleMesh" />
+			<description>
+			</description>
+		</method>
+		<method name="add_handles">
+			<return type="void" />
+			<argument index="0" name="handles" type="PoolVector3Array" />
+			<argument index="1" name="material" type="Material" />
+			<argument index="2" name="billboard" type="bool" default="false" />
+			<argument index="3" name="secondary" type="bool" default="false" />
+			<description>
+			</description>
+		</method>
+		<method name="add_lines">
+			<return type="void" />
+			<argument index="0" name="lines" type="PoolVector3Array" />
+			<argument index="1" name="material" type="Material" />
+			<argument index="2" name="billboard" type="bool" default="false" />
+			<argument index="3" name="modulate" type="Color" default="Color( 1, 1, 1, 1 )" />
+			<description>
+			</description>
+		</method>
+		<method name="add_mesh">
+			<return type="void" />
+			<argument index="0" name="mesh" type="ArrayMesh" />
+			<argument index="1" name="billboard" type="bool" default="false" />
+			<argument index="2" name="skeleton" type="SkinReference" default="null" />
+			<argument index="3" name="material" type="Material" default="null" />
+			<description>
+			</description>
+		</method>
+		<method name="add_unscaled_billboard">
+			<return type="void" />
+			<argument index="0" name="material" type="Material" />
+			<argument index="1" name="default_scale" type="float" default="1" />
+			<argument index="2" name="modulate" type="Color" default="Color( 1, 1, 1, 1 )" />
+			<description>
+			</description>
+		</method>
+		<method name="clear">
+			<return type="void" />
+			<description>
+			</description>
+		</method>
+		<method name="commit_handle" qualifiers="virtual">
+			<return type="void" />
+			<argument index="0" name="index" type="int" />
+			<argument index="1" name="restore" type="Variant" />
+			<argument index="2" name="cancel" type="bool" default="false" />
+			<description>
+			</description>
+		</method>
+		<method name="get_handle_name" qualifiers="virtual">
+			<return type="String" />
+			<argument index="0" name="index" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="get_handle_value" qualifiers="virtual">
+			<return type="Variant" />
+			<argument index="0" name="index" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="get_plugin" qualifiers="const">
+			<return type="EditorSpatialGizmoPlugin" />
+			<description>
+			</description>
+		</method>
+		<method name="get_spatial_node" qualifiers="const">
+			<return type="Spatial" />
+			<description>
+			</description>
+		</method>
+		<method name="is_handle_highlighted" qualifiers="virtual">
+			<return type="bool" />
+			<argument index="0" name="index" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="redraw" qualifiers="virtual">
+			<return type="void" />
+			<description>
+			</description>
+		</method>
+		<method name="set_handle" qualifiers="virtual">
+			<return type="void" />
+			<argument index="0" name="index" type="int" />
+			<argument index="1" name="camera" type="Camera" />
+			<argument index="2" name="point" type="Vector2" />
+			<description>
+			</description>
+		</method>
+		<method name="set_hidden">
+			<return type="void" />
+			<argument index="0" name="hidden" type="bool" />
+			<description>
+			</description>
+		</method>
+		<method name="set_spatial_node">
+			<return type="void" />
+			<argument index="0" name="node" type="Node" />
+			<description>
+			</description>
+		</method>
+	</methods>
+	<constants>
+	</constants>
+</class>

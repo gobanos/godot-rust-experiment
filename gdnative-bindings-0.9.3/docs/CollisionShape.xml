@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="CollisionShape" inherits="Spatial" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+		<method name="make_convex_from_brothers">
+			<return type="void" />
+			<description>
+			</description>
+		</method>
+		<method name="resource_changed">
+			<return type="void" />
+			<argument index="0" name="resource" type="Resource" />
+			<description>
+			</description>
+		</method>
+	</methods>
+	<members>
+		<member name="disabled" type="bool" setter="set_disabled" getter="is_disabled" default="false">
+		</member>
+		<member name="shape" type="Shape" setter="set_shape" getter="get_shape">
+		</member>
+	</members>
+	<constants>
+	</constants>
+</class>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="LargeTexture" inherits="Texture" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+		<method name="add_piece">
+			<return type="int" />
+			<argument index="0" name="ofs" type="Vector2" />
+			<argument index="1" name="texture" type="Texture" />
+			<description>
+			</description>
+		</method>
+		<method name="clear">
+			<return type="void" />
+			<description>
+			</description>
+		</method>
+		<method name="get_piece_count" qualifiers="const">
+			<return type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="get_piece_offset" qualifiers="const">
+			<return type="Vector2" />
+			<argument index="0" name="idx" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="get_piece_texture" qualifiers="const">
+			<return type="Texture" />
+			<argument index="0" name="idx" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="set_piece_offset">
+			<return type="void" />
+			<argument index="0" name="idx" type="int" />
+			<argument index="1" name="ofs" type="Vector2" />
+			<description>
+			</description>
+		</method>
+		<method name="set_piece_texture">
+			<return type="void" />
+			<argument index="0" name="idx" type="int" />
+			<argument index="1" name="texture" type="Texture" />
+			<description>
+			</description>
+		</method>
+		<method name="set_size">
+			<return type="void" />
+			<argument index="0" name="size" type="Vector2" />
+			<description>
+			</description>
+		</method>
+	</methods>
+	<members>
+		<member name="flags" type="int" setter="set_flags" getter="get_flags" override="true" default="0" />
+	</members>
+	<constants>
+	</constants>
+</class>

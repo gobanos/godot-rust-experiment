@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="Texture" inherits="Resource" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+		<method name="draw" qualifiers="const">
+			<return type="void" />
+			<argument index="0" name="canvas_item" type="RID" />
+			<argument index="1" name="position" type="Vector2" />
+			<argument index="2" name="modulate" type="Color" default="Color( 1, 1, 1, 1 )" />
+			<argument index="3" name="transpose" type="bool" default="false" />
+			<argument index="4" name="normal_map" type="Texture" default="null" />
+			<description>
+			</description>
+		</method>
+		<method name="draw_rect" qualifiers="const">
+			<return type="void" />
+			<argument index="0" name="canvas_item" type="RID" />
+			<argument index="1" name="rect" type="Rect2" />
+			<argument index="2" name="tile" type="bool" />
+			<argument index="3" name="modulate" type="Color" default="Color( 1, 1, 1, 1 )" />
+			<argument index="4" name="transpose" type="bool" default="false" />
+			<argument index="5" name="normal_map" type="Texture" default="null" />
+			<description>
+			</description>
+		</method>
+		<method name="draw_rect_region" qualifiers="const">
+			<return type="void" />
+			<argument index="0" name="canvas_item" type="RID" />
+			<argument index="1" name="rect" type="Rect2" />
+			<argument index="2" name="src_rect" type="Rect2" />
+			<argument index="3" name="modulate" type="Color" default="Color( 1, 1, 1, 1 )" />
+			<argument index="4" name="transpose" type="bool" default="false" />
+			<argument index="5" name="normal_map" type="Texture" default="null" />
+			<argument index="6" name="clip_uv" type="bool" default="true" />
+			<description>
+			</description>
+		</method>
+		<method name="get_data" qualifiers="const">
+			<return type="Image" />
+			<description>
+			</description>
+		</method>
+		<method name="get_height" qualifiers="const">
+			<return type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="get_size" qualifiers="const">
+			<return type="Vector2" />
+			<description>
+			</description>
+		</method>
+		<method name="get_width" qualifiers="const">
+			<return type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="has_alpha" qualifiers="const">
+			<return type="bool" />
+			<description>
+			</description>
+		</method>
+	</methods>
+	<members>
+		<member name="flags" type="int" setter="set_flags" getter="get_flags" default="4">
+		</member>
+	</members>
+	<constants>
+		<constant name="FLAGS_DEFAULT" value="7" enum="Flags">
+		</constant>
+		<constant name="FLAG_MIPMAPS" value="1" enum="Flags">
+		</constant>
+		<constant name="FLAG_REPEAT" value="2" enum="Flags">
+		</constant>
+		<constant name="FLAG_FILTER" value="4" enum="Flags">
+		</constant>
+		<constant name="FLAG_ANISOTROPIC_FILTER" value="8" enum="Flags">
+		</constant>
+		<constant name="FLAG_CONVERT_TO_LINEAR" value="16" enum="Flags">
+		</constant>
+		<constant name="FLAG_MIRRORED_REPEAT" value="32" enum="Flags">
+		</constant>
+		<constant name="FLAG_VIDEO_SURFACE" value="2048" enum="Flags">
+		</constant>
+	</constants>
+</class>

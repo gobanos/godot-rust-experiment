@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="SoftBody" inherits="MeshInstance" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+		<method name="add_collision_exception_with">
+			<return type="void" />
+			<argument index="0" name="body" type="Node" />
+			<description>
+			</description>
+		</method>
+		<method name="get_collision_exceptions">
+			<return type="Array" />
+			<description>
+			</description>
+		</method>
+		<method name="get_collision_layer_bit" qualifiers="const">
+			<return type="bool" />
+			<argument index="0" name="bit" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="get_collision_mask_bit" qualifiers="const">
+			<return type="bool" />
+			<argument index="0" name="bit" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="remove_collision_exception_with">
+			<return type="void" />
+			<argument index="0" name="body" type="Node" />
+			<description>
+			</description>
+		</method>
+		<method name="set_collision_layer_bit">
+			<return type="void" />
+			<argument index="0" name="bit" type="int" />
+			<argument index="1" name="value" type="bool" />
+			<description>
+			</description>
+		</method>
+		<method name="set_collision_mask_bit">
+			<return type="void" />
+			<argument index="0" name="bit" type="int" />
+			<argument index="1" name="value" type="bool" />
+			<description>
+			</description>
+		</method>
+	</methods>
+	<members>
+		<member name="areaAngular_stiffness" type="float" setter="set_areaAngular_stiffness" getter="get_areaAngular_stiffness" default="0.5">
+		</member>
+		<member name="collision_layer" type="int" setter="set_collision_layer" getter="get_collision_layer" default="1">
+		</member>
+		<member name="collision_mask" type="int" setter="set_collision_mask" getter="get_collision_mask" default="1">
+		</member>
+		<member name="damping_coefficient" type="float" setter="set_damping_coefficient" getter="get_damping_coefficient" default="0.01">
+		</member>
+		<member name="drag_coefficient" type="float" setter="set_drag_coefficient" getter="get_drag_coefficient" default="0.0">
+		</member>
+		<member name="linear_stiffness" type="float" setter="set_linear_stiffness" getter="get_linear_stiffness" default="0.5">
+		</member>
+		<member name="parent_collision_ignore" type="NodePath" setter="set_parent_collision_ignore" getter="get_parent_collision_ignore" default="NodePath(&quot;&quot;)">
+		</member>
+		<member name="pose_matching_coefficient" type="float" setter="set_pose_matching_coefficient" getter="get_pose_matching_coefficient" default="0.0">
+		</member>
+		<member name="pressure_coefficient" type="float" setter="set_pressure_coefficient" getter="get_pressure_coefficient" default="0.0">
+		</member>
+		<member name="ray_pickable" type="bool" setter="set_ray_pickable" getter="is_ray_pickable" default="true">
+		</member>
+		<member name="simulation_precision" type="int" setter="set_simulation_precision" getter="get_simulation_precision" default="5">
+		</member>
+		<member name="total_mass" type="float" setter="set_total_mass" getter="get_total_mass" default="1.0">
+		</member>
+		<member name="volume_stiffness" type="float" setter="set_volume_stiffness" getter="get_volume_stiffness" default="0.5">
+		</member>
+	</members>
+	<constants>
+	</constants>
+</class>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="AnimationNode" inherits="Resource" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+		<method name="add_input">
+			<return type="void" />
+			<argument index="0" name="name" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="blend_animation">
+			<return type="void" />
+			<argument index="0" name="animation" type="String" />
+			<argument index="1" name="time" type="float" />
+			<argument index="2" name="delta" type="float" />
+			<argument index="3" name="seeked" type="bool" />
+			<argument index="4" name="blend" type="float" />
+			<description>
+			</description>
+		</method>
+		<method name="blend_input">
+			<return type="float" />
+			<argument index="0" name="input_index" type="int" />
+			<argument index="1" name="time" type="float" />
+			<argument index="2" name="seek" type="bool" />
+			<argument index="3" name="blend" type="float" />
+			<argument index="4" name="filter" type="int" enum="AnimationNode.FilterAction" default="0" />
+			<argument index="5" name="optimize" type="bool" default="true" />
+			<description>
+			</description>
+		</method>
+		<method name="blend_node">
+			<return type="float" />
+			<argument index="0" name="name" type="String" />
+			<argument index="1" name="node" type="AnimationNode" />
+			<argument index="2" name="time" type="float" />
+			<argument index="3" name="seek" type="bool" />
+			<argument index="4" name="blend" type="float" />
+			<argument index="5" name="filter" type="int" enum="AnimationNode.FilterAction" default="0" />
+			<argument index="6" name="optimize" type="bool" default="true" />
+			<description>
+			</description>
+		</method>
+		<method name="get_caption" qualifiers="virtual">
+			<return type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="get_child_by_name" qualifiers="virtual">
+			<return type="Object" />
+			<argument index="0" name="name" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="get_child_nodes" qualifiers="virtual">
+			<return type="Dictionary" />
+			<description>
+			</description>
+		</method>
+		<method name="get_input_count" qualifiers="const">
+			<return type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="get_input_name">
+			<return type="String" />
+			<argument index="0" name="input" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="get_parameter" qualifiers="const">
+			<return type="Variant" />
+			<argument index="0" name="name" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="get_parameter_default_value" qualifiers="virtual">
+			<return type="Variant" />
+			<argument index="0" name="name" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="get_parameter_list" qualifiers="virtual">
+			<return type="Array" />
+			<description>
+			</description>
+		</method>
+		<method name="has_filter" qualifiers="virtual">
+			<return type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="is_path_filtered" qualifiers="const">
+			<return type="bool" />
+			<argument index="0" name="path" type="NodePath" />
+			<description>
+			</description>
+		</method>
+		<method name="process" qualifiers="virtual">
+			<return type="void" />
+			<argument index="0" name="time" type="float" />
+			<argument index="1" name="seek" type="bool" />
+			<description>
+			</description>
+		</method>
+		<method name="remove_input">
+			<return type="void" />
+			<argument index="0" name="index" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="set_filter_path">
+			<return type="void" />
+			<argument index="0" name="path" type="NodePath" />
+			<argument index="1" name="enable" type="bool" />
+			<description>
+			</description>
+		</method>
+		<method name="set_parameter">
+			<return type="void" />
+			<argument index="0" name="name" type="String" />
+			<argument index="1" name="value" type="Variant" />
+			<description>
+			</description>
+		</method>
+	</methods>
+	<members>
+		<member name="filter_enabled" type="bool" setter="set_filter_enabled" getter="is_filter_enabled">
+		</member>
+	</members>
+	<signals>
+		<signal name="removed_from_graph">
+			<description>
+			</description>
+		</signal>
+		<signal name="tree_changed">
+			<description>
+			</description>
+		</signal>
+	</signals>
+	<constants>
+		<constant name="FILTER_IGNORE" value="0" enum="FilterAction">
+		</constant>
+		<constant name="FILTER_PASS" value="1" enum="FilterAction">
+		</constant>
+		<constant name="FILTER_STOP" value="2" enum="FilterAction">
+		</constant>
+		<constant name="FILTER_BLEND" value="3" enum="FilterAction">
+		</constant>
+	</constants>
+</class>

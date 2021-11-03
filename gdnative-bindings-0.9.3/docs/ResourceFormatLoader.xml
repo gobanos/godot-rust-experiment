@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="ResourceFormatLoader" inherits="Reference" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+		<method name="get_dependencies" qualifiers="virtual">
+			<return type="void" />
+			<argument index="0" name="path" type="String" />
+			<argument index="1" name="add_types" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="get_recognized_extensions" qualifiers="virtual">
+			<return type="PoolStringArray" />
+			<description>
+			</description>
+		</method>
+		<method name="get_resource_type" qualifiers="virtual">
+			<return type="String" />
+			<argument index="0" name="path" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="handles_type" qualifiers="virtual">
+			<return type="bool" />
+			<argument index="0" name="typename" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="load" qualifiers="virtual">
+			<return type="Variant" />
+			<argument index="0" name="path" type="String" />
+			<argument index="1" name="original_path" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="rename_dependencies" qualifiers="virtual">
+			<return type="int" />
+			<argument index="0" name="path" type="String" />
+			<argument index="1" name="renames" type="String" />
+			<description>
+			</description>
+		</method>
+	</methods>
+	<constants>
+	</constants>
+</class>

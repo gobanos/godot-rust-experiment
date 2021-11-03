@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="Input" inherits="Object" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+		<method name="action_press">
+			<return type="void" />
+			<argument index="0" name="action" type="String" />
+			<argument index="1" name="strength" type="float" default="1.0" />
+			<description>
+			</description>
+		</method>
+		<method name="action_release">
+			<return type="void" />
+			<argument index="0" name="action" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="add_joy_mapping">
+			<return type="void" />
+			<argument index="0" name="mapping" type="String" />
+			<argument index="1" name="update_existing" type="bool" default="false" />
+			<description>
+			</description>
+		</method>
+		<method name="get_accelerometer" qualifiers="const">
+			<return type="Vector3" />
+			<description>
+			</description>
+		</method>
+		<method name="get_action_strength" qualifiers="const">
+			<return type="float" />
+			<argument index="0" name="action" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="get_connected_joypads">
+			<return type="Array" />
+			<description>
+			</description>
+		</method>
+		<method name="get_current_cursor_shape" qualifiers="const">
+			<return type="int" enum="Input.CursorShape" />
+			<description>
+			</description>
+		</method>
+		<method name="get_gravity" qualifiers="const">
+			<return type="Vector3" />
+			<description>
+			</description>
+		</method>
+		<method name="get_gyroscope" qualifiers="const">
+			<return type="Vector3" />
+			<description>
+			</description>
+		</method>
+		<method name="get_joy_axis" qualifiers="const">
+			<return type="float" />
+			<argument index="0" name="device" type="int" />
+			<argument index="1" name="axis" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="get_joy_axis_index_from_string">
+			<return type="int" />
+			<argument index="0" name="axis" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="get_joy_axis_string">
+			<return type="String" />
+			<argument index="0" name="axis_index" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="get_joy_button_index_from_string">
+			<return type="int" />
+			<argument index="0" name="button" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="get_joy_button_string">
+			<return type="String" />
+			<argument index="0" name="button_index" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="get_joy_guid" qualifiers="const">
+			<return type="String" />
+			<argument index="0" name="device" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="get_joy_name">
+			<return type="String" />
+			<argument index="0" name="device" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="get_joy_vibration_duration">
+			<return type="float" />
+			<argument index="0" name="device" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="get_joy_vibration_strength">
+			<return type="Vector2" />
+			<argument index="0" name="device" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="get_last_mouse_speed" qualifiers="const">
+			<return type="Vector2" />
+			<description>
+			</description>
+		</method>
+		<method name="get_magnetometer" qualifiers="const">
+			<return type="Vector3" />
+			<description>
+			</description>
+		</method>
+		<method name="get_mouse_button_mask" qualifiers="const">
+			<return type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="get_mouse_mode" qualifiers="const">
+			<return type="int" enum="Input.MouseMode" />
+			<description>
+			</description>
+		</method>
+		<method name="is_action_just_pressed" qualifiers="const">
+			<return type="bool" />
+			<argument index="0" name="action" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="is_action_just_released" qualifiers="const">
+			<return type="bool" />
+			<argument index="0" name="action" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="is_action_pressed" qualifiers="const">
+			<return type="bool" />
+			<argument index="0" name="action" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="is_joy_button_pressed" qualifiers="const">
+			<return type="bool" />
+			<argument index="0" name="device" type="int" />
+			<argument index="1" name="button" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="is_joy_known">
+			<return type="bool" />
+			<argument index="0" name="device" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="is_key_pressed" qualifiers="const">
+			<return type="bool" />
+			<argument index="0" name="scancode" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="is_mouse_button_pressed" qualifiers="const">
+			<return type="bool" />
+			<argument index="0" name="button" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="joy_connection_changed">
+			<return type="void" />
+			<argument index="0" name="device" type="int" />
+			<argument index="1" name="connected" type="bool" />
+			<argument index="2" name="name" type="String" />
+			<argument index="3" name="guid" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="parse_input_event">
+			<return type="void" />
+			<argument index="0" name="event" type="InputEvent" />
+			<description>
+			</description>
+		</method>
+		<method name="remove_joy_mapping">
+			<return type="void" />
+			<argument index="0" name="guid" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="set_custom_mouse_cursor">
+			<return type="void" />
+			<argument index="0" name="image" type="Resource" />
+			<argument index="1" name="shape" type="int" enum="Input.CursorShape" default="0" />
+			<argument index="2" name="hotspot" type="Vector2" default="Vector2( 0, 0 )" />
+			<description>
+			</description>
+		</method>
+		<method name="set_default_cursor_shape">
+			<return type="void" />
+			<argument index="0" name="shape" type="int" enum="Input.CursorShape" default="0" />
+			<description>
+			</description>
+		</method>
+		<method name="set_mouse_mode">
+			<return type="void" />
+			<argument index="0" name="mode" type="int" enum="Input.MouseMode" />
+			<description>
+			</description>
+		</method>
+		<method name="set_use_accumulated_input">
+			<return type="void" />
+			<argument index="0" name="enable" type="bool" />
+			<description>
+			</description>
+		</method>
+		<method name="start_joy_vibration">
+			<return type="void" />
+			<argument index="0" name="device" type="int" />
+			<argument index="1" name="weak_magnitude" type="float" />
+			<argument index="2" name="strong_magnitude" type="float" />
+			<argument index="3" name="duration" type="float" default="0" />
+			<description>
+			</description>
+		</method>
+		<method name="stop_joy_vibration">
+			<return type="void" />
+			<argument index="0" name="device" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="vibrate_handheld">
+			<return type="void" />
+			<argument index="0" name="duration_ms" type="int" default="500" />
+			<description>
+			</description>
+		</method>
+		<method name="warp_mouse_position">
+			<return type="void" />
+			<argument index="0" name="to" type="Vector2" />
+			<description>
+			</description>
+		</method>
+	</methods>
+	<signals>
+		<signal name="joy_connection_changed">
+			<argument index="0" name="device" type="int" />
+			<argument index="1" name="connected" type="bool" />
+			<description>
+			</description>
+		</signal>
+	</signals>
+	<constants>
+		<constant name="MOUSE_MODE_VISIBLE" value="0" enum="MouseMode">
+		</constant>
+		<constant name="MOUSE_MODE_HIDDEN" value="1" enum="MouseMode">
+		</constant>
+		<constant name="MOUSE_MODE_CAPTURED" value="2" enum="MouseMode">
+		</constant>
+		<constant name="MOUSE_MODE_CONFINED" value="3" enum="MouseMode">
+		</constant>
+		<constant name="CURSOR_ARROW" value="0" enum="CursorShape">
+		</constant>
+		<constant name="CURSOR_IBEAM" value="1" enum="CursorShape">
+		</constant>
+		<constant name="CURSOR_POINTING_HAND" value="2" enum="CursorShape">
+		</constant>
+		<constant name="CURSOR_CROSS" value="3" enum="CursorShape">
+		</constant>
+		<constant name="CURSOR_WAIT" value="4" enum="CursorShape">
+		</constant>
+		<constant name="CURSOR_BUSY" value="5" enum="CursorShape">
+		</constant>
+		<constant name="CURSOR_DRAG" value="6" enum="CursorShape">
+		</constant>
+		<constant name="CURSOR_CAN_DROP" value="7" enum="CursorShape">
+		</constant>
+		<constant name="CURSOR_FORBIDDEN" value="8" enum="CursorShape">
+		</constant>
+		<constant name="CURSOR_VSIZE" value="9" enum="CursorShape">
+		</constant>
+		<constant name="CURSOR_HSIZE" value="10" enum="CursorShape">
+		</constant>
+		<constant name="CURSOR_BDIAGSIZE" value="11" enum="CursorShape">
+		</constant>
+		<constant name="CURSOR_FDIAGSIZE" value="12" enum="CursorShape">
+		</constant>
+		<constant name="CURSOR_MOVE" value="13" enum="CursorShape">
+		</constant>
+		<constant name="CURSOR_VSPLIT" value="14" enum="CursorShape">
+		</constant>
+		<constant name="CURSOR_HSPLIT" value="15" enum="CursorShape">
+		</constant>
+		<constant name="CURSOR_HELP" value="16" enum="CursorShape">
+		</constant>
+	</constants>
+</class>

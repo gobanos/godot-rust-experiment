@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="ConcavePolygonShape" inherits="Shape" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+		<method name="get_faces" qualifiers="const">
+			<return type="PoolVector3Array" />
+			<description>
+			</description>
+		</method>
+		<method name="set_faces">
+			<return type="void" />
+			<argument index="0" name="faces" type="PoolVector3Array" />
+			<description>
+			</description>
+		</method>
+	</methods>
+	<constants>
+	</constants>
+</class>

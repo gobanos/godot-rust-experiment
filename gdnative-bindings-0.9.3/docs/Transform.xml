@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="Transform" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+		<method name="Transform">
+			<return type="Transform" />
+			<argument index="0" name="x_axis" type="Vector3" />
+			<argument index="1" name="y_axis" type="Vector3" />
+			<argument index="2" name="z_axis" type="Vector3" />
+			<argument index="3" name="origin" type="Vector3" />
+			<description>
+			</description>
+		</method>
+		<method name="Transform">
+			<return type="Transform" />
+			<argument index="0" name="basis" type="Basis" />
+			<argument index="1" name="origin" type="Vector3" />
+			<description>
+			</description>
+		</method>
+		<method name="Transform">
+			<return type="Transform" />
+			<argument index="0" name="from" type="Transform2D" />
+			<description>
+			</description>
+		</method>
+		<method name="Transform">
+			<return type="Transform" />
+			<argument index="0" name="from" type="Quat" />
+			<description>
+			</description>
+		</method>
+		<method name="Transform">
+			<return type="Transform" />
+			<argument index="0" name="from" type="Basis" />
+			<description>
+			</description>
+		</method>
+		<method name="affine_inverse">
+			<return type="Transform" />
+			<description>
+			</description>
+		</method>
+		<method name="interpolate_with">
+			<return type="Transform" />
+			<argument index="0" name="transform" type="Transform" />
+			<argument index="1" name="weight" type="float" />
+			<description>
+			</description>
+		</method>
+		<method name="inverse">
+			<return type="Transform" />
+			<description>
+			</description>
+		</method>
+		<method name="is_equal_approx">
+			<return type="bool" />
+			<argument index="0" name="transform" type="Transform" />
+			<description>
+			</description>
+		</method>
+		<method name="looking_at">
+			<return type="Transform" />
+			<argument index="0" name="target" type="Vector3" />
+			<argument index="1" name="up" type="Vector3" />
+			<description>
+			</description>
+		</method>
+		<method name="orthonormalized">
+			<return type="Transform" />
+			<description>
+			</description>
+		</method>
+		<method name="rotated">
+			<return type="Transform" />
+			<argument index="0" name="axis" type="Vector3" />
+			<argument index="1" name="phi" type="float" />
+			<description>
+			</description>
+		</method>
+		<method name="scaled">
+			<return type="Transform" />
+			<argument index="0" name="scale" type="Vector3" />
+			<description>
+			</description>
+		</method>
+		<method name="translated">
+			<return type="Transform" />
+			<argument index="0" name="offset" type="Vector3" />
+			<description>
+			</description>
+		</method>
+		<method name="xform">
+			<return type="Variant" />
+			<argument index="0" name="v" type="Variant" />
+			<description>
+			</description>
+		</method>
+		<method name="xform_inv">
+			<return type="Variant" />
+			<argument index="0" name="v" type="Variant" />
+			<description>
+			</description>
+		</method>
+	</methods>
+	<members>
+		<member name="basis" type="Basis" setter="" getter="" default="Basis( 1, 0, 0, 0, 1, 0, 0, 0, 1 )">
+		</member>
+		<member name="origin" type="Vector3" setter="" getter="" default="Vector3( 0, 0, 0 )">
+		</member>
+	</members>
+	<constants>
+		<constant name="IDENTITY" value="Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )">
+		</constant>
+		<constant name="FLIP_X" value="Transform( -1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )">
+		</constant>
+		<constant name="FLIP_Y" value="Transform( 1, 0, 0, 0, -1, 0, 0, 0, 1, 0, 0, 0 )">
+		</constant>
+		<constant name="FLIP_Z" value="Transform( 1, 0, 0, 0, 1, 0, 0, 0, -1, 0, 0, 0 )">
+		</constant>
+	</constants>
+</class>

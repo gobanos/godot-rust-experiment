@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="VisualShaderNodeCustom" inherits="VisualShaderNode" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+		<method name="_get_category" qualifiers="virtual">
+			<return type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="_get_code" qualifiers="virtual">
+			<return type="String" />
+			<argument index="0" name="input_vars" type="Array" />
+			<argument index="1" name="output_vars" type="Array" />
+			<argument index="2" name="mode" type="int" />
+			<argument index="3" name="type" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="_get_description" qualifiers="virtual">
+			<return type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="_get_global_code" qualifiers="virtual">
+			<return type="String" />
+			<argument index="0" name="mode" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="_get_input_port_count" qualifiers="virtual">
+			<return type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="_get_input_port_name" qualifiers="virtual">
+			<return type="String" />
+			<argument index="0" name="port" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="_get_input_port_type" qualifiers="virtual">
+			<return type="int" />
+			<argument index="0" name="port" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="_get_name" qualifiers="virtual">
+			<return type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="_get_output_port_count" qualifiers="virtual">
+			<return type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="_get_output_port_name" qualifiers="virtual">
+			<return type="String" />
+			<argument index="0" name="port" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="_get_output_port_type" qualifiers="virtual">
+			<return type="int" />
+			<argument index="0" name="port" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="_get_return_icon_type" qualifiers="virtual">
+			<return type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="_get_subcategory" qualifiers="virtual">
+			<return type="String" />
+			<description>
+			</description>
+		</method>
+	</methods>
+	<constants>
+	</constants>
+</class>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="MarginContainer" inherits="Container" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+	</methods>
+	<constants>
+	</constants>
+	<theme_items>
+		<theme_item name="margin_bottom" type="int" default="0">
+		</theme_item>
+		<theme_item name="margin_left" type="int" default="0">
+		</theme_item>
+		<theme_item name="margin_right" type="int" default="0">
+		</theme_item>
+		<theme_item name="margin_top" type="int" default="0">
+		</theme_item>
+	</theme_items>
+</class>

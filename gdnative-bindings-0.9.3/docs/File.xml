@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="File" inherits="Reference" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+		<method name="close">
+			<return type="void" />
+			<description>
+			</description>
+		</method>
+		<method name="eof_reached" qualifiers="const">
+			<return type="bool" />
+			<description>
+			</description>
+		</method>
+		<method name="file_exists" qualifiers="const">
+			<return type="bool" />
+			<argument index="0" name="path" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="flush">
+			<return type="void" />
+			<description>
+			</description>
+		</method>
+		<method name="get_16" qualifiers="const">
+			<return type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="get_32" qualifiers="const">
+			<return type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="get_64" qualifiers="const">
+			<return type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="get_8" qualifiers="const">
+			<return type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="get_as_text" qualifiers="const">
+			<return type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="get_buffer" qualifiers="const">
+			<return type="PoolByteArray" />
+			<argument index="0" name="len" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="get_csv_line" qualifiers="const">
+			<return type="PoolStringArray" />
+			<argument index="0" name="delim" type="String" default="&quot;,&quot;" />
+			<description>
+			</description>
+		</method>
+		<method name="get_double" qualifiers="const">
+			<return type="float" />
+			<description>
+			</description>
+		</method>
+		<method name="get_error" qualifiers="const">
+			<return type="int" enum="Error" />
+			<description>
+			</description>
+		</method>
+		<method name="get_float" qualifiers="const">
+			<return type="float" />
+			<description>
+			</description>
+		</method>
+		<method name="get_len" qualifiers="const">
+			<return type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="get_line" qualifiers="const">
+			<return type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="get_md5" qualifiers="const">
+			<return type="String" />
+			<argument index="0" name="path" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="get_modified_time" qualifiers="const">
+			<return type="int" />
+			<argument index="0" name="file" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="get_pascal_string">
+			<return type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="get_path" qualifiers="const">
+			<return type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="get_path_absolute" qualifiers="const">
+			<return type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="get_position" qualifiers="const">
+			<return type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="get_real" qualifiers="const">
+			<return type="float" />
+			<description>
+			</description>
+		</method>
+		<method name="get_sha256" qualifiers="const">
+			<return type="String" />
+			<argument index="0" name="path" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="get_var" qualifiers="const">
+			<return type="Variant" />
+			<argument index="0" name="allow_objects" type="bool" default="false" />
+			<description>
+			</description>
+		</method>
+		<method name="is_open" qualifiers="const">
+			<return type="bool" />
+			<description>
+			</description>
+		</method>
+		<method name="open">
+			<return type="int" enum="Error" />
+			<argument index="0" name="path" type="String" />
+			<argument index="1" name="flags" type="int" enum="File.ModeFlags" />
+			<description>
+			</description>
+		</method>
+		<method name="open_compressed">
+			<return type="int" enum="Error" />
+			<argument index="0" name="path" type="String" />
+			<argument index="1" name="mode_flags" type="int" enum="File.ModeFlags" />
+			<argument index="2" name="compression_mode" type="int" enum="File.CompressionMode" default="0" />
+			<description>
+			</description>
+		</method>
+		<method name="open_encrypted">
+			<return type="int" enum="Error" />
+			<argument index="0" name="path" type="String" />
+			<argument index="1" name="mode_flags" type="int" enum="File.ModeFlags" />
+			<argument index="2" name="key" type="PoolByteArray" />
+			<description>
+			</description>
+		</method>
+		<method name="open_encrypted_with_pass">
+			<return type="int" enum="Error" />
+			<argument index="0" name="path" type="String" />
+			<argument index="1" name="mode_flags" type="int" enum="File.ModeFlags" />
+			<argument index="2" name="pass" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="seek">
+			<return type="void" />
+			<argument index="0" name="position" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="seek_end">
+			<return type="void" />
+			<argument index="0" name="position" type="int" default="0" />
+			<description>
+			</description>
+		</method>
+		<method name="store_16">
+			<return type="void" />
+			<argument index="0" name="value" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="store_32">
+			<return type="void" />
+			<argument index="0" name="value" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="store_64">
+			<return type="void" />
+			<argument index="0" name="value" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="store_8">
+			<return type="void" />
+			<argument index="0" name="value" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="store_buffer">
+			<return type="void" />
+			<argument index="0" name="buffer" type="PoolByteArray" />
+			<description>
+			</description>
+		</method>
+		<method name="store_csv_line">
+			<return type="void" />
+			<argument index="0" name="values" type="PoolStringArray" />
+			<argument index="1" name="delim" type="String" default="&quot;,&quot;" />
+			<description>
+			</description>
+		</method>
+		<method name="store_double">
+			<return type="void" />
+			<argument index="0" name="value" type="float" />
+			<description>
+			</description>
+		</method>
+		<method name="store_float">
+			<return type="void" />
+			<argument index="0" name="value" type="float" />
+			<description>
+			</description>
+		</method>
+		<method name="store_line">
+			<return type="void" />
+			<argument index="0" name="line" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="store_pascal_string">
+			<return type="void" />
+			<argument index="0" name="string" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="store_real">
+			<return type="void" />
+			<argument index="0" name="value" type="float" />
+			<description>
+			</description>
+		</method>
+		<method name="store_string">
+			<return type="void" />
+			<argument index="0" name="string" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="store_var">
+			<return type="void" />
+			<argument index="0" name="value" type="Variant" />
+			<argument index="1" name="full_objects" type="bool" default="false" />
+			<description>
+			</description>
+		</method>
+	</methods>
+	<members>
+		<member name="endian_swap" type="bool" setter="set_endian_swap" getter="get_endian_swap" default="false">
+		</member>
+	</members>
+	<constants>
+		<constant name="READ" value="1" enum="ModeFlags">
+		</constant>
+		<constant name="WRITE" value="2" enum="ModeFlags">
+		</constant>
+		<constant name="READ_WRITE" value="3" enum="ModeFlags">
+		</constant>
+		<constant name="WRITE_READ" value="7" enum="ModeFlags">
+		</constant>
+		<constant name="COMPRESSION_FASTLZ" value="0" enum="CompressionMode">
+		</constant>
+		<constant name="COMPRESSION_DEFLATE" value="1" enum="CompressionMode">
+		</constant>
+		<constant name="COMPRESSION_ZSTD" value="2" enum="CompressionMode">
+		</constant>
+		<constant name="COMPRESSION_GZIP" value="3" enum="CompressionMode">
+		</constant>
+	</constants>
+</class>

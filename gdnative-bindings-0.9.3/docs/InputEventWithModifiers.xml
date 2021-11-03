@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="InputEventWithModifiers" inherits="InputEvent" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+	</methods>
+	<members>
+		<member name="alt" type="bool" setter="set_alt" getter="get_alt" default="false">
+		</member>
+		<member name="command" type="bool" setter="set_command" getter="get_command" default="false">
+		</member>
+		<member name="control" type="bool" setter="set_control" getter="get_control" default="false">
+		</member>
+		<member name="meta" type="bool" setter="set_metakey" getter="get_metakey" default="false">
+		</member>
+		<member name="shift" type="bool" setter="set_shift" getter="get_shift" default="false">
+		</member>
+	</members>
+	<constants>
+	</constants>
+</class>

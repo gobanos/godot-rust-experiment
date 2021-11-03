@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="StyleBox" inherits="Resource" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+		<method name="draw" qualifiers="const">
+			<return type="void" />
+			<argument index="0" name="canvas_item" type="RID" />
+			<argument index="1" name="rect" type="Rect2" />
+			<description>
+			</description>
+		</method>
+		<method name="get_center_size" qualifiers="const">
+			<return type="Vector2" />
+			<description>
+			</description>
+		</method>
+		<method name="get_current_item_drawn" qualifiers="const">
+			<return type="CanvasItem" />
+			<description>
+			</description>
+		</method>
+		<method name="get_default_margin" qualifiers="const">
+			<return type="float" />
+			<argument index="0" name="margin" type="int" enum="Margin" />
+			<description>
+			</description>
+		</method>
+		<method name="get_margin" qualifiers="const">
+			<return type="float" />
+			<argument index="0" name="margin" type="int" enum="Margin" />
+			<description>
+			</description>
+		</method>
+		<method name="get_minimum_size" qualifiers="const">
+			<return type="Vector2" />
+			<description>
+			</description>
+		</method>
+		<method name="get_offset" qualifiers="const">
+			<return type="Vector2" />
+			<description>
+			</description>
+		</method>
+		<method name="set_default_margin">
+			<return type="void" />
+			<argument index="0" name="margin" type="int" enum="Margin" />
+			<argument index="1" name="offset" type="float" />
+			<description>
+			</description>
+		</method>
+		<method name="test_mask" qualifiers="const">
+			<return type="bool" />
+			<argument index="0" name="point" type="Vector2" />
+			<argument index="1" name="rect" type="Rect2" />
+			<description>
+			</description>
+		</method>
+	</methods>
+	<members>
+		<member name="content_margin_bottom" type="float" setter="set_default_margin" getter="get_default_margin" default="-1.0">
+		</member>
+		<member name="content_margin_left" type="float" setter="set_default_margin" getter="get_default_margin" default="-1.0">
+		</member>
+		<member name="content_margin_right" type="float" setter="set_default_margin" getter="get_default_margin" default="-1.0">
+		</member>
+		<member name="content_margin_top" type="float" setter="set_default_margin" getter="get_default_margin" default="-1.0">
+		</member>
+	</members>
+	<constants>
+	</constants>
+</class>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="UDPServer" inherits="Reference" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+		<method name="is_connection_available" qualifiers="const">
+			<return type="bool" />
+			<description>
+			</description>
+		</method>
+		<method name="is_listening" qualifiers="const">
+			<return type="bool" />
+			<description>
+			</description>
+		</method>
+		<method name="listen">
+			<return type="int" enum="Error" />
+			<argument index="0" name="port" type="int" />
+			<argument index="1" name="bind_address" type="String" default="&quot;*&quot;" />
+			<description>
+			</description>
+		</method>
+		<method name="poll">
+			<return type="int" enum="Error" />
+			<description>
+			</description>
+		</method>
+		<method name="stop">
+			<return type="void" />
+			<description>
+			</description>
+		</method>
+		<method name="take_connection">
+			<return type="PacketPeerUDP" />
+			<description>
+			</description>
+		</method>
+	</methods>
+	<members>
+		<member name="max_pending_connections" type="int" setter="set_max_pending_connections" getter="get_max_pending_connections" default="16">
+		</member>
+	</members>
+	<constants>
+	</constants>
+</class>

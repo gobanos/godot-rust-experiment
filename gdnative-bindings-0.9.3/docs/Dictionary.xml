@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="Dictionary" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+		<method name="clear">
+			<description>
+			</description>
+		</method>
+		<method name="duplicate">
+			<return type="Dictionary" />
+			<argument index="0" name="deep" type="bool" default="false" />
+			<description>
+			</description>
+		</method>
+		<method name="empty">
+			<return type="bool" />
+			<description>
+			</description>
+		</method>
+		<method name="erase">
+			<return type="bool" />
+			<argument index="0" name="key" type="Variant" />
+			<description>
+			</description>
+		</method>
+		<method name="get">
+			<return type="Variant" />
+			<argument index="0" name="key" type="Variant" />
+			<argument index="1" name="default" type="Variant" default="null" />
+			<description>
+			</description>
+		</method>
+		<method name="has">
+			<return type="bool" />
+			<argument index="0" name="key" type="Variant" />
+			<description>
+			</description>
+		</method>
+		<method name="has_all">
+			<return type="bool" />
+			<argument index="0" name="keys" type="Array" />
+			<description>
+			</description>
+		</method>
+		<method name="hash">
+			<return type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="keys">
+			<return type="Array" />
+			<description>
+			</description>
+		</method>
+		<method name="size">
+			<return type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="values">
+			<return type="Array" />
+			<description>
+			</description>
+		</method>
+	</methods>
+	<constants>
+	</constants>
+</class>

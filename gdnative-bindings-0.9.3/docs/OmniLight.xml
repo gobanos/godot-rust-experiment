@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="OmniLight" inherits="Light" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+	</methods>
+	<members>
+		<member name="omni_attenuation" type="float" setter="set_param" getter="get_param" default="1.0">
+		</member>
+		<member name="omni_range" type="float" setter="set_param" getter="get_param" default="5.0">
+		</member>
+		<member name="omni_shadow_detail" type="int" setter="set_shadow_detail" getter="get_shadow_detail" enum="OmniLight.ShadowDetail" default="1">
+		</member>
+		<member name="omni_shadow_mode" type="int" setter="set_shadow_mode" getter="get_shadow_mode" enum="OmniLight.ShadowMode" default="1">
+		</member>
+	</members>
+	<constants>
+		<constant name="SHADOW_DUAL_PARABOLOID" value="0" enum="ShadowMode">
+		</constant>
+		<constant name="SHADOW_CUBE" value="1" enum="ShadowMode">
+		</constant>
+		<constant name="SHADOW_DETAIL_VERTICAL" value="0" enum="ShadowDetail">
+		</constant>
+		<constant name="SHADOW_DETAIL_HORIZONTAL" value="1" enum="ShadowDetail">
+		</constant>
+	</constants>
+</class>

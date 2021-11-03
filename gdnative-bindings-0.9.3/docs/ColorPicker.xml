@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="ColorPicker" inherits="BoxContainer" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+		<method name="add_preset">
+			<return type="void" />
+			<argument index="0" name="color" type="Color" />
+			<description>
+			</description>
+		</method>
+		<method name="erase_preset">
+			<return type="void" />
+			<argument index="0" name="color" type="Color" />
+			<description>
+			</description>
+		</method>
+		<method name="get_presets" qualifiers="const">
+			<return type="PoolColorArray" />
+			<description>
+			</description>
+		</method>
+	</methods>
+	<members>
+		<member name="color" type="Color" setter="set_pick_color" getter="get_pick_color" default="Color( 1, 1, 1, 1 )">
+		</member>
+		<member name="deferred_mode" type="bool" setter="set_deferred_mode" getter="is_deferred_mode" default="false">
+		</member>
+		<member name="edit_alpha" type="bool" setter="set_edit_alpha" getter="is_editing_alpha" default="true">
+		</member>
+		<member name="hsv_mode" type="bool" setter="set_hsv_mode" getter="is_hsv_mode" default="false">
+		</member>
+		<member name="presets_enabled" type="bool" setter="set_presets_enabled" getter="are_presets_enabled" default="true">
+		</member>
+		<member name="presets_visible" type="bool" setter="set_presets_visible" getter="are_presets_visible" default="true">
+		</member>
+		<member name="raw_mode" type="bool" setter="set_raw_mode" getter="is_raw_mode" default="false">
+		</member>
+	</members>
+	<signals>
+		<signal name="color_changed">
+			<argument index="0" name="color" type="Color" />
+			<description>
+			</description>
+		</signal>
+		<signal name="preset_added">
+			<argument index="0" name="color" type="Color" />
+			<description>
+			</description>
+		</signal>
+		<signal name="preset_removed">
+			<argument index="0" name="color" type="Color" />
+			<description>
+			</description>
+		</signal>
+	</signals>
+	<constants>
+	</constants>
+	<theme_items>
+		<theme_item name="add_preset" type="Texture">
+		</theme_item>
+		<theme_item name="color_hue" type="Texture">
+		</theme_item>
+		<theme_item name="color_sample" type="Texture">
+		</theme_item>
+		<theme_item name="h_width" type="int" default="30">
+		</theme_item>
+		<theme_item name="label_width" type="int" default="10">
+		</theme_item>
+		<theme_item name="margin" type="int" default="4">
+		</theme_item>
+		<theme_item name="overbright_indicator" type="Texture">
+		</theme_item>
+		<theme_item name="preset_bg" type="Texture">
+		</theme_item>
+		<theme_item name="screen_picker" type="Texture">
+		</theme_item>
+		<theme_item name="sv_height" type="int" default="256">
+		</theme_item>
+		<theme_item name="sv_width" type="int" default="256">
+		</theme_item>
+	</theme_items>
+</class>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="ScrollContainer" inherits="Container" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+		<method name="get_h_scrollbar">
+			<return type="HScrollBar" />
+			<description>
+			</description>
+		</method>
+		<method name="get_v_scrollbar">
+			<return type="VScrollBar" />
+			<description>
+			</description>
+		</method>
+	</methods>
+	<members>
+		<member name="follow_focus" type="bool" setter="set_follow_focus" getter="is_following_focus" default="false">
+		</member>
+		<member name="rect_clip_content" type="bool" setter="set_clip_contents" getter="is_clipping_contents" override="true" default="true" />
+		<member name="scroll_deadzone" type="int" setter="set_deadzone" getter="get_deadzone" default="0">
+		</member>
+		<member name="scroll_horizontal" type="int" setter="set_h_scroll" getter="get_h_scroll" default="0">
+		</member>
+		<member name="scroll_horizontal_enabled" type="bool" setter="set_enable_h_scroll" getter="is_h_scroll_enabled" default="true">
+		</member>
+		<member name="scroll_vertical" type="int" setter="set_v_scroll" getter="get_v_scroll" default="0">
+		</member>
+		<member name="scroll_vertical_enabled" type="bool" setter="set_enable_v_scroll" getter="is_v_scroll_enabled" default="true">
+		</member>
+	</members>
+	<signals>
+		<signal name="scroll_ended">
+			<description>
+			</description>
+		</signal>
+		<signal name="scroll_started">
+			<description>
+			</description>
+		</signal>
+	</signals>
+	<constants>
+	</constants>
+	<theme_items>
+		<theme_item name="bg" type="StyleBox">
+		</theme_item>
+	</theme_items>
+</class>

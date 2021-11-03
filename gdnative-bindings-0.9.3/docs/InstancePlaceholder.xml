@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="InstancePlaceholder" inherits="Node" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+		<method name="create_instance">
+			<return type="Node" />
+			<argument index="0" name="replace" type="bool" default="false" />
+			<argument index="1" name="custom_scene" type="PackedScene" default="null" />
+			<description>
+			</description>
+		</method>
+		<method name="get_instance_path" qualifiers="const">
+			<return type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="get_stored_values">
+			<return type="Dictionary" />
+			<argument index="0" name="with_order" type="bool" default="false" />
+			<description>
+			</description>
+		</method>
+		<method name="replace_by_instance">
+			<return type="void" />
+			<argument index="0" name="custom_scene" type="PackedScene" default="null" />
+			<description>
+			</description>
+		</method>
+	</methods>
+	<constants>
+	</constants>
+</class>

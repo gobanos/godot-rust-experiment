@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="SphereMesh" inherits="PrimitiveMesh" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+	</methods>
+	<members>
+		<member name="height" type="float" setter="set_height" getter="get_height" default="2.0">
+		</member>
+		<member name="is_hemisphere" type="bool" setter="set_is_hemisphere" getter="get_is_hemisphere" default="false">
+		</member>
+		<member name="radial_segments" type="int" setter="set_radial_segments" getter="get_radial_segments" default="64">
+		</member>
+		<member name="radius" type="float" setter="set_radius" getter="get_radius" default="1.0">
+		</member>
+		<member name="rings" type="int" setter="set_rings" getter="get_rings" default="32">
+		</member>
+	</members>
+	<constants>
+	</constants>
+</class>

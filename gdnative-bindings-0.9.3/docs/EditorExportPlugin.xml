@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="EditorExportPlugin" inherits="Reference" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+		<method name="_export_begin" qualifiers="virtual">
+			<return type="void" />
+			<argument index="0" name="features" type="PoolStringArray" />
+			<argument index="1" name="is_debug" type="bool" />
+			<argument index="2" name="path" type="String" />
+			<argument index="3" name="flags" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="_export_end" qualifiers="virtual">
+			<return type="void" />
+			<description>
+			</description>
+		</method>
+		<method name="_export_file" qualifiers="virtual">
+			<return type="void" />
+			<argument index="0" name="path" type="String" />
+			<argument index="1" name="type" type="String" />
+			<argument index="2" name="features" type="PoolStringArray" />
+			<description>
+			</description>
+		</method>
+		<method name="add_file">
+			<return type="void" />
+			<argument index="0" name="path" type="String" />
+			<argument index="1" name="file" type="PoolByteArray" />
+			<argument index="2" name="remap" type="bool" />
+			<description>
+			</description>
+		</method>
+		<method name="add_ios_bundle_file">
+			<return type="void" />
+			<argument index="0" name="path" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="add_ios_cpp_code">
+			<return type="void" />
+			<argument index="0" name="code" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="add_ios_embedded_framework">
+			<return type="void" />
+			<argument index="0" name="path" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="add_ios_framework">
+			<return type="void" />
+			<argument index="0" name="path" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="add_ios_linker_flags">
+			<return type="void" />
+			<argument index="0" name="flags" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="add_ios_plist_content">
+			<return type="void" />
+			<argument index="0" name="plist_content" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="add_ios_project_static_lib">
+			<return type="void" />
+			<argument index="0" name="path" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="add_shared_object">
+			<return type="void" />
+			<argument index="0" name="path" type="String" />
+			<argument index="1" name="tags" type="PoolStringArray" />
+			<description>
+			</description>
+		</method>
+		<method name="skip">
+			<return type="void" />
+			<description>
+			</description>
+		</method>
+	</methods>
+	<constants>
+	</constants>
+</class>

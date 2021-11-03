@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="GradientTexture" inherits="Texture" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+	</methods>
+	<members>
+		<member name="gradient" type="Gradient" setter="set_gradient" getter="get_gradient">
+		</member>
+		<member name="width" type="int" setter="set_width" getter="get_width" default="2048">
+		</member>
+	</members>
+	<constants>
+	</constants>
+</class>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="ARVRController" inherits="Spatial" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+		<method name="get_controller_name" qualifiers="const">
+			<return type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="get_hand" qualifiers="const">
+			<return type="int" enum="ARVRPositionalTracker.TrackerHand" />
+			<description>
+			</description>
+		</method>
+		<method name="get_is_active" qualifiers="const">
+			<return type="bool" />
+			<description>
+			</description>
+		</method>
+		<method name="get_joystick_axis" qualifiers="const">
+			<return type="float" />
+			<argument index="0" name="axis" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="get_joystick_id" qualifiers="const">
+			<return type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="get_mesh" qualifiers="const">
+			<return type="Mesh" />
+			<description>
+			</description>
+		</method>
+		<method name="is_button_pressed" qualifiers="const">
+			<return type="int" />
+			<argument index="0" name="button" type="int" />
+			<description>
+			</description>
+		</method>
+	</methods>
+	<members>
+		<member name="controller_id" type="int" setter="set_controller_id" getter="get_controller_id" default="1">
+		</member>
+		<member name="rumble" type="float" setter="set_rumble" getter="get_rumble" default="0.0">
+		</member>
+	</members>
+	<signals>
+		<signal name="button_pressed">
+			<argument index="0" name="button" type="int" />
+			<description>
+			</description>
+		</signal>
+		<signal name="button_release">
+			<argument index="0" name="button" type="int" />
+			<description>
+			</description>
+		</signal>
+		<signal name="mesh_updated">
+			<argument index="0" name="mesh" type="Mesh" />
+			<description>
+			</description>
+		</signal>
+	</signals>
+	<constants>
+	</constants>
+</class>

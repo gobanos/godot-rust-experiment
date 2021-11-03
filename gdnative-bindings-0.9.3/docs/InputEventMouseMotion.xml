@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="InputEventMouseMotion" inherits="InputEventMouse" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+	</methods>
+	<members>
+		<member name="pressure" type="float" setter="set_pressure" getter="get_pressure" default="0.0">
+		</member>
+		<member name="relative" type="Vector2" setter="set_relative" getter="get_relative" default="Vector2( 0, 0 )">
+		</member>
+		<member name="speed" type="Vector2" setter="set_speed" getter="get_speed" default="Vector2( 0, 0 )">
+		</member>
+		<member name="tilt" type="Vector2" setter="set_tilt" getter="get_tilt" default="Vector2( 0, 0 )">
+		</member>
+	</members>
+	<constants>
+	</constants>
+</class>

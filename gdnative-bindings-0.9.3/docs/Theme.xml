@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="Theme" inherits="Resource" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+		<method name="clear">
+			<return type="void" />
+			<description>
+			</description>
+		</method>
+		<method name="clear_color">
+			<return type="void" />
+			<argument index="0" name="name" type="String" />
+			<argument index="1" name="node_type" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="clear_constant">
+			<return type="void" />
+			<argument index="0" name="name" type="String" />
+			<argument index="1" name="node_type" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="clear_font">
+			<return type="void" />
+			<argument index="0" name="name" type="String" />
+			<argument index="1" name="node_type" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="clear_icon">
+			<return type="void" />
+			<argument index="0" name="name" type="String" />
+			<argument index="1" name="node_type" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="clear_stylebox">
+			<return type="void" />
+			<argument index="0" name="name" type="String" />
+			<argument index="1" name="node_type" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="copy_default_theme">
+			<return type="void" />
+			<description>
+			</description>
+		</method>
+		<method name="copy_theme">
+			<return type="void" />
+			<argument index="0" name="other" type="Theme" />
+			<description>
+			</description>
+		</method>
+		<method name="get_color" qualifiers="const">
+			<return type="Color" />
+			<argument index="0" name="name" type="String" />
+			<argument index="1" name="node_type" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="get_color_list" qualifiers="const">
+			<return type="PoolStringArray" />
+			<argument index="0" name="node_type" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="get_constant" qualifiers="const">
+			<return type="int" />
+			<argument index="0" name="name" type="String" />
+			<argument index="1" name="node_type" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="get_constant_list" qualifiers="const">
+			<return type="PoolStringArray" />
+			<argument index="0" name="node_type" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="get_font" qualifiers="const">
+			<return type="Font" />
+			<argument index="0" name="name" type="String" />
+			<argument index="1" name="node_type" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="get_font_list" qualifiers="const">
+			<return type="PoolStringArray" />
+			<argument index="0" name="node_type" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="get_icon" qualifiers="const">
+			<return type="Texture" />
+			<argument index="0" name="name" type="String" />
+			<argument index="1" name="node_type" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="get_icon_list" qualifiers="const">
+			<return type="PoolStringArray" />
+			<argument index="0" name="node_type" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="get_stylebox" qualifiers="const">
+			<return type="StyleBox" />
+			<argument index="0" name="name" type="String" />
+			<argument index="1" name="node_type" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="get_stylebox_list" qualifiers="const">
+			<return type="PoolStringArray" />
+			<argument index="0" name="node_type" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="get_stylebox_types" qualifiers="const">
+			<return type="PoolStringArray" />
+			<description>
+			</description>
+		</method>
+		<method name="get_type_list" qualifiers="const">
+			<return type="PoolStringArray" />
+			<argument index="0" name="node_type" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="has_color" qualifiers="const">
+			<return type="bool" />
+			<argument index="0" name="name" type="String" />
+			<argument index="1" name="node_type" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="has_constant" qualifiers="const">
+			<return type="bool" />
+			<argument index="0" name="name" type="String" />
+			<argument index="1" name="node_type" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="has_font" qualifiers="const">
+			<return type="bool" />
+			<argument index="0" name="name" type="String" />
+			<argument index="1" name="node_type" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="has_icon" qualifiers="const">
+			<return type="bool" />
+			<argument index="0" name="name" type="String" />
+			<argument index="1" name="node_type" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="has_stylebox" qualifiers="const">
+			<return type="bool" />
+			<argument index="0" name="name" type="String" />
+			<argument index="1" name="node_type" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="set_color">
+			<return type="void" />
+			<argument index="0" name="name" type="String" />
+			<argument index="1" name="node_type" type="String" />
+			<argument index="2" name="color" type="Color" />
+			<description>
+			</description>
+		</method>
+		<method name="set_constant">
+			<return type="void" />
+			<argument index="0" name="name" type="String" />
+			<argument index="1" name="node_type" type="String" />
+			<argument index="2" name="constant" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="set_font">
+			<return type="void" />
+			<argument index="0" name="name" type="String" />
+			<argument index="1" name="node_type" type="String" />
+			<argument index="2" name="font" type="Font" />
+			<description>
+			</description>
+		</method>
+		<method name="set_icon">
+			<return type="void" />
+			<argument index="0" name="name" type="String" />
+			<argument index="1" name="node_type" type="String" />
+			<argument index="2" name="texture" type="Texture" />
+			<description>
+			</description>
+		</method>
+		<method name="set_stylebox">
+			<return type="void" />
+			<argument index="0" name="name" type="String" />
+			<argument index="1" name="node_type" type="String" />
+			<argument index="2" name="texture" type="StyleBox" />
+			<description>
+			</description>
+		</method>
+	</methods>
+	<members>
+		<member name="default_font" type="Font" setter="set_default_font" getter="get_default_font">
+		</member>
+	</members>
+	<constants>
+	</constants>
+</class>

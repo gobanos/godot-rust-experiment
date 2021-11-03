@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="SpriteFrames" inherits="Resource" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+		<method name="add_animation">
+			<return type="void" />
+			<argument index="0" name="anim" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="add_frame">
+			<return type="void" />
+			<argument index="0" name="anim" type="String" />
+			<argument index="1" name="frame" type="Texture" />
+			<argument index="2" name="at_position" type="int" default="-1" />
+			<description>
+			</description>
+		</method>
+		<method name="clear">
+			<return type="void" />
+			<argument index="0" name="anim" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="clear_all">
+			<return type="void" />
+			<description>
+			</description>
+		</method>
+		<method name="get_animation_loop" qualifiers="const">
+			<return type="bool" />
+			<argument index="0" name="anim" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="get_animation_names" qualifiers="const">
+			<return type="PoolStringArray" />
+			<description>
+			</description>
+		</method>
+		<method name="get_animation_speed" qualifiers="const">
+			<return type="float" />
+			<argument index="0" name="anim" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="get_frame" qualifiers="const">
+			<return type="Texture" />
+			<argument index="0" name="anim" type="String" />
+			<argument index="1" name="idx" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="get_frame_count" qualifiers="const">
+			<return type="int" />
+			<argument index="0" name="anim" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="has_animation" qualifiers="const">
+			<return type="bool" />
+			<argument index="0" name="anim" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="remove_animation">
+			<return type="void" />
+			<argument index="0" name="anim" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="remove_frame">
+			<return type="void" />
+			<argument index="0" name="anim" type="String" />
+			<argument index="1" name="idx" type="int" />
+			<description>
+			</description>
+		</method>
+		<method name="rename_animation">
+			<return type="void" />
+			<argument index="0" name="anim" type="String" />
+			<argument index="1" name="newname" type="String" />
+			<description>
+			</description>
+		</method>
+		<method name="set_animation_loop">
+			<return type="void" />
+			<argument index="0" name="anim" type="String" />
+			<argument index="1" name="loop" type="bool" />
+			<description>
+			</description>
+		</method>
+		<method name="set_animation_speed">
+			<return type="void" />
+			<argument index="0" name="anim" type="String" />
+			<argument index="1" name="speed" type="float" />
+			<description>
+			</description>
+		</method>
+		<method name="set_frame">
+			<return type="void" />
+			<argument index="0" name="anim" type="String" />
+			<argument index="1" name="idx" type="int" />
+			<argument index="2" name="txt" type="Texture" />
+			<description>
+			</description>
+		</method>
+	</methods>
+	<members>
+		<member name="frames" type="Array" setter="_set_frames" getter="_get_frames">
+		</member>
+	</members>
+	<constants>
+	</constants>
+</class>

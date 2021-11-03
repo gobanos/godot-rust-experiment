@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="SegmentShape2D" inherits="Shape2D" version="3.3">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+	</methods>
+	<members>
+		<member name="a" type="Vector2" setter="set_a" getter="get_a" default="Vector2( 0, 0 )">
+		</member>
+		<member name="b" type="Vector2" setter="set_b" getter="get_b" default="Vector2( 0, 10 )">
+		</member>
+	</members>
+	<constants>
+	</constants>
+</class>
